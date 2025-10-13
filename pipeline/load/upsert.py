@@ -42,7 +42,7 @@ def main():
     url = "https://example.com/"
     name = "Example Placeholder"
     price = 9.99
-    currency = "USD"
+    currency = "GBP"
     in_stock = True
     on_sale = False
     source_hash = "example_v1"
