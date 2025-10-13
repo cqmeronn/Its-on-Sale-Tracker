@@ -1,2 +1,9 @@
 .env
+.env.*
+!.env.example
 .venv
+.dbt/
+__pycache__/
+*.pyc
+.ipynb_checkpoints
+.DS_Store
