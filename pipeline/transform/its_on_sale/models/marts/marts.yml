@@ -12,3 +12,9 @@ models:
               field: product_id
       - name: ts_utc
         tests: [not_null]
+  - name: latest_price_per_product
+    columns:
+      - name: product_id
+        tests:
+          - not_null
+          - unique
