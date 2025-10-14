@@ -31,10 +31,10 @@ jobs:
         env:
           DATABASE_URL: ${{ secrets.NEON_DATABASE_URL }}
         run: |
-          python - <<'PY' | while read line; do echo "$line" >> "$GITHUB_ENV"; done
+          python - <<'PY'
 import os, re
 url = os.environ["DATABASE_URL"]
-m = re.match(r"^postgresql://([^:]+):([^@]+)@([^/]+)/([^?]+)", url)
+m = re.match(r"^postgresql\+?[^:]*://([^:]+):([^@]+)@([^/]+)/([^?]+)", url)
 assert m, f"Bad DATABASE_URL: {url}"
 user, pwd, host, db = m.groups()
 print(f"PGHOST={host}")
@@ -43,7 +43,8 @@ print(f"PGPASSWORD={pwd}")
 print(f"PGDATABASE={db}")
 print("PGPORT=5432")
 print(f"DBT_PROFILES_DIR={os.environ.get('GITHUB_WORKSPACE')}/pipeline/transform")
-PY
+PY | while read line; do echo "$line" >> $GITHUB_ENV; done
+
 
       - name: Run ingestion
         env:
