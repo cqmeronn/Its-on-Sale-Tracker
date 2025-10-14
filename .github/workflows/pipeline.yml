@@ -61,3 +61,7 @@ jobs:
       - name: Run dbt tests
         working-directory: pipeline/transform/its_on_sale
         run: dbt test
+
+      - name: Run Great Expectations checks
+        run: |
+          python -m pipeline.dq.run_dq_checks
