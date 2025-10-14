@@ -3,12 +3,11 @@ name: pipeline
 on:
   workflow_dispatch:
   schedule:
-    - cron: "*/5 * * * *"   # every 5 minutes
+    - cron: "*/5 * * * *" # every 5 minutes
 
 jobs:
   run:
     runs-on: ubuntu-latest
-
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -31,7 +30,7 @@ jobs:
         env:
           DATABASE_URL: ${{ secrets.NEON_DATABASE_URL }}
         run: |
-          python - <<'PY'
+          python - <<'PY' | while read line; do echo "$line" >> $GITHUB_ENV; done
 import os, re
 url = os.environ["DATABASE_URL"]
 m = re.match(r"^postgresql\+?[^:]*://([^:]+):([^@]+)@([^/]+)/([^?]+)", url)
@@ -43,8 +42,7 @@ print(f"PGPASSWORD={pwd}")
 print(f"PGDATABASE={db}")
 print("PGPORT=5432")
 print(f"DBT_PROFILES_DIR={os.environ.get('GITHUB_WORKSPACE')}/pipeline/transform")
-PY | while read line; do echo "$line" >> $GITHUB_ENV; done
-
+PY
 
       - name: Run ingestion
         env:
@@ -52,9 +50,14 @@ PY | while read line; do echo "$line" >> $GITHUB_ENV; done
         run: |
           python -m pipeline.ingest.fetch_and_parse
 
-      - name: Run dbt (debug, run, test)
+      - name: Run dbt debug
         working-directory: pipeline/transform/its_on_sale
-        run: |
-          dbt debug
-          dbt run
-          dbt test
+        run: dbt debug
+
+      - name: Run dbt transformations
+        working-directory: pipeline/transform/its_on_sale
+        run: dbt run
+
+      - name: Run dbt tests
+        working-directory: pipeline/transform/its_on_sale
+        run: dbt test
