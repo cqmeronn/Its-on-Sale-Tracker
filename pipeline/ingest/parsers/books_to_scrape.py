@@ -14,8 +14,11 @@ def parse_product_page(html: str, url: str) -> dict:
     currency = "GBP"
     price = None
     if raw_price:
-        # raw like "£51.77"
-        price = float(raw_price.replace("£", "").strip())
+        cleaned = raw_price.replace("£", "").replace("Â", "").strip()
+        try:
+            price = float(cleaned)
+        except ValueError:
+            price = None
 
     in_stock = None
     if stock_el:
