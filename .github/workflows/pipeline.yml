@@ -29,5 +29,4 @@ jobs:
           SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
         run: |
           python -m pipeline.ingest.fetch_and_parse
-          python -m pipeline.load.upsert
           # later: dbt run, gx checks, alerts
