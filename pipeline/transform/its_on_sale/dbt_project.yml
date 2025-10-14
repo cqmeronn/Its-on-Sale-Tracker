@@ -1,0 +1,22 @@
+name: "its_on_sale"
+version: "1.0"
+config-version: 2
+
+profile: "its_on_sale"
+
+model-paths: ["models"]
+analysis-paths: ["analyses"]
+test-paths: ["tests"]
+seed-paths: ["seeds"]
+macro-paths: ["macros"]
+snapshot-paths: ["snapshots"]
+target-path: "target"
+clean-targets: ["target"]
+
+models:
+  its_on_sale:
+    +materialized: view
+    staging:
+      +schema: staging
+    marts:
+      +schema: marts

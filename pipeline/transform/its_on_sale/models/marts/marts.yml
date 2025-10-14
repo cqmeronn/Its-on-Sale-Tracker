@@ -1,0 +1,14 @@
+version: 2
+
+models:
+  - name: fact_price_history
+    columns:
+      - name: id
+        tests: [not_null, unique]
+      - name: product_id
+        tests:
+          - relationships:
+              to: ref('stg_product')
+              field: product_id
+      - name: ts_utc
+        tests: [not_null]
