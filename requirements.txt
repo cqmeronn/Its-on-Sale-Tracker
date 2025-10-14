@@ -7,7 +7,7 @@ rich
 loguru
 python-dotenv
 sqlalchemy>=2.0,<3.0
-psycopg2-binary>=3.2,<4.0
+psycopg2-binary>=2.9,<3.0
 great-expectations>=0.18,<1.0
 dbt-core>=1.8.8,<1.9
 dbt-postgres>=1.8.2,<1.9
