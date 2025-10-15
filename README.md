@@ -125,10 +125,26 @@ its-on-sale-tracker/
   ```
 - Supports bold text, bullet points, and hyperlink formatting.
 
-### 7. Streamlit (In Progress)
+### 7. Streamlit
 - Displays live data from Neon DB.
 - Product filters by site or search term.
 - Price history visualisation planned.
+
+----
+
+### Dashboard Preview
+
+![Streamlit Dashboard](./readme/streamlit_dashboard.png)
+
+*Figure: The Streamlit dashboard showing the latest product prices, site filters, and search functionality.*
+
+----
+
+### Price History Graph
+
+![Price History View](./readme/graph_and_price_history.png)
+
+*Figure: Historical price trend and record-level price data visualisation for a selected product.*
 
 ---
 
