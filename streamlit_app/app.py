@@ -39,6 +39,16 @@ if products.empty:
     st.info("No products yet. Run the ingestion pipeline.")
     st.stop()
 
+# Add site filter
+site_filter = st.selectbox(
+    "Filter by site",
+    ["All"] + sorted(products["site"].dropna().unique().tolist()),
+)
+
+if site_filter != "All":
+    products = products[products["site"] == site_filter]
+
+
 pid = st.selectbox(
     "Select a product",
     products["product_id"].tolist(),
