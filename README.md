@@ -63,7 +63,7 @@ its-on-sale-tracker/
 │           ├── .user.yml
 │           └── dbt_project.yml
 ├── streamlit_app/
-│   └── app.py                          # (WIP) dashboard
+│   └── app.py                          # Dashboard
 ├── .env.example
 ├── .gitignore
 ├── README.md
