@@ -16,7 +16,7 @@ It scrapes product data from the web (currently using `books.toscrape.com` as a 
 | Layer | Tool | Purpose |
 |-------|------|----------|
 | **Ingestion** | `requests`, `BeautifulSoup4`, `lxml`, `loguru`, `pandas` | Scrape and structure product data from multiple websites |
-| **Database** | `PostgreSQL` (Neon) + `SQLAlchemy` | Store product metadata and price history |
+| **Database** | `PostgreSQL` `Neon` + `SQLAlchemy` | Store product metadata and price history |
 | **Transformation** | `dbt-core`, `dbt-postgres` | Clean, model, and aggregate data for analysis |
 | **Validation** | `dbt tests`, `Great Expectations`, `pandas` | Ensure data quality, types, and expected values |
 | **Orchestration / CI** | `GitHub Actions`, `reset.py` | Automate ingestion, dbt, validation, and Slack alerts |
