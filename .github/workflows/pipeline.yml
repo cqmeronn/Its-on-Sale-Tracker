@@ -68,7 +68,9 @@ jobs:
         run: |
           python -m pipeline.dq.run_dq_checks
 
-
       - name: Post price summary
+        env:
+          DATABASE_URL: ${{ secrets.NEON_DATABASE_URL }}
         run: |
           python -m pipeline.load.report_summary
+
