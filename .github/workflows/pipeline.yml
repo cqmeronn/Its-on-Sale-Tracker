@@ -75,6 +75,9 @@ jobs:
           python -m pipeline.load.report_summary
 
       - name: Alert price drops
+        env:
+          DATABASE_URL: ${{ secrets.NEON_DATABASE_URL }}
+          SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
         run: |
           python -m pipeline.load.alert_price_drops
 
