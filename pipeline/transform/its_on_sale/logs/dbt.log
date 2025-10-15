@@ -14032,3 +14032,1474 @@ having count(*) > 1
 [0m05:34:23.837886 [debug] [MainThread]: Command `dbt test` succeeded at 05:34:23.837886 after 1.88 seconds
 [0m05:34:23.838891 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028402E7D010>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028403091A10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028403090250>]}
 [0m05:34:23.838891 [debug] [MainThread]: Flushing usage events
+[0m06:14:15.784020 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023875373190>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023875372F50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023875373ED0>]}
+
+
+============================== 06:14:15.788366 | 58978380-2625-41b4-8c95-88ba264e14f6 ==============================
+[0m06:14:15.788366 [info ] [MainThread]: Running with dbt=1.8.8
+[0m06:14:15.789370 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'version_check': 'True', 'log_path': "C:\\Users\\meg\\Documents\\cam\\proj\\It's On Sale\\its-on-sale-tracker\\pipeline\\transform\\its_on_sale\\logs", 'fail_fast': 'False', 'profiles_dir': "C:\\Users\\meg\\Documents\\cam\\proj\\It's On Sale\\its-on-sale-tracker\\pipeline\\transform", 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'log_format': 'default', 'invocation_command': 'dbt debug', 'introspect': 'True', 'static_parser': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m06:14:15.807850 [info ] [MainThread]: dbt version: 1.8.8
+[0m06:14:15.808855 [info ] [MainThread]: python version: 3.11.9
+[0m06:14:15.809861 [info ] [MainThread]: python path: C:\Users\meg\Documents\cam\proj\It's On Sale\its-on-sale-tracker\.venv\Scripts\python.exe
+[0m06:14:15.809861 [info ] [MainThread]: os info: Windows-10-10.0.26100-SP0
+[0m06:14:15.877911 [info ] [MainThread]: Using profiles dir at C:\Users\meg\Documents\cam\proj\It's On Sale\its-on-sale-tracker\pipeline\transform
+[0m06:14:15.878991 [info ] [MainThread]: Using profiles.yml file at C:\Users\meg\Documents\cam\proj\It's On Sale\its-on-sale-tracker\pipeline\transform\profiles.yml
+[0m06:14:15.880001 [info ] [MainThread]: Using dbt_project.yml file at C:\Users\meg\Documents\cam\proj\It's On Sale\its-on-sale-tracker\pipeline\transform\its_on_sale\dbt_project.yml
+[0m06:14:15.881007 [info ] [MainThread]: adapter type: postgres
+[0m06:14:15.882011 [info ] [MainThread]: adapter version: 1.8.2
+[0m06:14:15.968272 [info ] [MainThread]: Configuration:
+[0m06:14:15.969278 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m06:14:15.969278 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m06:14:15.970626 [info ] [MainThread]: Required dependencies:
+[0m06:14:15.970626 [debug] [MainThread]: Executing "git --help"
+[0m06:14:16.014995 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone      Clone a repository into a new directory\n   init       Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add        Add file contents to the index\n   mv         Move or rename a file, a directory, or a symlink\n   restore    Restore working tree files\n   rm         Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect     Use binary search to find the commit that introduced a bug\n   diff       Show changes between commits, commit and working tree, etc\n   grep       Print lines matching a pattern\n   log        Show commit logs\n   show       Show various types of objects\n   status     Show the working tree status\n\ngrow, mark and tweak your common history\n   backfill   Download missing objects in a partial clone\n   branch     List, create, or delete branches\n   commit     Record changes to the repository\n   merge      Join two or more development histories together\n   rebase     Reapply commits on top of another base tip\n   reset      Reset current HEAD to the specified state\n   switch     Switch branches\n   tag        Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch      Download objects and refs from another repository\n   pull       Fetch from and integrate with another repository or a local branch\n   push       Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m06:14:16.015998 [debug] [MainThread]: STDERR: "b''"
+[0m06:14:16.016999 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m06:14:16.016999 [info ] [MainThread]: Connection:
+[0m06:14:16.018426 [info ] [MainThread]:   host: ep-broad-wind-abjb6cfi-pooler.eu-west-2.aws.neon.tech
+[0m06:14:16.018426 [info ] [MainThread]:   port: 5432
+[0m06:14:16.019435 [info ] [MainThread]:   user: neondb_owner
+[0m06:14:16.019435 [info ] [MainThread]:   database: neondb
+[0m06:14:16.020440 [info ] [MainThread]:   schema: public
+[0m06:14:16.020440 [info ] [MainThread]:   connect_timeout: 10
+[0m06:14:16.021449 [info ] [MainThread]:   role: None
+[0m06:14:16.022453 [info ] [MainThread]:   search_path: None
+[0m06:14:16.022453 [info ] [MainThread]:   keepalives_idle: 0
+[0m06:14:16.023464 [info ] [MainThread]:   sslmode: require
+[0m06:14:16.023464 [info ] [MainThread]:   sslcert: None
+[0m06:14:16.024483 [info ] [MainThread]:   sslkey: None
+[0m06:14:16.024483 [info ] [MainThread]:   sslrootcert: None
+[0m06:14:16.025493 [info ] [MainThread]:   application_name: dbt
+[0m06:14:16.026500 [info ] [MainThread]:   retries: 1
+[0m06:14:16.026500 [info ] [MainThread]: Registered adapter: postgres=1.8.2
+[0m06:14:16.027505 [debug] [MainThread]: Acquiring new postgres connection 'debug'
+[0m06:14:16.143621 [debug] [MainThread]: Using postgres connection "debug"
+[0m06:14:16.144629 [debug] [MainThread]: On debug: select 1 as id
+[0m06:14:16.144629 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m06:14:16.245616 [debug] [MainThread]: SQL status: SELECT 1 in 0.101 seconds
+[0m06:14:16.247699 [debug] [MainThread]: On debug: Close
+[0m06:14:16.247699 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m06:14:16.248703 [info ] [MainThread]: [32mAll checks passed![0m
+[0m06:14:16.249712 [debug] [MainThread]: Command `dbt debug` succeeded at 06:14:16.249712 after 0.55 seconds
+[0m06:14:16.250717 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m06:14:16.251722 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002386D926F10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002386D926D10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002386D927550>]}
+[0m06:14:16.251722 [debug] [MainThread]: Flushing usage events
+[0m06:14:20.686659 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002941B09B490>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002941AE8C790>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002941C0BFFD0>]}
+
+
+============================== 06:14:20.691007 | ad3274ce-4465-4516-a79f-6b0125fb176f ==============================
+[0m06:14:20.691007 [info ] [MainThread]: Running with dbt=1.8.8
+[0m06:14:20.692010 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'version_check': 'True', 'log_path': "C:\\Users\\meg\\Documents\\cam\\proj\\It's On Sale\\its-on-sale-tracker\\pipeline\\transform\\its_on_sale\\logs", 'debug': 'False', 'profiles_dir': "C:\\Users\\meg\\Documents\\cam\\proj\\It's On Sale\\its-on-sale-tracker\\pipeline\\transform", 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'invocation_command': 'dbt run', 'static_parser': 'True', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m06:14:20.917053 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'ad3274ce-4465-4516-a79f-6b0125fb176f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002941B09D350>]}
+[0m06:14:20.970513 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'ad3274ce-4465-4516-a79f-6b0125fb176f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000294180E0290>]}
+[0m06:14:20.972522 [info ] [MainThread]: Registered adapter: postgres=1.8.2
+[0m06:14:20.983613 [debug] [MainThread]: checksum: ec53e341a936509427e16df1c646386a84befec52c1957e3f4359fbc36fc93f5, vars: {}, profile: , target: , version: 1.8.8
+[0m06:14:21.183911 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m06:14:21.184914 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m06:14:21.228648 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'ad3274ce-4465-4516-a79f-6b0125fb176f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002941C404A10>]}
+[0m06:14:21.348181 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'ad3274ce-4465-4516-a79f-6b0125fb176f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002941C28D290>]}
+[0m06:14:21.349185 [info ] [MainThread]: Found 5 models, 19 data tests, 423 macros
+[0m06:14:21.350189 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'ad3274ce-4465-4516-a79f-6b0125fb176f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002941B09EB10>]}
+[0m06:14:21.352202 [info ] [MainThread]: 
+[0m06:14:21.353205 [debug] [MainThread]: Acquiring new postgres connection 'master'
+[0m06:14:21.357241 [debug] [ThreadPool]: Acquiring new postgres connection 'list_neondb'
+[0m06:14:21.358245 [debug] [ThreadPool]: Acquiring new postgres connection 'list_neondb'
+[0m06:14:21.554961 [debug] [ThreadPool]: Using postgres connection "list_neondb"
+[0m06:14:21.554961 [debug] [ThreadPool]: Using postgres connection "list_neondb"
+[0m06:14:21.555966 [debug] [ThreadPool]: On list_neondb: /* {"app": "dbt", "dbt_version": "1.8.8", "profile_name": "its_on_sale", "target_name": "dev", "connection_name": "list_neondb"} */
+
+    select distinct nspname from pg_namespace
+  
+[0m06:14:21.555966 [debug] [ThreadPool]: On list_neondb: /* {"app": "dbt", "dbt_version": "1.8.8", "profile_name": "its_on_sale", "target_name": "dev", "connection_name": "list_neondb"} */
+
+    select distinct nspname from pg_namespace
+  
+[0m06:14:21.556973 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m06:14:21.556973 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m06:14:21.644542 [debug] [ThreadPool]: SQL status: SELECT 8 in 0.087 seconds
+[0m06:14:21.644542 [debug] [ThreadPool]: SQL status: SELECT 8 in 0.088 seconds
+[0m06:14:21.646560 [debug] [ThreadPool]: On list_neondb: Close
+[0m06:14:21.647566 [debug] [ThreadPool]: On list_neondb: Close
+[0m06:14:21.649577 [debug] [ThreadPool]: Acquiring new postgres connection 'list_neondb_public_marts'
+[0m06:14:21.650586 [debug] [ThreadPool]: Acquiring new postgres connection 'list_neondb_public_staging'
+[0m06:14:21.656712 [debug] [ThreadPool]: Using postgres connection "list_neondb_public_marts"
+[0m06:14:21.658720 [debug] [ThreadPool]: Using postgres connection "list_neondb_public_staging"
+[0m06:14:21.659724 [debug] [ThreadPool]: On list_neondb_public_marts: BEGIN
+[0m06:14:21.659724 [debug] [ThreadPool]: On list_neondb_public_staging: BEGIN
+[0m06:14:21.660727 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m06:14:21.660727 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m06:14:21.727803 [debug] [ThreadPool]: SQL status: BEGIN in 0.067 seconds
+[0m06:14:21.727803 [debug] [ThreadPool]: Using postgres connection "list_neondb_public_staging"
+[0m06:14:21.728809 [debug] [ThreadPool]: On list_neondb_public_staging: /* {"app": "dbt", "dbt_version": "1.8.8", "profile_name": "its_on_sale", "target_name": "dev", "connection_name": "list_neondb_public_staging"} */
+select
+      'neondb' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'public_staging'
+    union all
+    select
+      'neondb' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'public_staging'
+    union all
+    select
+      'neondb' as database,
+      matviewname as name,
+      schemaname as schema,
+      'materialized_view' as type
+    from pg_matviews
+    where schemaname ilike 'public_staging'
+  
+[0m06:14:21.732605 [debug] [ThreadPool]: SQL status: BEGIN in 0.072 seconds
+[0m06:14:21.732605 [debug] [ThreadPool]: Using postgres connection "list_neondb_public_marts"
+[0m06:14:21.733615 [debug] [ThreadPool]: On list_neondb_public_marts: /* {"app": "dbt", "dbt_version": "1.8.8", "profile_name": "its_on_sale", "target_name": "dev", "connection_name": "list_neondb_public_marts"} */
+select
+      'neondb' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'public_marts'
+    union all
+    select
+      'neondb' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'public_marts'
+    union all
+    select
+      'neondb' as database,
+      matviewname as name,
+      schemaname as schema,
+      'materialized_view' as type
+    from pg_matviews
+    where schemaname ilike 'public_marts'
+  
+[0m06:14:21.735800 [debug] [ThreadPool]: SQL status: SELECT 0 in 0.006 seconds
+[0m06:14:21.736807 [debug] [ThreadPool]: On list_neondb_public_staging: ROLLBACK
+[0m06:14:21.741430 [debug] [ThreadPool]: SQL status: SELECT 0 in 0.007 seconds
+[0m06:14:21.742610 [debug] [ThreadPool]: On list_neondb_public_marts: ROLLBACK
+[0m06:14:21.742610 [debug] [ThreadPool]: On list_neondb_public_staging: Close
+[0m06:14:21.748891 [debug] [ThreadPool]: On list_neondb_public_marts: Close
+[0m06:14:21.753917 [debug] [MainThread]: Using postgres connection "master"
+[0m06:14:21.753917 [debug] [MainThread]: On master: BEGIN
+[0m06:14:21.754921 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m06:14:21.850497 [debug] [MainThread]: SQL status: BEGIN in 0.096 seconds
+[0m06:14:21.850497 [debug] [MainThread]: Using postgres connection "master"
+[0m06:14:21.851516 [debug] [MainThread]: On master: /* {"app": "dbt", "dbt_version": "1.8.8", "profile_name": "its_on_sale", "target_name": "dev", "connection_name": "master"} */
+with relation as (
+        select
+            pg_rewrite.ev_class as class,
+            pg_rewrite.oid as id
+        from pg_rewrite
+    ),
+    class as (
+        select
+            oid as id,
+            relname as name,
+            relnamespace as schema,
+            relkind as kind
+        from pg_class
+    ),
+    dependency as (
+        select distinct
+            pg_depend.objid as id,
+            pg_depend.refobjid as ref
+        from pg_depend
+    ),
+    schema as (
+        select
+            pg_namespace.oid as id,
+            pg_namespace.nspname as name
+        from pg_namespace
+        where nspname != 'information_schema' and nspname not like 'pg\_%'
+    ),
+    referenced as (
+        select
+            relation.id AS id,
+            referenced_class.name ,
+            referenced_class.schema ,
+            referenced_class.kind
+        from relation
+        join class as referenced_class on relation.class=referenced_class.id
+        where referenced_class.kind in ('r', 'v', 'm')
+    ),
+    relationships as (
+        select
+            referenced.name as referenced_name,
+            referenced.schema as referenced_schema_id,
+            dependent_class.name as dependent_name,
+            dependent_class.schema as dependent_schema_id,
+            referenced.kind as kind
+        from referenced
+        join dependency on referenced.id=dependency.id
+        join class as dependent_class on dependency.ref=dependent_class.id
+        where
+            (referenced.name != dependent_class.name or
+             referenced.schema != dependent_class.schema)
+    )
+
+    select
+        referenced_schema.name as referenced_schema,
+        relationships.referenced_name as referenced_name,
+        dependent_schema.name as dependent_schema,
+        relationships.dependent_name as dependent_name
+    from relationships
+    join schema as dependent_schema on relationships.dependent_schema_id=dependent_schema.id
+    join schema as referenced_schema on relationships.referenced_schema_id=referenced_schema.id
+    group by referenced_schema, referenced_name, dependent_schema, dependent_name
+    order by referenced_schema, referenced_name, dependent_schema, dependent_name;
+[0m06:14:21.859291 [debug] [MainThread]: SQL status: SELECT 0 in 0.007 seconds
+[0m06:14:21.860501 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'ad3274ce-4465-4516-a79f-6b0125fb176f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002941A64FB90>]}
+[0m06:14:21.860501 [debug] [MainThread]: On master: ROLLBACK
+[0m06:14:21.867994 [debug] [MainThread]: Using postgres connection "master"
+[0m06:14:21.867994 [debug] [MainThread]: On master: BEGIN
+[0m06:14:21.879102 [debug] [MainThread]: SQL status: BEGIN in 0.010 seconds
+[0m06:14:21.879102 [debug] [MainThread]: On master: COMMIT
+[0m06:14:21.879102 [debug] [MainThread]: Using postgres connection "master"
+[0m06:14:21.880508 [debug] [MainThread]: On master: COMMIT
+[0m06:14:21.887068 [debug] [MainThread]: SQL status: COMMIT in 0.006 seconds
+[0m06:14:21.887068 [debug] [MainThread]: On master: Close
+[0m06:14:21.888075 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m06:14:21.889083 [info ] [MainThread]: 
+[0m06:14:21.892103 [debug] [Thread-1 (]: Began running node model.its_on_sale.stg_price_history
+[0m06:14:21.893215 [debug] [Thread-2 (]: Began running node model.its_on_sale.stg_product
+[0m06:14:21.893215 [info ] [Thread-1 (]: 1 of 5 START sql view model public_staging.stg_price_history ................... [RUN]
+[0m06:14:21.894245 [info ] [Thread-2 (]: 2 of 5 START sql view model public_staging.stg_product ......................... [RUN]
+[0m06:14:21.895249 [debug] [Thread-1 (]: Acquiring new postgres connection 'model.its_on_sale.stg_price_history'
+[0m06:14:21.896254 [debug] [Thread-2 (]: Acquiring new postgres connection 'model.its_on_sale.stg_product'
+[0m06:14:21.897259 [debug] [Thread-1 (]: Began compiling node model.its_on_sale.stg_price_history
+[0m06:14:21.898265 [debug] [Thread-2 (]: Began compiling node model.its_on_sale.stg_product
+[0m06:14:21.905408 [debug] [Thread-1 (]: Writing injected SQL for node "model.its_on_sale.stg_price_history"
+[0m06:14:21.908456 [debug] [Thread-2 (]: Writing injected SQL for node "model.its_on_sale.stg_product"
+[0m06:14:21.909475 [debug] [Thread-1 (]: Began executing node model.its_on_sale.stg_price_history
+[0m06:14:21.910482 [debug] [Thread-2 (]: Began executing node model.its_on_sale.stg_product
+[0m06:14:21.949192 [debug] [Thread-1 (]: Writing runtime sql for node "model.its_on_sale.stg_price_history"
+[0m06:14:21.953209 [debug] [Thread-2 (]: Writing runtime sql for node "model.its_on_sale.stg_product"
+[0m06:14:21.954238 [debug] [Thread-1 (]: Using postgres connection "model.its_on_sale.stg_price_history"
+[0m06:14:21.955251 [debug] [Thread-1 (]: On model.its_on_sale.stg_price_history: BEGIN
+[0m06:14:21.955251 [debug] [Thread-2 (]: Using postgres connection "model.its_on_sale.stg_product"
+[0m06:14:21.956257 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m06:14:21.957264 [debug] [Thread-2 (]: On model.its_on_sale.stg_product: BEGIN
+[0m06:14:21.957264 [debug] [Thread-2 (]: Opening a new connection, currently in state init
+[0m06:14:22.013466 [debug] [Thread-1 (]: SQL status: BEGIN in 0.057 seconds
+[0m06:14:22.014490 [debug] [Thread-1 (]: Using postgres connection "model.its_on_sale.stg_price_history"
+[0m06:14:22.014490 [debug] [Thread-2 (]: SQL status: BEGIN in 0.057 seconds
+[0m06:14:22.015494 [debug] [Thread-1 (]: On model.its_on_sale.stg_price_history: /* {"app": "dbt", "dbt_version": "1.8.8", "profile_name": "its_on_sale", "target_name": "dev", "node_id": "model.its_on_sale.stg_price_history"} */
+
+  create view "neondb"."public_staging"."stg_price_history__dbt_tmp"
+    
+    
+  as (
+    -- Basic staging view over price_history
+
+select
+  id,
+  product_id,
+  ts_utc,
+  cast(price_numeric as numeric(12,2)) as price,
+  currency,
+  in_stock_bool as in_stock,
+  on_sale_bool as on_sale,
+  source_hash
+from public.price_history
+  );
+[0m06:14:22.015494 [debug] [Thread-2 (]: Using postgres connection "model.its_on_sale.stg_product"
+[0m06:14:22.016498 [debug] [Thread-2 (]: On model.its_on_sale.stg_product: /* {"app": "dbt", "dbt_version": "1.8.8", "profile_name": "its_on_sale", "target_name": "dev", "node_id": "model.its_on_sale.stg_product"} */
+
+  create view "neondb"."public_staging"."stg_product__dbt_tmp"
+    
+    
+  as (
+    -- Basic staging view over product
+
+select
+  product_id,
+  site,
+  url,
+  name,
+  created_at
+from public.product
+  );
+[0m06:14:22.027139 [debug] [Thread-1 (]: SQL status: CREATE VIEW in 0.011 seconds
+[0m06:14:22.027139 [debug] [Thread-2 (]: SQL status: CREATE VIEW in 0.010 seconds
+[0m06:14:22.034192 [debug] [Thread-1 (]: Using postgres connection "model.its_on_sale.stg_price_history"
+[0m06:14:22.037275 [debug] [Thread-2 (]: Using postgres connection "model.its_on_sale.stg_product"
+[0m06:14:22.038282 [debug] [Thread-1 (]: On model.its_on_sale.stg_price_history: /* {"app": "dbt", "dbt_version": "1.8.8", "profile_name": "its_on_sale", "target_name": "dev", "node_id": "model.its_on_sale.stg_price_history"} */
+alter table "neondb"."public_staging"."stg_price_history__dbt_tmp" rename to "stg_price_history"
+[0m06:14:22.038282 [debug] [Thread-2 (]: On model.its_on_sale.stg_product: /* {"app": "dbt", "dbt_version": "1.8.8", "profile_name": "its_on_sale", "target_name": "dev", "node_id": "model.its_on_sale.stg_product"} */
+alter table "neondb"."public_staging"."stg_product__dbt_tmp" rename to "stg_product"
+[0m06:14:22.044746 [debug] [Thread-2 (]: SQL status: ALTER TABLE in 0.005 seconds
+[0m06:14:22.044746 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.006 seconds
+[0m06:14:22.059878 [debug] [Thread-2 (]: On model.its_on_sale.stg_product: COMMIT
+[0m06:14:22.061885 [debug] [Thread-1 (]: On model.its_on_sale.stg_price_history: COMMIT
+[0m06:14:22.062888 [debug] [Thread-2 (]: Using postgres connection "model.its_on_sale.stg_product"
+[0m06:14:22.062888 [debug] [Thread-1 (]: Using postgres connection "model.its_on_sale.stg_price_history"
+[0m06:14:22.063894 [debug] [Thread-2 (]: On model.its_on_sale.stg_product: COMMIT
+[0m06:14:22.064898 [debug] [Thread-1 (]: On model.its_on_sale.stg_price_history: COMMIT
+[0m06:14:22.072116 [debug] [Thread-2 (]: SQL status: COMMIT in 0.007 seconds
+[0m06:14:22.072116 [debug] [Thread-1 (]: SQL status: COMMIT in 0.007 seconds
+[0m06:14:22.079160 [debug] [Thread-2 (]: Applying DROP to: "neondb"."public_staging"."stg_product__dbt_backup"
+[0m06:14:22.082178 [debug] [Thread-1 (]: Applying DROP to: "neondb"."public_staging"."stg_price_history__dbt_backup"
+[0m06:14:22.088266 [debug] [Thread-2 (]: Using postgres connection "model.its_on_sale.stg_product"
+[0m06:14:22.089285 [debug] [Thread-1 (]: Using postgres connection "model.its_on_sale.stg_price_history"
+[0m06:14:22.090290 [debug] [Thread-2 (]: On model.its_on_sale.stg_product: /* {"app": "dbt", "dbt_version": "1.8.8", "profile_name": "its_on_sale", "target_name": "dev", "node_id": "model.its_on_sale.stg_product"} */
+drop view if exists "neondb"."public_staging"."stg_product__dbt_backup" cascade
+[0m06:14:22.091295 [debug] [Thread-1 (]: On model.its_on_sale.stg_price_history: /* {"app": "dbt", "dbt_version": "1.8.8", "profile_name": "its_on_sale", "target_name": "dev", "node_id": "model.its_on_sale.stg_price_history"} */
+drop view if exists "neondb"."public_staging"."stg_price_history__dbt_backup" cascade
+[0m06:14:22.097329 [debug] [Thread-1 (]: SQL status: DROP VIEW in 0.006 seconds
+[0m06:14:22.098388 [debug] [Thread-2 (]: SQL status: DROP VIEW in 0.007 seconds
+[0m06:14:22.100399 [debug] [Thread-1 (]: On model.its_on_sale.stg_price_history: Close
+[0m06:14:22.102406 [debug] [Thread-2 (]: On model.its_on_sale.stg_product: Close
+[0m06:14:22.104505 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'ad3274ce-4465-4516-a79f-6b0125fb176f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002941C8DFED0>]}
+[0m06:14:22.105510 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'ad3274ce-4465-4516-a79f-6b0125fb176f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002941C884090>]}
+[0m06:14:22.106519 [info ] [Thread-1 (]: 1 of 5 OK created sql view model public_staging.stg_price_history .............. [[32mCREATE VIEW[0m in 0.21s]
+[0m06:14:22.106519 [info ] [Thread-2 (]: 2 of 5 OK created sql view model public_staging.stg_product .................... [[32mCREATE VIEW[0m in 0.21s]
+[0m06:14:22.107675 [debug] [Thread-1 (]: Finished running node model.its_on_sale.stg_price_history
+[0m06:14:22.108680 [debug] [Thread-2 (]: Finished running node model.its_on_sale.stg_product
+[0m06:14:22.109826 [debug] [Thread-4 (]: Began running node model.its_on_sale.latest_price_per_product
+[0m06:14:22.110830 [debug] [Thread-3 (]: Began running node model.its_on_sale.price_events
+[0m06:14:22.110830 [debug] [Thread-1 (]: Began running node model.its_on_sale.fact_price_history
+[0m06:14:22.112076 [info ] [Thread-4 (]: 3 of 5 START sql view model public_marts.latest_price_per_product .............. [RUN]
+[0m06:14:22.113080 [info ] [Thread-3 (]: 4 of 5 START sql view model public_marts.price_events .......................... [RUN]
+[0m06:14:22.114284 [info ] [Thread-1 (]: 5 of 5 START sql view model public_marts.fact_price_history .................... [RUN]
+[0m06:14:22.115317 [debug] [Thread-4 (]: Acquiring new postgres connection 'model.its_on_sale.latest_price_per_product'
+[0m06:14:22.116614 [debug] [Thread-3 (]: Acquiring new postgres connection 'model.its_on_sale.price_events'
+[0m06:14:22.117623 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.its_on_sale.stg_price_history, now model.its_on_sale.fact_price_history)
+[0m06:14:22.118648 [debug] [Thread-4 (]: Began compiling node model.its_on_sale.latest_price_per_product
+[0m06:14:22.118648 [debug] [Thread-3 (]: Began compiling node model.its_on_sale.price_events
+[0m06:14:22.119654 [debug] [Thread-1 (]: Began compiling node model.its_on_sale.fact_price_history
+[0m06:14:22.123109 [debug] [Thread-4 (]: Writing injected SQL for node "model.its_on_sale.latest_price_per_product"
+[0m06:14:22.127130 [debug] [Thread-3 (]: Writing injected SQL for node "model.its_on_sale.price_events"
+[0m06:14:22.131259 [debug] [Thread-1 (]: Writing injected SQL for node "model.its_on_sale.fact_price_history"
+[0m06:14:22.132262 [debug] [Thread-4 (]: Began executing node model.its_on_sale.latest_price_per_product
+[0m06:14:22.137059 [debug] [Thread-4 (]: Writing runtime sql for node "model.its_on_sale.latest_price_per_product"
+[0m06:14:22.138063 [debug] [Thread-3 (]: Began executing node model.its_on_sale.price_events
+[0m06:14:22.139071 [debug] [Thread-1 (]: Began executing node model.its_on_sale.fact_price_history
+[0m06:14:22.144111 [debug] [Thread-3 (]: Writing runtime sql for node "model.its_on_sale.price_events"
+[0m06:14:22.145253 [debug] [Thread-4 (]: Using postgres connection "model.its_on_sale.latest_price_per_product"
+[0m06:14:22.149385 [debug] [Thread-1 (]: Writing runtime sql for node "model.its_on_sale.fact_price_history"
+[0m06:14:22.150390 [debug] [Thread-4 (]: On model.its_on_sale.latest_price_per_product: BEGIN
+[0m06:14:22.151396 [debug] [Thread-3 (]: Using postgres connection "model.its_on_sale.price_events"
+[0m06:14:22.152400 [debug] [Thread-4 (]: Opening a new connection, currently in state init
+[0m06:14:22.152400 [debug] [Thread-1 (]: Using postgres connection "model.its_on_sale.fact_price_history"
+[0m06:14:22.153405 [debug] [Thread-3 (]: On model.its_on_sale.price_events: BEGIN
+[0m06:14:22.154413 [debug] [Thread-1 (]: On model.its_on_sale.fact_price_history: BEGIN
+[0m06:14:22.155422 [debug] [Thread-3 (]: Opening a new connection, currently in state init
+[0m06:14:22.155422 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m06:14:22.212271 [debug] [Thread-4 (]: SQL status: BEGIN in 0.060 seconds
+[0m06:14:22.213277 [debug] [Thread-4 (]: Using postgres connection "model.its_on_sale.latest_price_per_product"
+[0m06:14:22.213277 [debug] [Thread-4 (]: On model.its_on_sale.latest_price_per_product: /* {"app": "dbt", "dbt_version": "1.8.8", "profile_name": "its_on_sale", "target_name": "dev", "node_id": "model.its_on_sale.latest_price_per_product"} */
+
+  create view "neondb"."public_marts"."latest_price_per_product__dbt_tmp"
+    
+    
+  as (
+    -- Latest price per product
+
+with ranked as (
+  select
+    ph.product_id,
+    ph.ts_utc,
+    ph.price,
+    ph.currency,
+    ph.in_stock,
+    row_number() over (partition by ph.product_id order by ph.ts_utc desc) as rn
+  from "neondb"."public_staging"."stg_price_history" ph
+)
+select
+  r.product_id,
+  r.ts_utc as last_seen_utc,
+  r.price,
+  r.currency,
+  r.in_stock
+from ranked r
+where r.rn = 1
+  );
+[0m06:14:22.215977 [debug] [Thread-3 (]: SQL status: BEGIN in 0.061 seconds
+[0m06:14:22.216983 [debug] [Thread-3 (]: Using postgres connection "model.its_on_sale.price_events"
+[0m06:14:22.216983 [debug] [Thread-3 (]: On model.its_on_sale.price_events: /* {"app": "dbt", "dbt_version": "1.8.8", "profile_name": "its_on_sale", "target_name": "dev", "node_id": "model.its_on_sale.price_events"} */
+
+  create view "neondb"."public_marts"."price_events__dbt_tmp"
+    
+    
+  as (
+    -- Price drop/restock events derived from consecutive snapshots
+
+with hist as (
+  select
+    product_id,
+    ts_utc,
+    price,
+    in_stock,
+    lag(price) over (partition by product_id order by ts_utc) as prev_price,
+    lag(in_stock) over (partition by product_id order by ts_utc) as prev_stock
+  from "neondb"."public_staging"."stg_price_history"
+),
+events as (
+  select
+    product_id,
+    ts_utc,
+    prev_price,
+    price as new_price,
+    case
+      when prev_price is not null and price is not null and price < prev_price then 'DROP'
+      when prev_stock = false and in_stock = true then 'RESTOCK'
+      when prev_stock = true and in_stock = false then 'OOS'
+      else null
+    end as event_type,
+    case
+      when prev_price is not null and price is not null and price < prev_price
+        then round(100.0*(prev_price - price)/prev_price, 2)
+      else null
+    end as drop_pct
+  from hist
+)
+select * from events where event_type is not null
+  );
+[0m06:14:22.218995 [debug] [Thread-1 (]: SQL status: BEGIN in 0.064 seconds
+[0m06:14:22.220000 [debug] [Thread-1 (]: Using postgres connection "model.its_on_sale.fact_price_history"
+[0m06:14:22.221007 [debug] [Thread-1 (]: On model.its_on_sale.fact_price_history: /* {"app": "dbt", "dbt_version": "1.8.8", "profile_name": "its_on_sale", "target_name": "dev", "node_id": "model.its_on_sale.fact_price_history"} */
+
+  create view "neondb"."public_marts"."fact_price_history__dbt_tmp"
+    
+    
+  as (
+    -- Fact table for price time series
+
+select
+  ph.id,
+  ph.product_id,
+  p.site,
+  p.url,
+  p.name,
+  ph.ts_utc,
+  ph.price,
+  ph.currency,
+  ph.in_stock,
+  ph.on_sale
+from "neondb"."public_staging"."stg_price_history" ph
+join "neondb"."public_staging"."stg_product" p
+  on p.product_id = ph.product_id
+  );
+[0m06:14:22.222988 [debug] [Thread-4 (]: SQL status: CREATE VIEW in 0.009 seconds
+[0m06:14:22.226023 [debug] [Thread-4 (]: Using postgres connection "model.its_on_sale.latest_price_per_product"
+[0m06:14:22.227026 [debug] [Thread-3 (]: SQL status: CREATE VIEW in 0.009 seconds
+[0m06:14:22.227026 [debug] [Thread-4 (]: On model.its_on_sale.latest_price_per_product: /* {"app": "dbt", "dbt_version": "1.8.8", "profile_name": "its_on_sale", "target_name": "dev", "node_id": "model.its_on_sale.latest_price_per_product"} */
+alter table "neondb"."public_marts"."latest_price_per_product__dbt_tmp" rename to "latest_price_per_product"
+[0m06:14:22.231045 [debug] [Thread-3 (]: Using postgres connection "model.its_on_sale.price_events"
+[0m06:14:22.232051 [debug] [Thread-1 (]: SQL status: CREATE VIEW in 0.011 seconds
+[0m06:14:22.232051 [debug] [Thread-3 (]: On model.its_on_sale.price_events: /* {"app": "dbt", "dbt_version": "1.8.8", "profile_name": "its_on_sale", "target_name": "dev", "node_id": "model.its_on_sale.price_events"} */
+alter table "neondb"."public_marts"."price_events__dbt_tmp" rename to "price_events"
+[0m06:14:22.235091 [debug] [Thread-1 (]: Using postgres connection "model.its_on_sale.fact_price_history"
+[0m06:14:22.236094 [debug] [Thread-1 (]: On model.its_on_sale.fact_price_history: /* {"app": "dbt", "dbt_version": "1.8.8", "profile_name": "its_on_sale", "target_name": "dev", "node_id": "model.its_on_sale.fact_price_history"} */
+alter table "neondb"."public_marts"."fact_price_history__dbt_tmp" rename to "fact_price_history"
+[0m06:14:22.237097 [debug] [Thread-4 (]: SQL status: ALTER TABLE in 0.006 seconds
+[0m06:14:22.239176 [debug] [Thread-4 (]: On model.its_on_sale.latest_price_per_product: COMMIT
+[0m06:14:22.239176 [debug] [Thread-4 (]: Using postgres connection "model.its_on_sale.latest_price_per_product"
+[0m06:14:22.240180 [debug] [Thread-4 (]: On model.its_on_sale.latest_price_per_product: COMMIT
+[0m06:14:22.241739 [debug] [Thread-3 (]: SQL status: ALTER TABLE in 0.005 seconds
+[0m06:14:22.243084 [debug] [Thread-3 (]: On model.its_on_sale.price_events: COMMIT
+[0m06:14:22.244091 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.007 seconds
+[0m06:14:22.244091 [debug] [Thread-3 (]: Using postgres connection "model.its_on_sale.price_events"
+[0m06:14:22.246103 [debug] [Thread-1 (]: On model.its_on_sale.fact_price_history: COMMIT
+[0m06:14:22.246103 [debug] [Thread-4 (]: SQL status: COMMIT in 0.006 seconds
+[0m06:14:22.247108 [debug] [Thread-3 (]: On model.its_on_sale.price_events: COMMIT
+[0m06:14:22.247108 [debug] [Thread-1 (]: Using postgres connection "model.its_on_sale.fact_price_history"
+[0m06:14:22.250121 [debug] [Thread-4 (]: Applying DROP to: "neondb"."public_marts"."latest_price_per_product__dbt_backup"
+[0m06:14:22.251124 [debug] [Thread-1 (]: On model.its_on_sale.fact_price_history: COMMIT
+[0m06:14:22.252134 [debug] [Thread-4 (]: Using postgres connection "model.its_on_sale.latest_price_per_product"
+[0m06:14:22.253217 [debug] [Thread-4 (]: On model.its_on_sale.latest_price_per_product: /* {"app": "dbt", "dbt_version": "1.8.8", "profile_name": "its_on_sale", "target_name": "dev", "node_id": "model.its_on_sale.latest_price_per_product"} */
+drop view if exists "neondb"."public_marts"."latest_price_per_product__dbt_backup" cascade
+[0m06:14:22.258867 [debug] [Thread-3 (]: SQL status: COMMIT in 0.008 seconds
+[0m06:14:22.258867 [debug] [Thread-4 (]: SQL status: DROP VIEW in 0.005 seconds
+[0m06:14:22.259872 [debug] [Thread-1 (]: SQL status: COMMIT in 0.007 seconds
+[0m06:14:22.261880 [debug] [Thread-3 (]: Applying DROP to: "neondb"."public_marts"."price_events__dbt_backup"
+[0m06:14:22.263891 [debug] [Thread-4 (]: On model.its_on_sale.latest_price_per_product: Close
+[0m06:14:22.266908 [debug] [Thread-1 (]: Applying DROP to: "neondb"."public_marts"."fact_price_history__dbt_backup"
+[0m06:14:22.267911 [debug] [Thread-3 (]: Using postgres connection "model.its_on_sale.price_events"
+[0m06:14:22.268979 [debug] [Thread-1 (]: Using postgres connection "model.its_on_sale.fact_price_history"
+[0m06:14:22.268979 [debug] [Thread-4 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'ad3274ce-4465-4516-a79f-6b0125fb176f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002941CDB1AD0>]}
+[0m06:14:22.269983 [debug] [Thread-3 (]: On model.its_on_sale.price_events: /* {"app": "dbt", "dbt_version": "1.8.8", "profile_name": "its_on_sale", "target_name": "dev", "node_id": "model.its_on_sale.price_events"} */
+drop view if exists "neondb"."public_marts"."price_events__dbt_backup" cascade
+[0m06:14:22.270987 [debug] [Thread-1 (]: On model.its_on_sale.fact_price_history: /* {"app": "dbt", "dbt_version": "1.8.8", "profile_name": "its_on_sale", "target_name": "dev", "node_id": "model.its_on_sale.fact_price_history"} */
+drop view if exists "neondb"."public_marts"."fact_price_history__dbt_backup" cascade
+[0m06:14:22.270987 [info ] [Thread-4 (]: 3 of 5 OK created sql view model public_marts.latest_price_per_product ......... [[32mCREATE VIEW[0m in 0.15s]
+[0m06:14:22.273000 [debug] [Thread-4 (]: Finished running node model.its_on_sale.latest_price_per_product
+[0m06:14:22.278393 [debug] [Thread-1 (]: SQL status: DROP VIEW in 0.006 seconds
+[0m06:14:22.278393 [debug] [Thread-3 (]: SQL status: DROP VIEW in 0.007 seconds
+[0m06:14:22.280407 [debug] [Thread-1 (]: On model.its_on_sale.fact_price_history: Close
+[0m06:14:22.281412 [debug] [Thread-3 (]: On model.its_on_sale.price_events: Close
+[0m06:14:22.282415 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'ad3274ce-4465-4516-a79f-6b0125fb176f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002941AF43050>]}
+[0m06:14:22.283422 [debug] [Thread-3 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'ad3274ce-4465-4516-a79f-6b0125fb176f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002941C18C510>]}
+[0m06:14:22.283422 [info ] [Thread-1 (]: 5 of 5 OK created sql view model public_marts.fact_price_history ............... [[32mCREATE VIEW[0m in 0.16s]
+[0m06:14:22.284514 [info ] [Thread-3 (]: 4 of 5 OK created sql view model public_marts.price_events ..................... [[32mCREATE VIEW[0m in 0.17s]
+[0m06:14:22.285519 [debug] [Thread-1 (]: Finished running node model.its_on_sale.fact_price_history
+[0m06:14:22.286526 [debug] [Thread-3 (]: Finished running node model.its_on_sale.price_events
+[0m06:14:22.289545 [debug] [MainThread]: Using postgres connection "master"
+[0m06:14:22.289545 [debug] [MainThread]: On master: BEGIN
+[0m06:14:22.290553 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m06:14:22.345425 [debug] [MainThread]: SQL status: BEGIN in 0.055 seconds
+[0m06:14:22.345425 [debug] [MainThread]: On master: COMMIT
+[0m06:14:22.346538 [debug] [MainThread]: Using postgres connection "master"
+[0m06:14:22.346538 [debug] [MainThread]: On master: COMMIT
+[0m06:14:22.355410 [debug] [MainThread]: SQL status: COMMIT in 0.008 seconds
+[0m06:14:22.356415 [debug] [MainThread]: On master: Close
+[0m06:14:22.357425 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m06:14:22.357425 [debug] [MainThread]: Connection 'list_neondb' was properly closed.
+[0m06:14:22.358430 [debug] [MainThread]: Connection 'list_neondb' was properly closed.
+[0m06:14:22.358430 [debug] [MainThread]: Connection 'list_neondb_public_marts' was properly closed.
+[0m06:14:22.359456 [debug] [MainThread]: Connection 'list_neondb_public_staging' was properly closed.
+[0m06:14:22.359456 [debug] [MainThread]: Connection 'model.its_on_sale.fact_price_history' was properly closed.
+[0m06:14:22.360460 [debug] [MainThread]: Connection 'model.its_on_sale.stg_product' was properly closed.
+[0m06:14:22.360460 [debug] [MainThread]: Connection 'model.its_on_sale.latest_price_per_product' was properly closed.
+[0m06:14:22.360460 [debug] [MainThread]: Connection 'model.its_on_sale.price_events' was properly closed.
+[0m06:14:22.361463 [info ] [MainThread]: 
+[0m06:14:22.362521 [info ] [MainThread]: Finished running 5 view models in 0 hours 0 minutes and 1.01 seconds (1.01s).
+[0m06:14:22.363531 [debug] [MainThread]: Command end result
+[0m06:14:22.400990 [info ] [MainThread]: 
+[0m06:14:22.401996 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m06:14:22.403000 [info ] [MainThread]: 
+[0m06:14:22.403000 [info ] [MainThread]: Done. PASS=5 WARN=0 ERROR=0 SKIP=0 TOTAL=5
+[0m06:14:22.405036 [debug] [MainThread]: Command `dbt run` succeeded at 06:14:22.405036 after 1.80 seconds
+[0m06:14:22.405036 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000294135A7410>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000294135A6D10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000294135A6F90>]}
+[0m06:14:22.406040 [debug] [MainThread]: Flushing usage events
+[0m06:14:26.836888 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023FBCDC01D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023FBCDCBA10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023FBCDCBE90>]}
+
+
+============================== 06:14:26.841915 | e8cdabc0-5ee0-45d7-8bfd-4bc14b60de9e ==============================
+[0m06:14:26.841915 [info ] [MainThread]: Running with dbt=1.8.8
+[0m06:14:26.842919 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': "C:\\Users\\meg\\Documents\\cam\\proj\\It's On Sale\\its-on-sale-tracker\\pipeline\\transform", 'fail_fast': 'False', 'warn_error': 'None', 'log_path': "C:\\Users\\meg\\Documents\\cam\\proj\\It's On Sale\\its-on-sale-tracker\\pipeline\\transform\\its_on_sale\\logs", 'debug': 'False', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt test', 'introspect': 'True', 'static_parser': 'True', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m06:14:27.067226 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'e8cdabc0-5ee0-45d7-8bfd-4bc14b60de9e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023FBCDFA410>]}
+[0m06:14:27.121807 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'e8cdabc0-5ee0-45d7-8bfd-4bc14b60de9e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023FB8DF4750>]}
+[0m06:14:27.124057 [info ] [MainThread]: Registered adapter: postgres=1.8.2
+[0m06:14:27.134644 [debug] [MainThread]: checksum: ec53e341a936509427e16df1c646386a84befec52c1957e3f4359fbc36fc93f5, vars: {}, profile: , target: , version: 1.8.8
+[0m06:14:27.313008 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m06:14:27.314013 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m06:14:27.357438 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'e8cdabc0-5ee0-45d7-8bfd-4bc14b60de9e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023FBD033590>]}
+[0m06:14:27.486858 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'e8cdabc0-5ee0-45d7-8bfd-4bc14b60de9e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023FBD341410>]}
+[0m06:14:27.487863 [info ] [MainThread]: Found 5 models, 19 data tests, 423 macros
+[0m06:14:27.487863 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'e8cdabc0-5ee0-45d7-8bfd-4bc14b60de9e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023FBBDB1DD0>]}
+[0m06:14:27.490960 [info ] [MainThread]: 
+[0m06:14:27.491968 [debug] [MainThread]: Acquiring new postgres connection 'master'
+[0m06:14:27.496998 [debug] [ThreadPool]: Acquiring new postgres connection 'list_neondb_public_staging'
+[0m06:14:27.498002 [debug] [ThreadPool]: Acquiring new postgres connection 'list_neondb_public_marts'
+[0m06:14:27.702192 [debug] [ThreadPool]: Using postgres connection "list_neondb_public_staging"
+[0m06:14:27.703196 [debug] [ThreadPool]: Using postgres connection "list_neondb_public_marts"
+[0m06:14:27.703196 [debug] [ThreadPool]: On list_neondb_public_staging: BEGIN
+[0m06:14:27.704205 [debug] [ThreadPool]: On list_neondb_public_marts: BEGIN
+[0m06:14:27.704205 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m06:14:27.705210 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m06:14:27.791520 [debug] [ThreadPool]: SQL status: BEGIN in 0.087 seconds
+[0m06:14:27.791520 [debug] [ThreadPool]: Using postgres connection "list_neondb_public_staging"
+[0m06:14:27.792682 [debug] [ThreadPool]: SQL status: BEGIN in 0.087 seconds
+[0m06:14:27.792682 [debug] [ThreadPool]: On list_neondb_public_staging: /* {"app": "dbt", "dbt_version": "1.8.8", "profile_name": "its_on_sale", "target_name": "dev", "connection_name": "list_neondb_public_staging"} */
+select
+      'neondb' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'public_staging'
+    union all
+    select
+      'neondb' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'public_staging'
+    union all
+    select
+      'neondb' as database,
+      matviewname as name,
+      schemaname as schema,
+      'materialized_view' as type
+    from pg_matviews
+    where schemaname ilike 'public_staging'
+  
+[0m06:14:27.793711 [debug] [ThreadPool]: Using postgres connection "list_neondb_public_marts"
+[0m06:14:27.793711 [debug] [ThreadPool]: On list_neondb_public_marts: /* {"app": "dbt", "dbt_version": "1.8.8", "profile_name": "its_on_sale", "target_name": "dev", "connection_name": "list_neondb_public_marts"} */
+select
+      'neondb' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'public_marts'
+    union all
+    select
+      'neondb' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'public_marts'
+    union all
+    select
+      'neondb' as database,
+      matviewname as name,
+      schemaname as schema,
+      'materialized_view' as type
+    from pg_matviews
+    where schemaname ilike 'public_marts'
+  
+[0m06:14:27.801445 [debug] [ThreadPool]: SQL status: SELECT 2 in 0.007 seconds
+[0m06:14:27.802448 [debug] [ThreadPool]: On list_neondb_public_staging: ROLLBACK
+[0m06:14:27.803452 [debug] [ThreadPool]: SQL status: SELECT 3 in 0.009 seconds
+[0m06:14:27.805473 [debug] [ThreadPool]: On list_neondb_public_marts: ROLLBACK
+[0m06:14:27.809740 [debug] [ThreadPool]: On list_neondb_public_staging: Close
+[0m06:14:27.810742 [debug] [ThreadPool]: On list_neondb_public_marts: Close
+[0m06:14:27.816779 [debug] [MainThread]: Using postgres connection "master"
+[0m06:14:27.816779 [debug] [MainThread]: On master: BEGIN
+[0m06:14:27.817783 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m06:14:27.893120 [debug] [MainThread]: SQL status: BEGIN in 0.075 seconds
+[0m06:14:27.893669 [debug] [MainThread]: Using postgres connection "master"
+[0m06:14:27.894688 [debug] [MainThread]: On master: /* {"app": "dbt", "dbt_version": "1.8.8", "profile_name": "its_on_sale", "target_name": "dev", "connection_name": "master"} */
+with relation as (
+        select
+            pg_rewrite.ev_class as class,
+            pg_rewrite.oid as id
+        from pg_rewrite
+    ),
+    class as (
+        select
+            oid as id,
+            relname as name,
+            relnamespace as schema,
+            relkind as kind
+        from pg_class
+    ),
+    dependency as (
+        select distinct
+            pg_depend.objid as id,
+            pg_depend.refobjid as ref
+        from pg_depend
+    ),
+    schema as (
+        select
+            pg_namespace.oid as id,
+            pg_namespace.nspname as name
+        from pg_namespace
+        where nspname != 'information_schema' and nspname not like 'pg\_%'
+    ),
+    referenced as (
+        select
+            relation.id AS id,
+            referenced_class.name ,
+            referenced_class.schema ,
+            referenced_class.kind
+        from relation
+        join class as referenced_class on relation.class=referenced_class.id
+        where referenced_class.kind in ('r', 'v', 'm')
+    ),
+    relationships as (
+        select
+            referenced.name as referenced_name,
+            referenced.schema as referenced_schema_id,
+            dependent_class.name as dependent_name,
+            dependent_class.schema as dependent_schema_id,
+            referenced.kind as kind
+        from referenced
+        join dependency on referenced.id=dependency.id
+        join class as dependent_class on dependency.ref=dependent_class.id
+        where
+            (referenced.name != dependent_class.name or
+             referenced.schema != dependent_class.schema)
+    )
+
+    select
+        referenced_schema.name as referenced_schema,
+        relationships.referenced_name as referenced_name,
+        dependent_schema.name as dependent_schema,
+        relationships.dependent_name as dependent_name
+    from relationships
+    join schema as dependent_schema on relationships.dependent_schema_id=dependent_schema.id
+    join schema as referenced_schema on relationships.referenced_schema_id=referenced_schema.id
+    group by referenced_schema, referenced_name, dependent_schema, dependent_name
+    order by referenced_schema, referenced_name, dependent_schema, dependent_name;
+[0m06:14:27.902130 [debug] [MainThread]: SQL status: SELECT 6 in 0.007 seconds
+[0m06:14:27.905207 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'e8cdabc0-5ee0-45d7-8bfd-4bc14b60de9e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023FBD37FD10>]}
+[0m06:14:27.905207 [debug] [MainThread]: On master: ROLLBACK
+[0m06:14:27.913798 [debug] [MainThread]: Using postgres connection "master"
+[0m06:14:27.913798 [debug] [MainThread]: On master: BEGIN
+[0m06:14:27.926699 [debug] [MainThread]: SQL status: BEGIN in 0.012 seconds
+[0m06:14:27.926699 [debug] [MainThread]: On master: COMMIT
+[0m06:14:27.927705 [debug] [MainThread]: Using postgres connection "master"
+[0m06:14:27.927705 [debug] [MainThread]: On master: COMMIT
+[0m06:14:27.934924 [debug] [MainThread]: SQL status: COMMIT in 0.006 seconds
+[0m06:14:27.935929 [debug] [MainThread]: On master: Close
+[0m06:14:27.935929 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m06:14:27.936934 [info ] [MainThread]: 
+[0m06:14:27.941981 [debug] [Thread-1 (]: Began running node test.its_on_sale.not_null_fact_price_history_id.110f7c1113
+[0m06:14:27.941981 [debug] [Thread-2 (]: Began running node test.its_on_sale.not_null_fact_price_history_ts_utc.78d3e6c462
+[0m06:14:27.942985 [debug] [Thread-3 (]: Began running node test.its_on_sale.not_null_latest_price_per_product_product_id.48bbe621b2
+[0m06:14:27.942985 [debug] [Thread-4 (]: Began running node test.its_on_sale.not_null_price_events_event_type.61d7de2d7b
+[0m06:14:27.943995 [info ] [Thread-1 (]: 1 of 19 START test not_null_fact_price_history_id .............................. [RUN]
+[0m06:14:27.943995 [info ] [Thread-2 (]: 2 of 19 START test not_null_fact_price_history_ts_utc .......................... [RUN]
+[0m06:14:27.945001 [info ] [Thread-3 (]: 3 of 19 START test not_null_latest_price_per_product_product_id ................ [RUN]
+[0m06:14:27.946013 [info ] [Thread-4 (]: 4 of 19 START test not_null_price_events_event_type ............................ [RUN]
+[0m06:14:27.947020 [debug] [Thread-1 (]: Acquiring new postgres connection 'test.its_on_sale.not_null_fact_price_history_id.110f7c1113'
+[0m06:14:27.948026 [debug] [Thread-2 (]: Acquiring new postgres connection 'test.its_on_sale.not_null_fact_price_history_ts_utc.78d3e6c462'
+[0m06:14:27.949031 [debug] [Thread-3 (]: Acquiring new postgres connection 'test.its_on_sale.not_null_latest_price_per_product_product_id.48bbe621b2'
+[0m06:14:27.949031 [debug] [Thread-4 (]: Acquiring new postgres connection 'test.its_on_sale.not_null_price_events_event_type.61d7de2d7b'
+[0m06:14:27.950109 [debug] [Thread-1 (]: Began compiling node test.its_on_sale.not_null_fact_price_history_id.110f7c1113
+[0m06:14:27.951114 [debug] [Thread-2 (]: Began compiling node test.its_on_sale.not_null_fact_price_history_ts_utc.78d3e6c462
+[0m06:14:27.951114 [debug] [Thread-3 (]: Began compiling node test.its_on_sale.not_null_latest_price_per_product_product_id.48bbe621b2
+[0m06:14:27.952122 [debug] [Thread-4 (]: Began compiling node test.its_on_sale.not_null_price_events_event_type.61d7de2d7b
+[0m06:14:27.970035 [debug] [Thread-1 (]: Writing injected SQL for node "test.its_on_sale.not_null_fact_price_history_id.110f7c1113"
+[0m06:14:27.974464 [debug] [Thread-2 (]: Writing injected SQL for node "test.its_on_sale.not_null_fact_price_history_ts_utc.78d3e6c462"
+[0m06:14:27.979539 [debug] [Thread-3 (]: Writing injected SQL for node "test.its_on_sale.not_null_latest_price_per_product_product_id.48bbe621b2"
+[0m06:14:27.983645 [debug] [Thread-4 (]: Writing injected SQL for node "test.its_on_sale.not_null_price_events_event_type.61d7de2d7b"
+[0m06:14:27.985675 [debug] [Thread-1 (]: Began executing node test.its_on_sale.not_null_fact_price_history_id.110f7c1113
+[0m06:14:27.986682 [debug] [Thread-2 (]: Began executing node test.its_on_sale.not_null_fact_price_history_ts_utc.78d3e6c462
+[0m06:14:28.002879 [debug] [Thread-1 (]: Writing runtime sql for node "test.its_on_sale.not_null_fact_price_history_id.110f7c1113"
+[0m06:14:28.003883 [debug] [Thread-3 (]: Began executing node test.its_on_sale.not_null_latest_price_per_product_product_id.48bbe621b2
+[0m06:14:28.006905 [debug] [Thread-2 (]: Writing runtime sql for node "test.its_on_sale.not_null_fact_price_history_ts_utc.78d3e6c462"
+[0m06:14:28.006905 [debug] [Thread-4 (]: Began executing node test.its_on_sale.not_null_price_events_event_type.61d7de2d7b
+[0m06:14:28.009947 [debug] [Thread-3 (]: Writing runtime sql for node "test.its_on_sale.not_null_latest_price_per_product_product_id.48bbe621b2"
+[0m06:14:28.010951 [debug] [Thread-1 (]: Using postgres connection "test.its_on_sale.not_null_fact_price_history_id.110f7c1113"
+[0m06:14:28.013026 [debug] [Thread-4 (]: Writing runtime sql for node "test.its_on_sale.not_null_price_events_event_type.61d7de2d7b"
+[0m06:14:28.014065 [debug] [Thread-2 (]: Using postgres connection "test.its_on_sale.not_null_fact_price_history_ts_utc.78d3e6c462"
+[0m06:14:28.015078 [debug] [Thread-1 (]: On test.its_on_sale.not_null_fact_price_history_id.110f7c1113: BEGIN
+[0m06:14:28.016089 [debug] [Thread-3 (]: Using postgres connection "test.its_on_sale.not_null_latest_price_per_product_product_id.48bbe621b2"
+[0m06:14:28.016089 [debug] [Thread-2 (]: On test.its_on_sale.not_null_fact_price_history_ts_utc.78d3e6c462: BEGIN
+[0m06:14:28.017096 [debug] [Thread-4 (]: Using postgres connection "test.its_on_sale.not_null_price_events_event_type.61d7de2d7b"
+[0m06:14:28.017096 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m06:14:28.018103 [debug] [Thread-3 (]: On test.its_on_sale.not_null_latest_price_per_product_product_id.48bbe621b2: BEGIN
+[0m06:14:28.019108 [debug] [Thread-2 (]: Opening a new connection, currently in state init
+[0m06:14:28.019108 [debug] [Thread-4 (]: On test.its_on_sale.not_null_price_events_event_type.61d7de2d7b: BEGIN
+[0m06:14:28.020113 [debug] [Thread-3 (]: Opening a new connection, currently in state init
+[0m06:14:28.021118 [debug] [Thread-4 (]: Opening a new connection, currently in state init
+[0m06:14:28.089131 [debug] [Thread-2 (]: SQL status: BEGIN in 0.071 seconds
+[0m06:14:28.090242 [debug] [Thread-2 (]: Using postgres connection "test.its_on_sale.not_null_fact_price_history_ts_utc.78d3e6c462"
+[0m06:14:28.091255 [debug] [Thread-2 (]: On test.its_on_sale.not_null_fact_price_history_ts_utc.78d3e6c462: /* {"app": "dbt", "dbt_version": "1.8.8", "profile_name": "its_on_sale", "target_name": "dev", "node_id": "test.its_on_sale.not_null_fact_price_history_ts_utc.78d3e6c462"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+
+
+select ts_utc
+from "neondb"."public_marts"."fact_price_history"
+where ts_utc is null
+
+
+
+      
+    ) dbt_internal_test
+[0m06:14:28.095283 [debug] [Thread-1 (]: SQL status: BEGIN in 0.077 seconds
+[0m06:14:28.095283 [debug] [Thread-1 (]: Using postgres connection "test.its_on_sale.not_null_fact_price_history_id.110f7c1113"
+[0m06:14:28.096288 [debug] [Thread-1 (]: On test.its_on_sale.not_null_fact_price_history_id.110f7c1113: /* {"app": "dbt", "dbt_version": "1.8.8", "profile_name": "its_on_sale", "target_name": "dev", "node_id": "test.its_on_sale.not_null_fact_price_history_id.110f7c1113"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+
+
+select id
+from "neondb"."public_marts"."fact_price_history"
+where id is null
+
+
+
+      
+    ) dbt_internal_test
+[0m06:14:28.098009 [debug] [Thread-4 (]: SQL status: BEGIN in 0.077 seconds
+[0m06:14:28.098009 [debug] [Thread-2 (]: SQL status: SELECT 1 in 0.007 seconds
+[0m06:14:28.099016 [debug] [Thread-4 (]: Using postgres connection "test.its_on_sale.not_null_price_events_event_type.61d7de2d7b"
+[0m06:14:28.103036 [debug] [Thread-2 (]: On test.its_on_sale.not_null_fact_price_history_ts_utc.78d3e6c462: ROLLBACK
+[0m06:14:28.104057 [debug] [Thread-4 (]: On test.its_on_sale.not_null_price_events_event_type.61d7de2d7b: /* {"app": "dbt", "dbt_version": "1.8.8", "profile_name": "its_on_sale", "target_name": "dev", "node_id": "test.its_on_sale.not_null_price_events_event_type.61d7de2d7b"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+
+
+select event_type
+from "neondb"."public_marts"."price_events"
+where event_type is null
+
+
+
+      
+    ) dbt_internal_test
+[0m06:14:28.111260 [debug] [Thread-3 (]: SQL status: BEGIN in 0.091 seconds
+[0m06:14:28.112271 [debug] [Thread-1 (]: SQL status: SELECT 1 in 0.015 seconds
+[0m06:14:28.112271 [debug] [Thread-2 (]: On test.its_on_sale.not_null_fact_price_history_ts_utc.78d3e6c462: Close
+[0m06:14:28.113275 [debug] [Thread-4 (]: SQL status: SELECT 1 in 0.008 seconds
+[0m06:14:28.113275 [debug] [Thread-3 (]: Using postgres connection "test.its_on_sale.not_null_latest_price_per_product_product_id.48bbe621b2"
+[0m06:14:28.115287 [debug] [Thread-1 (]: On test.its_on_sale.not_null_fact_price_history_id.110f7c1113: ROLLBACK
+[0m06:14:28.117297 [debug] [Thread-4 (]: On test.its_on_sale.not_null_price_events_event_type.61d7de2d7b: ROLLBACK
+[0m06:14:28.118304 [info ] [Thread-2 (]: 2 of 19 PASS not_null_fact_price_history_ts_utc ................................ [[32mPASS[0m in 0.17s]
+[0m06:14:28.118304 [debug] [Thread-3 (]: On test.its_on_sale.not_null_latest_price_per_product_product_id.48bbe621b2: /* {"app": "dbt", "dbt_version": "1.8.8", "profile_name": "its_on_sale", "target_name": "dev", "node_id": "test.its_on_sale.not_null_latest_price_per_product_product_id.48bbe621b2"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+
+
+select product_id
+from "neondb"."public_marts"."latest_price_per_product"
+where product_id is null
+
+
+
+      
+    ) dbt_internal_test
+[0m06:14:28.120343 [debug] [Thread-2 (]: Finished running node test.its_on_sale.not_null_fact_price_history_ts_utc.78d3e6c462
+[0m06:14:28.121436 [debug] [Thread-2 (]: Began running node test.its_on_sale.not_null_price_events_product_id.d5bcb90d02
+[0m06:14:28.122441 [info ] [Thread-2 (]: 5 of 19 START test not_null_price_events_product_id ............................ [RUN]
+[0m06:14:28.122441 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly test.its_on_sale.not_null_fact_price_history_ts_utc.78d3e6c462, now test.its_on_sale.not_null_price_events_product_id.d5bcb90d02)
+[0m06:14:28.123445 [debug] [Thread-2 (]: Began compiling node test.its_on_sale.not_null_price_events_product_id.d5bcb90d02
+[0m06:14:28.127466 [debug] [Thread-2 (]: Writing injected SQL for node "test.its_on_sale.not_null_price_events_product_id.d5bcb90d02"
+[0m06:14:28.128957 [debug] [Thread-4 (]: On test.its_on_sale.not_null_price_events_event_type.61d7de2d7b: Close
+[0m06:14:28.128957 [debug] [Thread-1 (]: On test.its_on_sale.not_null_fact_price_history_id.110f7c1113: Close
+[0m06:14:28.129969 [debug] [Thread-3 (]: SQL status: SELECT 1 in 0.009 seconds
+[0m06:14:28.130976 [info ] [Thread-4 (]: 4 of 19 PASS not_null_price_events_event_type .................................. [[32mPASS[0m in 0.18s]
+[0m06:14:28.131989 [debug] [Thread-2 (]: Began executing node test.its_on_sale.not_null_price_events_product_id.d5bcb90d02
+[0m06:14:28.134040 [debug] [Thread-3 (]: On test.its_on_sale.not_null_latest_price_per_product_product_id.48bbe621b2: ROLLBACK
+[0m06:14:28.131989 [info ] [Thread-1 (]: 1 of 19 PASS not_null_fact_price_history_id .................................... [[32mPASS[0m in 0.18s]
+[0m06:14:28.135104 [debug] [Thread-4 (]: Finished running node test.its_on_sale.not_null_price_events_event_type.61d7de2d7b
+[0m06:14:28.139392 [debug] [Thread-2 (]: Writing runtime sql for node "test.its_on_sale.not_null_price_events_product_id.d5bcb90d02"
+[0m06:14:28.141414 [debug] [Thread-1 (]: Finished running node test.its_on_sale.not_null_fact_price_history_id.110f7c1113
+[0m06:14:28.141414 [debug] [Thread-4 (]: Began running node test.its_on_sale.not_null_price_events_ts_utc.dd91ee2019
+[0m06:14:28.143428 [debug] [Thread-1 (]: Began running node test.its_on_sale.not_null_stg_price_history_id.cb86572049
+[0m06:14:28.144445 [debug] [Thread-2 (]: Using postgres connection "test.its_on_sale.not_null_price_events_product_id.d5bcb90d02"
+[0m06:14:28.144445 [info ] [Thread-4 (]: 6 of 19 START test not_null_price_events_ts_utc ................................ [RUN]
+[0m06:14:28.145452 [info ] [Thread-1 (]: 7 of 19 START test not_null_stg_price_history_id ............................... [RUN]
+[0m06:14:28.146459 [debug] [Thread-2 (]: On test.its_on_sale.not_null_price_events_product_id.d5bcb90d02: BEGIN
+[0m06:14:28.146459 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly test.its_on_sale.not_null_price_events_event_type.61d7de2d7b, now test.its_on_sale.not_null_price_events_ts_utc.dd91ee2019)
+[0m06:14:28.147471 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.its_on_sale.not_null_fact_price_history_id.110f7c1113, now test.its_on_sale.not_null_stg_price_history_id.cb86572049)
+[0m06:14:28.148479 [debug] [Thread-2 (]: Opening a new connection, currently in state closed
+[0m06:14:28.149504 [debug] [Thread-4 (]: Began compiling node test.its_on_sale.not_null_price_events_ts_utc.dd91ee2019
+[0m06:14:28.149504 [debug] [Thread-3 (]: On test.its_on_sale.not_null_latest_price_per_product_product_id.48bbe621b2: Close
+[0m06:14:28.150517 [debug] [Thread-1 (]: Began compiling node test.its_on_sale.not_null_stg_price_history_id.cb86572049
+[0m06:14:28.156892 [debug] [Thread-4 (]: Writing injected SQL for node "test.its_on_sale.not_null_price_events_ts_utc.dd91ee2019"
+[0m06:14:28.157900 [info ] [Thread-3 (]: 3 of 19 PASS not_null_latest_price_per_product_product_id ...................... [[32mPASS[0m in 0.21s]
+[0m06:14:28.163979 [debug] [Thread-1 (]: Writing injected SQL for node "test.its_on_sale.not_null_stg_price_history_id.cb86572049"
+[0m06:14:28.165992 [debug] [Thread-3 (]: Finished running node test.its_on_sale.not_null_latest_price_per_product_product_id.48bbe621b2
+[0m06:14:28.165992 [debug] [Thread-4 (]: Began executing node test.its_on_sale.not_null_price_events_ts_utc.dd91ee2019
+[0m06:14:28.167051 [debug] [Thread-3 (]: Began running node test.its_on_sale.not_null_stg_price_history_product_id.082361509e
+[0m06:14:28.170079 [debug] [Thread-4 (]: Writing runtime sql for node "test.its_on_sale.not_null_price_events_ts_utc.dd91ee2019"
+[0m06:14:28.171091 [debug] [Thread-1 (]: Began executing node test.its_on_sale.not_null_stg_price_history_id.cb86572049
+[0m06:14:28.171091 [info ] [Thread-3 (]: 8 of 19 START test not_null_stg_price_history_product_id ....................... [RUN]
+[0m06:14:28.175144 [debug] [Thread-1 (]: Writing runtime sql for node "test.its_on_sale.not_null_stg_price_history_id.cb86572049"
+[0m06:14:28.175144 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly test.its_on_sale.not_null_latest_price_per_product_product_id.48bbe621b2, now test.its_on_sale.not_null_stg_price_history_product_id.082361509e)
+[0m06:14:28.176151 [debug] [Thread-4 (]: Using postgres connection "test.its_on_sale.not_null_price_events_ts_utc.dd91ee2019"
+[0m06:14:28.177158 [debug] [Thread-3 (]: Began compiling node test.its_on_sale.not_null_stg_price_history_product_id.082361509e
+[0m06:14:28.178162 [debug] [Thread-4 (]: On test.its_on_sale.not_null_price_events_ts_utc.dd91ee2019: BEGIN
+[0m06:14:28.178162 [debug] [Thread-1 (]: Using postgres connection "test.its_on_sale.not_null_stg_price_history_id.cb86572049"
+[0m06:14:28.182272 [debug] [Thread-3 (]: Writing injected SQL for node "test.its_on_sale.not_null_stg_price_history_product_id.082361509e"
+[0m06:14:28.183280 [debug] [Thread-4 (]: Opening a new connection, currently in state closed
+[0m06:14:28.184292 [debug] [Thread-1 (]: On test.its_on_sale.not_null_stg_price_history_id.cb86572049: BEGIN
+[0m06:14:28.185298 [debug] [Thread-3 (]: Began executing node test.its_on_sale.not_null_stg_price_history_product_id.082361509e
+[0m06:14:28.186306 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m06:14:28.189329 [debug] [Thread-3 (]: Writing runtime sql for node "test.its_on_sale.not_null_stg_price_history_product_id.082361509e"
+[0m06:14:28.191344 [debug] [Thread-3 (]: Using postgres connection "test.its_on_sale.not_null_stg_price_history_product_id.082361509e"
+[0m06:14:28.191344 [debug] [Thread-3 (]: On test.its_on_sale.not_null_stg_price_history_product_id.082361509e: BEGIN
+[0m06:14:28.192348 [debug] [Thread-3 (]: Opening a new connection, currently in state closed
+[0m06:14:28.206740 [debug] [Thread-2 (]: SQL status: BEGIN in 0.058 seconds
+[0m06:14:28.207746 [debug] [Thread-2 (]: Using postgres connection "test.its_on_sale.not_null_price_events_product_id.d5bcb90d02"
+[0m06:14:28.207746 [debug] [Thread-2 (]: On test.its_on_sale.not_null_price_events_product_id.d5bcb90d02: /* {"app": "dbt", "dbt_version": "1.8.8", "profile_name": "its_on_sale", "target_name": "dev", "node_id": "test.its_on_sale.not_null_price_events_product_id.d5bcb90d02"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+
+
+select product_id
+from "neondb"."public_marts"."price_events"
+where product_id is null
+
+
+
+      
+    ) dbt_internal_test
+[0m06:14:28.215540 [debug] [Thread-2 (]: SQL status: SELECT 1 in 0.007 seconds
+[0m06:14:28.216778 [debug] [Thread-2 (]: On test.its_on_sale.not_null_price_events_product_id.d5bcb90d02: ROLLBACK
+[0m06:14:28.221192 [debug] [Thread-2 (]: On test.its_on_sale.not_null_price_events_product_id.d5bcb90d02: Close
+[0m06:14:28.222200 [info ] [Thread-2 (]: 5 of 19 PASS not_null_price_events_product_id .................................. [[32mPASS[0m in 0.10s]
+[0m06:14:28.223209 [debug] [Thread-2 (]: Finished running node test.its_on_sale.not_null_price_events_product_id.d5bcb90d02
+[0m06:14:28.224235 [debug] [Thread-2 (]: Began running node test.its_on_sale.not_null_stg_price_history_ts_utc.a6f1e7003a
+[0m06:14:28.225242 [info ] [Thread-2 (]: 9 of 19 START test not_null_stg_price_history_ts_utc ........................... [RUN]
+[0m06:14:28.225242 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly test.its_on_sale.not_null_price_events_product_id.d5bcb90d02, now test.its_on_sale.not_null_stg_price_history_ts_utc.a6f1e7003a)
+[0m06:14:28.226246 [debug] [Thread-2 (]: Began compiling node test.its_on_sale.not_null_stg_price_history_ts_utc.a6f1e7003a
+[0m06:14:28.230322 [debug] [Thread-2 (]: Writing injected SQL for node "test.its_on_sale.not_null_stg_price_history_ts_utc.a6f1e7003a"
+[0m06:14:28.232332 [debug] [Thread-2 (]: Began executing node test.its_on_sale.not_null_stg_price_history_ts_utc.a6f1e7003a
+[0m06:14:28.234344 [debug] [Thread-2 (]: Writing runtime sql for node "test.its_on_sale.not_null_stg_price_history_ts_utc.a6f1e7003a"
+[0m06:14:28.235348 [debug] [Thread-2 (]: Using postgres connection "test.its_on_sale.not_null_stg_price_history_ts_utc.a6f1e7003a"
+[0m06:14:28.236353 [debug] [Thread-2 (]: On test.its_on_sale.not_null_stg_price_history_ts_utc.a6f1e7003a: BEGIN
+[0m06:14:28.237361 [debug] [Thread-2 (]: Opening a new connection, currently in state closed
+[0m06:14:28.247196 [debug] [Thread-1 (]: SQL status: BEGIN in 0.061 seconds
+[0m06:14:28.248479 [debug] [Thread-1 (]: Using postgres connection "test.its_on_sale.not_null_stg_price_history_id.cb86572049"
+[0m06:14:28.248479 [debug] [Thread-1 (]: On test.its_on_sale.not_null_stg_price_history_id.cb86572049: /* {"app": "dbt", "dbt_version": "1.8.8", "profile_name": "its_on_sale", "target_name": "dev", "node_id": "test.its_on_sale.not_null_stg_price_history_id.cb86572049"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+
+
+select id
+from "neondb"."public_staging"."stg_price_history"
+where id is null
+
+
+
+      
+    ) dbt_internal_test
+[0m06:14:28.253467 [debug] [Thread-3 (]: SQL status: BEGIN in 0.061 seconds
+[0m06:14:28.253467 [debug] [Thread-3 (]: Using postgres connection "test.its_on_sale.not_null_stg_price_history_product_id.082361509e"
+[0m06:14:28.254490 [debug] [Thread-3 (]: On test.its_on_sale.not_null_stg_price_history_product_id.082361509e: /* {"app": "dbt", "dbt_version": "1.8.8", "profile_name": "its_on_sale", "target_name": "dev", "node_id": "test.its_on_sale.not_null_stg_price_history_product_id.082361509e"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+
+
+select product_id
+from "neondb"."public_staging"."stg_price_history"
+where product_id is null
+
+
+
+      
+    ) dbt_internal_test
+[0m06:14:28.255494 [debug] [Thread-1 (]: SQL status: SELECT 1 in 0.006 seconds
+[0m06:14:28.256498 [debug] [Thread-1 (]: On test.its_on_sale.not_null_stg_price_history_id.cb86572049: ROLLBACK
+[0m06:14:28.260855 [debug] [Thread-3 (]: SQL status: SELECT 1 in 0.006 seconds
+[0m06:14:28.262867 [debug] [Thread-3 (]: On test.its_on_sale.not_null_stg_price_history_product_id.082361509e: ROLLBACK
+[0m06:14:28.262867 [debug] [Thread-1 (]: On test.its_on_sale.not_null_stg_price_history_id.cb86572049: Close
+[0m06:14:28.263876 [debug] [Thread-4 (]: SQL status: BEGIN in 0.080 seconds
+[0m06:14:28.264936 [debug] [Thread-4 (]: Using postgres connection "test.its_on_sale.not_null_price_events_ts_utc.dd91ee2019"
+[0m06:14:28.265945 [debug] [Thread-4 (]: On test.its_on_sale.not_null_price_events_ts_utc.dd91ee2019: /* {"app": "dbt", "dbt_version": "1.8.8", "profile_name": "its_on_sale", "target_name": "dev", "node_id": "test.its_on_sale.not_null_price_events_ts_utc.dd91ee2019"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+
+
+select ts_utc
+from "neondb"."public_marts"."price_events"
+where ts_utc is null
+
+
+
+      
+    ) dbt_internal_test
+[0m06:14:28.264936 [info ] [Thread-1 (]: 7 of 19 PASS not_null_stg_price_history_id ..................................... [[32mPASS[0m in 0.12s]
+[0m06:14:28.266951 [debug] [Thread-1 (]: Finished running node test.its_on_sale.not_null_stg_price_history_id.cb86572049
+[0m06:14:28.267956 [debug] [Thread-3 (]: On test.its_on_sale.not_null_stg_price_history_product_id.082361509e: Close
+[0m06:14:28.268977 [debug] [Thread-1 (]: Began running node test.its_on_sale.not_null_stg_product_product_id.5e35fa3f95
+[0m06:14:28.269982 [info ] [Thread-3 (]: 8 of 19 PASS not_null_stg_price_history_product_id ............................. [[32mPASS[0m in 0.09s]
+[0m06:14:28.269982 [info ] [Thread-1 (]: 10 of 19 START test not_null_stg_product_product_id ............................ [RUN]
+[0m06:14:28.270993 [debug] [Thread-3 (]: Finished running node test.its_on_sale.not_null_stg_price_history_product_id.082361509e
+[0m06:14:28.272061 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.its_on_sale.not_null_stg_price_history_id.cb86572049, now test.its_on_sale.not_null_stg_product_product_id.5e35fa3f95)
+[0m06:14:28.273066 [debug] [Thread-3 (]: Began running node test.its_on_sale.not_null_stg_product_site.712843232d
+[0m06:14:28.273066 [debug] [Thread-4 (]: SQL status: SELECT 1 in 0.007 seconds
+[0m06:14:28.274077 [debug] [Thread-1 (]: Began compiling node test.its_on_sale.not_null_stg_product_product_id.5e35fa3f95
+[0m06:14:28.275172 [info ] [Thread-3 (]: 11 of 19 START test not_null_stg_product_site .................................. [RUN]
+[0m06:14:28.276175 [debug] [Thread-4 (]: On test.its_on_sale.not_null_price_events_ts_utc.dd91ee2019: ROLLBACK
+[0m06:14:28.281557 [debug] [Thread-1 (]: Writing injected SQL for node "test.its_on_sale.not_null_stg_product_product_id.5e35fa3f95"
+[0m06:14:28.282839 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly test.its_on_sale.not_null_stg_price_history_product_id.082361509e, now test.its_on_sale.not_null_stg_product_site.712843232d)
+[0m06:14:28.283845 [debug] [Thread-3 (]: Began compiling node test.its_on_sale.not_null_stg_product_site.712843232d
+[0m06:14:28.288960 [debug] [Thread-3 (]: Writing injected SQL for node "test.its_on_sale.not_null_stg_product_site.712843232d"
+[0m06:14:28.288960 [debug] [Thread-1 (]: Began executing node test.its_on_sale.not_null_stg_product_product_id.5e35fa3f95
+[0m06:14:28.289965 [debug] [Thread-4 (]: On test.its_on_sale.not_null_price_events_ts_utc.dd91ee2019: Close
+[0m06:14:28.293065 [debug] [Thread-1 (]: Writing runtime sql for node "test.its_on_sale.not_null_stg_product_product_id.5e35fa3f95"
+[0m06:14:28.294072 [debug] [Thread-3 (]: Began executing node test.its_on_sale.not_null_stg_product_site.712843232d
+[0m06:14:28.295080 [info ] [Thread-4 (]: 6 of 19 PASS not_null_price_events_ts_utc ...................................... [[32mPASS[0m in 0.15s]
+[0m06:14:28.299181 [debug] [Thread-3 (]: Writing runtime sql for node "test.its_on_sale.not_null_stg_product_site.712843232d"
+[0m06:14:28.300185 [debug] [Thread-4 (]: Finished running node test.its_on_sale.not_null_price_events_ts_utc.dd91ee2019
+[0m06:14:28.301188 [debug] [Thread-1 (]: Using postgres connection "test.its_on_sale.not_null_stg_product_product_id.5e35fa3f95"
+[0m06:14:28.301188 [debug] [Thread-2 (]: SQL status: BEGIN in 0.065 seconds
+[0m06:14:28.302201 [debug] [Thread-4 (]: Began running node test.its_on_sale.not_null_stg_product_url.2f8ccdc1e9
+[0m06:14:28.303207 [debug] [Thread-1 (]: On test.its_on_sale.not_null_stg_product_product_id.5e35fa3f95: BEGIN
+[0m06:14:28.304218 [debug] [Thread-3 (]: Using postgres connection "test.its_on_sale.not_null_stg_product_site.712843232d"
+[0m06:14:28.304218 [debug] [Thread-2 (]: Using postgres connection "test.its_on_sale.not_null_stg_price_history_ts_utc.a6f1e7003a"
+[0m06:14:28.305227 [info ] [Thread-4 (]: 12 of 19 START test not_null_stg_product_url ................................... [RUN]
+[0m06:14:28.305227 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m06:14:28.306326 [debug] [Thread-3 (]: On test.its_on_sale.not_null_stg_product_site.712843232d: BEGIN
+[0m06:14:28.307331 [debug] [Thread-2 (]: On test.its_on_sale.not_null_stg_price_history_ts_utc.a6f1e7003a: /* {"app": "dbt", "dbt_version": "1.8.8", "profile_name": "its_on_sale", "target_name": "dev", "node_id": "test.its_on_sale.not_null_stg_price_history_ts_utc.a6f1e7003a"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+
+
+select ts_utc
+from "neondb"."public_staging"."stg_price_history"
+where ts_utc is null
+
+
+
+      
+    ) dbt_internal_test
+[0m06:14:28.307331 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly test.its_on_sale.not_null_price_events_ts_utc.dd91ee2019, now test.its_on_sale.not_null_stg_product_url.2f8ccdc1e9)
+[0m06:14:28.308338 [debug] [Thread-3 (]: Opening a new connection, currently in state closed
+[0m06:14:28.309342 [debug] [Thread-4 (]: Began compiling node test.its_on_sale.not_null_stg_product_url.2f8ccdc1e9
+[0m06:14:28.314415 [debug] [Thread-4 (]: Writing injected SQL for node "test.its_on_sale.not_null_stg_product_url.2f8ccdc1e9"
+[0m06:14:28.315427 [debug] [Thread-2 (]: SQL status: SELECT 1 in 0.005 seconds
+[0m06:14:28.316434 [debug] [Thread-2 (]: On test.its_on_sale.not_null_stg_price_history_ts_utc.a6f1e7003a: ROLLBACK
+[0m06:14:28.317441 [debug] [Thread-4 (]: Began executing node test.its_on_sale.not_null_stg_product_url.2f8ccdc1e9
+[0m06:14:28.320512 [debug] [Thread-4 (]: Writing runtime sql for node "test.its_on_sale.not_null_stg_product_url.2f8ccdc1e9"
+[0m06:14:28.321574 [debug] [Thread-4 (]: Using postgres connection "test.its_on_sale.not_null_stg_product_url.2f8ccdc1e9"
+[0m06:14:28.322580 [debug] [Thread-4 (]: On test.its_on_sale.not_null_stg_product_url.2f8ccdc1e9: BEGIN
+[0m06:14:28.322580 [debug] [Thread-4 (]: Opening a new connection, currently in state closed
+[0m06:14:28.323587 [debug] [Thread-2 (]: On test.its_on_sale.not_null_stg_price_history_ts_utc.a6f1e7003a: Close
+[0m06:14:28.325608 [info ] [Thread-2 (]: 9 of 19 PASS not_null_stg_price_history_ts_utc ................................. [[32mPASS[0m in 0.10s]
+[0m06:14:28.325608 [debug] [Thread-2 (]: Finished running node test.its_on_sale.not_null_stg_price_history_ts_utc.a6f1e7003a
+[0m06:14:28.326633 [debug] [Thread-2 (]: Began running node test.its_on_sale.relationships_fact_price_history_product_id__product_id__ref_stg_product_.42bbec0ccf
+[0m06:14:28.327644 [info ] [Thread-2 (]: 13 of 19 START test relationships_fact_price_history_product_id__product_id__ref_stg_product_  [RUN]
+[0m06:14:28.328650 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly test.its_on_sale.not_null_stg_price_history_ts_utc.a6f1e7003a, now test.its_on_sale.relationships_fact_price_history_product_id__product_id__ref_stg_product_.42bbec0ccf)
+[0m06:14:28.328650 [debug] [Thread-2 (]: Began compiling node test.its_on_sale.relationships_fact_price_history_product_id__product_id__ref_stg_product_.42bbec0ccf
+[0m06:14:28.337869 [debug] [Thread-2 (]: Writing injected SQL for node "test.its_on_sale.relationships_fact_price_history_product_id__product_id__ref_stg_product_.42bbec0ccf"
+[0m06:14:28.339877 [debug] [Thread-2 (]: Began executing node test.its_on_sale.relationships_fact_price_history_product_id__product_id__ref_stg_product_.42bbec0ccf
+[0m06:14:28.342906 [debug] [Thread-2 (]: Writing runtime sql for node "test.its_on_sale.relationships_fact_price_history_product_id__product_id__ref_stg_product_.42bbec0ccf"
+[0m06:14:28.343931 [debug] [Thread-2 (]: Using postgres connection "test.its_on_sale.relationships_fact_price_history_product_id__product_id__ref_stg_product_.42bbec0ccf"
+[0m06:14:28.344937 [debug] [Thread-2 (]: On test.its_on_sale.relationships_fact_price_history_product_id__product_id__ref_stg_product_.42bbec0ccf: BEGIN
+[0m06:14:28.344937 [debug] [Thread-2 (]: Opening a new connection, currently in state closed
+[0m06:14:28.368896 [debug] [Thread-3 (]: SQL status: BEGIN in 0.060 seconds
+[0m06:14:28.368896 [debug] [Thread-3 (]: Using postgres connection "test.its_on_sale.not_null_stg_product_site.712843232d"
+[0m06:14:28.370007 [debug] [Thread-3 (]: On test.its_on_sale.not_null_stg_product_site.712843232d: /* {"app": "dbt", "dbt_version": "1.8.8", "profile_name": "its_on_sale", "target_name": "dev", "node_id": "test.its_on_sale.not_null_stg_product_site.712843232d"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+
+
+select site
+from "neondb"."public_staging"."stg_product"
+where site is null
+
+
+
+      
+    ) dbt_internal_test
+[0m06:14:28.377175 [debug] [Thread-3 (]: SQL status: SELECT 1 in 0.007 seconds
+[0m06:14:28.379185 [debug] [Thread-3 (]: On test.its_on_sale.not_null_stg_product_site.712843232d: ROLLBACK
+[0m06:14:28.383266 [debug] [Thread-1 (]: SQL status: BEGIN in 0.077 seconds
+[0m06:14:28.383266 [debug] [Thread-1 (]: Using postgres connection "test.its_on_sale.not_null_stg_product_product_id.5e35fa3f95"
+[0m06:14:28.384275 [debug] [Thread-1 (]: On test.its_on_sale.not_null_stg_product_product_id.5e35fa3f95: /* {"app": "dbt", "dbt_version": "1.8.8", "profile_name": "its_on_sale", "target_name": "dev", "node_id": "test.its_on_sale.not_null_stg_product_product_id.5e35fa3f95"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+
+
+select product_id
+from "neondb"."public_staging"."stg_product"
+where product_id is null
+
+
+
+      
+    ) dbt_internal_test
+[0m06:14:28.385284 [debug] [Thread-3 (]: On test.its_on_sale.not_null_stg_product_site.712843232d: Close
+[0m06:14:28.386288 [info ] [Thread-3 (]: 11 of 19 PASS not_null_stg_product_site ........................................ [[32mPASS[0m in 0.10s]
+[0m06:14:28.387296 [debug] [Thread-3 (]: Finished running node test.its_on_sale.not_null_stg_product_site.712843232d
+[0m06:14:28.387296 [debug] [Thread-3 (]: Began running node test.its_on_sale.relationships_stg_price_history_product_id__product_id__ref_stg_product_.055b801818
+[0m06:14:28.388300 [info ] [Thread-3 (]: 14 of 19 START test relationships_stg_price_history_product_id__product_id__ref_stg_product_  [RUN]
+[0m06:14:28.388300 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly test.its_on_sale.not_null_stg_product_site.712843232d, now test.its_on_sale.relationships_stg_price_history_product_id__product_id__ref_stg_product_.055b801818)
+[0m06:14:28.389325 [debug] [Thread-3 (]: Began compiling node test.its_on_sale.relationships_stg_price_history_product_id__product_id__ref_stg_product_.055b801818
+[0m06:14:28.394350 [debug] [Thread-3 (]: Writing injected SQL for node "test.its_on_sale.relationships_stg_price_history_product_id__product_id__ref_stg_product_.055b801818"
+[0m06:14:28.395353 [debug] [Thread-1 (]: SQL status: SELECT 1 in 0.010 seconds
+[0m06:14:28.397478 [debug] [Thread-1 (]: On test.its_on_sale.not_null_stg_product_product_id.5e35fa3f95: ROLLBACK
+[0m06:14:28.397478 [debug] [Thread-3 (]: Began executing node test.its_on_sale.relationships_stg_price_history_product_id__product_id__ref_stg_product_.055b801818
+[0m06:14:28.400931 [debug] [Thread-3 (]: Writing runtime sql for node "test.its_on_sale.relationships_stg_price_history_product_id__product_id__ref_stg_product_.055b801818"
+[0m06:14:28.402983 [debug] [Thread-3 (]: Using postgres connection "test.its_on_sale.relationships_stg_price_history_product_id__product_id__ref_stg_product_.055b801818"
+[0m06:14:28.402983 [debug] [Thread-3 (]: On test.its_on_sale.relationships_stg_price_history_product_id__product_id__ref_stg_product_.055b801818: BEGIN
+[0m06:14:28.404068 [debug] [Thread-1 (]: On test.its_on_sale.not_null_stg_product_product_id.5e35fa3f95: Close
+[0m06:14:28.404068 [debug] [Thread-3 (]: Opening a new connection, currently in state closed
+[0m06:14:28.406127 [debug] [Thread-4 (]: SQL status: BEGIN in 0.083 seconds
+[0m06:14:28.407131 [debug] [Thread-2 (]: SQL status: BEGIN in 0.062 seconds
+[0m06:14:28.406127 [info ] [Thread-1 (]: 10 of 19 PASS not_null_stg_product_product_id .................................. [[32mPASS[0m in 0.13s]
+[0m06:14:28.407131 [debug] [Thread-4 (]: Using postgres connection "test.its_on_sale.not_null_stg_product_url.2f8ccdc1e9"
+[0m06:14:28.408380 [debug] [Thread-2 (]: Using postgres connection "test.its_on_sale.relationships_fact_price_history_product_id__product_id__ref_stg_product_.42bbec0ccf"
+[0m06:14:28.409409 [debug] [Thread-1 (]: Finished running node test.its_on_sale.not_null_stg_product_product_id.5e35fa3f95
+[0m06:14:28.409409 [debug] [Thread-4 (]: On test.its_on_sale.not_null_stg_product_url.2f8ccdc1e9: /* {"app": "dbt", "dbt_version": "1.8.8", "profile_name": "its_on_sale", "target_name": "dev", "node_id": "test.its_on_sale.not_null_stg_product_url.2f8ccdc1e9"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+
+
+select url
+from "neondb"."public_staging"."stg_product"
+where url is null
+
+
+
+      
+    ) dbt_internal_test
+[0m06:14:28.410422 [debug] [Thread-2 (]: On test.its_on_sale.relationships_fact_price_history_product_id__product_id__ref_stg_product_.42bbec0ccf: /* {"app": "dbt", "dbt_version": "1.8.8", "profile_name": "its_on_sale", "target_name": "dev", "node_id": "test.its_on_sale.relationships_fact_price_history_product_id__product_id__ref_stg_product_.42bbec0ccf"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+with child as (
+    select product_id as from_field
+    from "neondb"."public_marts"."fact_price_history"
+    where product_id is not null
+),
+
+parent as (
+    select product_id as to_field
+    from "neondb"."public_staging"."stg_product"
+)
+
+select
+    from_field
+
+from child
+left join parent
+    on child.from_field = parent.to_field
+
+where parent.to_field is null
+
+
+
+      
+    ) dbt_internal_test
+[0m06:14:28.411727 [debug] [Thread-1 (]: Began running node test.its_on_sale.unique_fact_price_history_id.0da56e5a2d
+[0m06:14:28.412730 [info ] [Thread-1 (]: 15 of 19 START test unique_fact_price_history_id ............................... [RUN]
+[0m06:14:28.414022 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.its_on_sale.not_null_stg_product_product_id.5e35fa3f95, now test.its_on_sale.unique_fact_price_history_id.0da56e5a2d)
+[0m06:14:28.415034 [debug] [Thread-1 (]: Began compiling node test.its_on_sale.unique_fact_price_history_id.0da56e5a2d
+[0m06:14:28.422097 [debug] [Thread-1 (]: Writing injected SQL for node "test.its_on_sale.unique_fact_price_history_id.0da56e5a2d"
+[0m06:14:28.422097 [debug] [Thread-4 (]: SQL status: SELECT 1 in 0.010 seconds
+[0m06:14:28.423100 [debug] [Thread-2 (]: SQL status: SELECT 1 in 0.011 seconds
+[0m06:14:28.425435 [debug] [Thread-4 (]: On test.its_on_sale.not_null_stg_product_url.2f8ccdc1e9: ROLLBACK
+[0m06:14:28.426914 [debug] [Thread-2 (]: On test.its_on_sale.relationships_fact_price_history_product_id__product_id__ref_stg_product_.42bbec0ccf: ROLLBACK
+[0m06:14:28.426914 [debug] [Thread-1 (]: Began executing node test.its_on_sale.unique_fact_price_history_id.0da56e5a2d
+[0m06:14:28.431029 [debug] [Thread-1 (]: Writing runtime sql for node "test.its_on_sale.unique_fact_price_history_id.0da56e5a2d"
+[0m06:14:28.433042 [debug] [Thread-1 (]: Using postgres connection "test.its_on_sale.unique_fact_price_history_id.0da56e5a2d"
+[0m06:14:28.434070 [debug] [Thread-4 (]: On test.its_on_sale.not_null_stg_product_url.2f8ccdc1e9: Close
+[0m06:14:28.434070 [debug] [Thread-2 (]: On test.its_on_sale.relationships_fact_price_history_product_id__product_id__ref_stg_product_.42bbec0ccf: Close
+[0m06:14:28.434070 [debug] [Thread-1 (]: On test.its_on_sale.unique_fact_price_history_id.0da56e5a2d: BEGIN
+[0m06:14:28.435482 [info ] [Thread-4 (]: 12 of 19 PASS not_null_stg_product_url ......................................... [[32mPASS[0m in 0.13s]
+[0m06:14:28.436485 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m06:14:28.437674 [info ] [Thread-2 (]: 13 of 19 PASS relationships_fact_price_history_product_id__product_id__ref_stg_product_  [[32mPASS[0m in 0.11s]
+[0m06:14:28.437674 [debug] [Thread-4 (]: Finished running node test.its_on_sale.not_null_stg_product_url.2f8ccdc1e9
+[0m06:14:28.439688 [debug] [Thread-2 (]: Finished running node test.its_on_sale.relationships_fact_price_history_product_id__product_id__ref_stg_product_.42bbec0ccf
+[0m06:14:28.440697 [debug] [Thread-4 (]: Began running node test.its_on_sale.unique_latest_price_per_product_product_id.dab72b4de6
+[0m06:14:28.440697 [debug] [Thread-2 (]: Began running node test.its_on_sale.unique_product_site_url
+[0m06:14:28.441702 [info ] [Thread-4 (]: 16 of 19 START test unique_latest_price_per_product_product_id ................. [RUN]
+[0m06:14:28.442707 [info ] [Thread-2 (]: 17 of 19 START test unique_product_site_url .................................... [RUN]
+[0m06:14:28.443713 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly test.its_on_sale.not_null_stg_product_url.2f8ccdc1e9, now test.its_on_sale.unique_latest_price_per_product_product_id.dab72b4de6)
+[0m06:14:28.444814 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly test.its_on_sale.relationships_fact_price_history_product_id__product_id__ref_stg_product_.42bbec0ccf, now test.its_on_sale.unique_product_site_url)
+[0m06:14:28.444814 [debug] [Thread-4 (]: Began compiling node test.its_on_sale.unique_latest_price_per_product_product_id.dab72b4de6
+[0m06:14:28.445818 [debug] [Thread-2 (]: Began compiling node test.its_on_sale.unique_product_site_url
+[0m06:14:28.449954 [debug] [Thread-4 (]: Writing injected SQL for node "test.its_on_sale.unique_latest_price_per_product_product_id.dab72b4de6"
+[0m06:14:28.453983 [debug] [Thread-2 (]: Writing injected SQL for node "test.its_on_sale.unique_product_site_url"
+[0m06:14:28.455153 [debug] [Thread-4 (]: Began executing node test.its_on_sale.unique_latest_price_per_product_product_id.dab72b4de6
+[0m06:14:28.456153 [debug] [Thread-2 (]: Began executing node test.its_on_sale.unique_product_site_url
+[0m06:14:28.458607 [debug] [Thread-4 (]: Writing runtime sql for node "test.its_on_sale.unique_latest_price_per_product_product_id.dab72b4de6"
+[0m06:14:28.463776 [debug] [Thread-2 (]: Writing runtime sql for node "test.its_on_sale.unique_product_site_url"
+[0m06:14:28.464801 [debug] [Thread-4 (]: Using postgres connection "test.its_on_sale.unique_latest_price_per_product_product_id.dab72b4de6"
+[0m06:14:28.465801 [debug] [Thread-2 (]: Using postgres connection "test.its_on_sale.unique_product_site_url"
+[0m06:14:28.465801 [debug] [Thread-4 (]: On test.its_on_sale.unique_latest_price_per_product_product_id.dab72b4de6: BEGIN
+[0m06:14:28.466876 [debug] [Thread-2 (]: On test.its_on_sale.unique_product_site_url: BEGIN
+[0m06:14:28.468027 [debug] [Thread-4 (]: Opening a new connection, currently in state closed
+[0m06:14:28.468027 [debug] [Thread-2 (]: Opening a new connection, currently in state closed
+[0m06:14:28.479845 [debug] [Thread-3 (]: SQL status: BEGIN in 0.075 seconds
+[0m06:14:28.480852 [debug] [Thread-3 (]: Using postgres connection "test.its_on_sale.relationships_stg_price_history_product_id__product_id__ref_stg_product_.055b801818"
+[0m06:14:28.480852 [debug] [Thread-3 (]: On test.its_on_sale.relationships_stg_price_history_product_id__product_id__ref_stg_product_.055b801818: /* {"app": "dbt", "dbt_version": "1.8.8", "profile_name": "its_on_sale", "target_name": "dev", "node_id": "test.its_on_sale.relationships_stg_price_history_product_id__product_id__ref_stg_product_.055b801818"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+with child as (
+    select product_id as from_field
+    from "neondb"."public_staging"."stg_price_history"
+    where product_id is not null
+),
+
+parent as (
+    select product_id as to_field
+    from "neondb"."public_staging"."stg_product"
+)
+
+select
+    from_field
+
+from child
+left join parent
+    on child.from_field = parent.to_field
+
+where parent.to_field is null
+
+
+
+      
+    ) dbt_internal_test
+[0m06:14:28.488679 [debug] [Thread-3 (]: SQL status: SELECT 1 in 0.007 seconds
+[0m06:14:28.489684 [debug] [Thread-3 (]: On test.its_on_sale.relationships_stg_price_history_product_id__product_id__ref_stg_product_.055b801818: ROLLBACK
+[0m06:14:28.492858 [debug] [Thread-1 (]: SQL status: BEGIN in 0.056 seconds
+[0m06:14:28.493869 [debug] [Thread-1 (]: Using postgres connection "test.its_on_sale.unique_fact_price_history_id.0da56e5a2d"
+[0m06:14:28.494891 [debug] [Thread-1 (]: On test.its_on_sale.unique_fact_price_history_id.0da56e5a2d: /* {"app": "dbt", "dbt_version": "1.8.8", "profile_name": "its_on_sale", "target_name": "dev", "node_id": "test.its_on_sale.unique_fact_price_history_id.0da56e5a2d"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+select
+    id as unique_field,
+    count(*) as n_records
+
+from "neondb"."public_marts"."fact_price_history"
+where id is not null
+group by id
+having count(*) > 1
+
+
+
+      
+    ) dbt_internal_test
+[0m06:14:28.494891 [debug] [Thread-3 (]: On test.its_on_sale.relationships_stg_price_history_product_id__product_id__ref_stg_product_.055b801818: Close
+[0m06:14:28.495895 [info ] [Thread-3 (]: 14 of 19 PASS relationships_stg_price_history_product_id__product_id__ref_stg_product_  [[32mPASS[0m in 0.11s]
+[0m06:14:28.496900 [debug] [Thread-3 (]: Finished running node test.its_on_sale.relationships_stg_price_history_product_id__product_id__ref_stg_product_.055b801818
+[0m06:14:28.497903 [debug] [Thread-3 (]: Began running node test.its_on_sale.unique_stg_price_history_id.b6bbfe8a58
+[0m06:14:28.498984 [info ] [Thread-3 (]: 18 of 19 START test unique_stg_price_history_id ................................ [RUN]
+[0m06:14:28.498984 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly test.its_on_sale.relationships_stg_price_history_product_id__product_id__ref_stg_product_.055b801818, now test.its_on_sale.unique_stg_price_history_id.b6bbfe8a58)
+[0m06:14:28.499993 [debug] [Thread-3 (]: Began compiling node test.its_on_sale.unique_stg_price_history_id.b6bbfe8a58
+[0m06:14:28.504017 [debug] [Thread-3 (]: Writing injected SQL for node "test.its_on_sale.unique_stg_price_history_id.b6bbfe8a58"
+[0m06:14:28.505022 [debug] [Thread-1 (]: SQL status: SELECT 1 in 0.009 seconds
+[0m06:14:28.507104 [debug] [Thread-1 (]: On test.its_on_sale.unique_fact_price_history_id.0da56e5a2d: ROLLBACK
+[0m06:14:28.508108 [debug] [Thread-3 (]: Began executing node test.its_on_sale.unique_stg_price_history_id.b6bbfe8a58
+[0m06:14:28.510410 [debug] [Thread-3 (]: Writing runtime sql for node "test.its_on_sale.unique_stg_price_history_id.b6bbfe8a58"
+[0m06:14:28.512433 [debug] [Thread-3 (]: Using postgres connection "test.its_on_sale.unique_stg_price_history_id.b6bbfe8a58"
+[0m06:14:28.512433 [debug] [Thread-3 (]: On test.its_on_sale.unique_stg_price_history_id.b6bbfe8a58: BEGIN
+[0m06:14:28.513445 [debug] [Thread-3 (]: Opening a new connection, currently in state closed
+[0m06:14:28.514456 [debug] [Thread-1 (]: On test.its_on_sale.unique_fact_price_history_id.0da56e5a2d: Close
+[0m06:14:28.516466 [info ] [Thread-1 (]: 15 of 19 PASS unique_fact_price_history_id ..................................... [[32mPASS[0m in 0.10s]
+[0m06:14:28.517471 [debug] [Thread-1 (]: Finished running node test.its_on_sale.unique_fact_price_history_id.0da56e5a2d
+[0m06:14:28.518475 [debug] [Thread-1 (]: Began running node test.its_on_sale.unique_stg_product_product_id.fd1037e514
+[0m06:14:28.519479 [info ] [Thread-1 (]: 19 of 19 START test unique_stg_product_product_id .............................. [RUN]
+[0m06:14:28.519479 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.its_on_sale.unique_fact_price_history_id.0da56e5a2d, now test.its_on_sale.unique_stg_product_product_id.fd1037e514)
+[0m06:14:28.520490 [debug] [Thread-1 (]: Began compiling node test.its_on_sale.unique_stg_product_product_id.fd1037e514
+[0m06:14:28.525613 [debug] [Thread-1 (]: Writing injected SQL for node "test.its_on_sale.unique_stg_product_product_id.fd1037e514"
+[0m06:14:28.527627 [debug] [Thread-1 (]: Began executing node test.its_on_sale.unique_stg_product_product_id.fd1037e514
+[0m06:14:28.529635 [debug] [Thread-1 (]: Writing runtime sql for node "test.its_on_sale.unique_stg_product_product_id.fd1037e514"
+[0m06:14:28.530639 [debug] [Thread-2 (]: SQL status: BEGIN in 0.062 seconds
+[0m06:14:28.531643 [debug] [Thread-2 (]: Using postgres connection "test.its_on_sale.unique_product_site_url"
+[0m06:14:28.532651 [debug] [Thread-2 (]: On test.its_on_sale.unique_product_site_url: /* {"app": "dbt", "dbt_version": "1.8.8", "profile_name": "its_on_sale", "target_name": "dev", "node_id": "test.its_on_sale.unique_product_site_url"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      -- fail if any (site, url) appears more than once
+
+select site, url
+from "neondb"."public_staging"."stg_product"
+group by 1, 2
+having count(*) > 1
+      
+    ) dbt_internal_test
+[0m06:14:28.532651 [debug] [Thread-1 (]: Using postgres connection "test.its_on_sale.unique_stg_product_product_id.fd1037e514"
+[0m06:14:28.533670 [debug] [Thread-1 (]: On test.its_on_sale.unique_stg_product_product_id.fd1037e514: BEGIN
+[0m06:14:28.533670 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m06:14:28.538755 [debug] [Thread-4 (]: SQL status: BEGIN in 0.071 seconds
+[0m06:14:28.538755 [debug] [Thread-2 (]: SQL status: SELECT 1 in 0.006 seconds
+[0m06:14:28.539801 [debug] [Thread-4 (]: Using postgres connection "test.its_on_sale.unique_latest_price_per_product_product_id.dab72b4de6"
+[0m06:14:28.541835 [debug] [Thread-2 (]: On test.its_on_sale.unique_product_site_url: ROLLBACK
+[0m06:14:28.542842 [debug] [Thread-4 (]: On test.its_on_sale.unique_latest_price_per_product_product_id.dab72b4de6: /* {"app": "dbt", "dbt_version": "1.8.8", "profile_name": "its_on_sale", "target_name": "dev", "node_id": "test.its_on_sale.unique_latest_price_per_product_product_id.dab72b4de6"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+select
+    product_id as unique_field,
+    count(*) as n_records
+
+from "neondb"."public_marts"."latest_price_per_product"
+where product_id is not null
+group by product_id
+having count(*) > 1
+
+
+
+      
+    ) dbt_internal_test
+[0m06:14:28.548233 [debug] [Thread-4 (]: SQL status: SELECT 1 in 0.005 seconds
+[0m06:14:28.548233 [debug] [Thread-2 (]: On test.its_on_sale.unique_product_site_url: Close
+[0m06:14:28.550274 [debug] [Thread-4 (]: On test.its_on_sale.unique_latest_price_per_product_product_id.dab72b4de6: ROLLBACK
+[0m06:14:28.551472 [info ] [Thread-2 (]: 17 of 19 PASS unique_product_site_url .......................................... [[32mPASS[0m in 0.11s]
+[0m06:14:28.552636 [debug] [Thread-2 (]: Finished running node test.its_on_sale.unique_product_site_url
+[0m06:14:28.555803 [debug] [Thread-4 (]: On test.its_on_sale.unique_latest_price_per_product_product_id.dab72b4de6: Close
+[0m06:14:28.556808 [info ] [Thread-4 (]: 16 of 19 PASS unique_latest_price_per_product_product_id ....................... [[32mPASS[0m in 0.11s]
+[0m06:14:28.557815 [debug] [Thread-4 (]: Finished running node test.its_on_sale.unique_latest_price_per_product_product_id.dab72b4de6
+[0m06:14:28.570964 [debug] [Thread-3 (]: SQL status: BEGIN in 0.058 seconds
+[0m06:14:28.571969 [debug] [Thread-3 (]: Using postgres connection "test.its_on_sale.unique_stg_price_history_id.b6bbfe8a58"
+[0m06:14:28.572974 [debug] [Thread-3 (]: On test.its_on_sale.unique_stg_price_history_id.b6bbfe8a58: /* {"app": "dbt", "dbt_version": "1.8.8", "profile_name": "its_on_sale", "target_name": "dev", "node_id": "test.its_on_sale.unique_stg_price_history_id.b6bbfe8a58"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+select
+    id as unique_field,
+    count(*) as n_records
+
+from "neondb"."public_staging"."stg_price_history"
+where id is not null
+group by id
+having count(*) > 1
+
+
+
+      
+    ) dbt_internal_test
+[0m06:14:28.581096 [debug] [Thread-3 (]: SQL status: SELECT 1 in 0.008 seconds
+[0m06:14:28.582102 [debug] [Thread-3 (]: On test.its_on_sale.unique_stg_price_history_id.b6bbfe8a58: ROLLBACK
+[0m06:14:28.588193 [debug] [Thread-3 (]: On test.its_on_sale.unique_stg_price_history_id.b6bbfe8a58: Close
+[0m06:14:28.589199 [info ] [Thread-3 (]: 18 of 19 PASS unique_stg_price_history_id ...................................... [[32mPASS[0m in 0.09s]
+[0m06:14:28.590212 [debug] [Thread-3 (]: Finished running node test.its_on_sale.unique_stg_price_history_id.b6bbfe8a58
+[0m06:14:28.591223 [debug] [Thread-1 (]: SQL status: BEGIN in 0.057 seconds
+[0m06:14:28.592442 [debug] [Thread-1 (]: Using postgres connection "test.its_on_sale.unique_stg_product_product_id.fd1037e514"
+[0m06:14:28.592442 [debug] [Thread-1 (]: On test.its_on_sale.unique_stg_product_product_id.fd1037e514: /* {"app": "dbt", "dbt_version": "1.8.8", "profile_name": "its_on_sale", "target_name": "dev", "node_id": "test.its_on_sale.unique_stg_product_product_id.fd1037e514"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+select
+    product_id as unique_field,
+    count(*) as n_records
+
+from "neondb"."public_staging"."stg_product"
+where product_id is not null
+group by product_id
+having count(*) > 1
+
+
+
+      
+    ) dbt_internal_test
+[0m06:14:28.599556 [debug] [Thread-1 (]: SQL status: SELECT 1 in 0.006 seconds
+[0m06:14:28.601567 [debug] [Thread-1 (]: On test.its_on_sale.unique_stg_product_product_id.fd1037e514: ROLLBACK
+[0m06:14:28.608073 [debug] [Thread-1 (]: On test.its_on_sale.unique_stg_product_product_id.fd1037e514: Close
+[0m06:14:28.609266 [info ] [Thread-1 (]: 19 of 19 PASS unique_stg_product_product_id .................................... [[32mPASS[0m in 0.09s]
+[0m06:14:28.610272 [debug] [Thread-1 (]: Finished running node test.its_on_sale.unique_stg_product_product_id.fd1037e514
+[0m06:14:28.612281 [debug] [MainThread]: Using postgres connection "master"
+[0m06:14:28.613282 [debug] [MainThread]: On master: BEGIN
+[0m06:14:28.613282 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m06:14:28.672812 [debug] [MainThread]: SQL status: BEGIN in 0.059 seconds
+[0m06:14:28.672812 [debug] [MainThread]: On master: COMMIT
+[0m06:14:28.674045 [debug] [MainThread]: Using postgres connection "master"
+[0m06:14:28.674045 [debug] [MainThread]: On master: COMMIT
+[0m06:14:28.683530 [debug] [MainThread]: SQL status: COMMIT in 0.008 seconds
+[0m06:14:28.684533 [debug] [MainThread]: On master: Close
+[0m06:14:28.684533 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m06:14:28.685537 [debug] [MainThread]: Connection 'list_neondb_public_staging' was properly closed.
+[0m06:14:28.685537 [debug] [MainThread]: Connection 'list_neondb_public_marts' was properly closed.
+[0m06:14:28.686541 [debug] [MainThread]: Connection 'test.its_on_sale.unique_stg_product_product_id.fd1037e514' was properly closed.
+[0m06:14:28.686541 [debug] [MainThread]: Connection 'test.its_on_sale.unique_product_site_url' was properly closed.
+[0m06:14:28.687550 [debug] [MainThread]: Connection 'test.its_on_sale.unique_stg_price_history_id.b6bbfe8a58' was properly closed.
+[0m06:14:28.687550 [debug] [MainThread]: Connection 'test.its_on_sale.unique_latest_price_per_product_product_id.dab72b4de6' was properly closed.
+[0m06:14:28.688557 [info ] [MainThread]: 
+[0m06:14:28.689576 [info ] [MainThread]: Finished running 19 data tests in 0 hours 0 minutes and 1.20 seconds (1.20s).
+[0m06:14:28.692590 [debug] [MainThread]: Command end result
+[0m06:14:28.733042 [info ] [MainThread]: 
+[0m06:14:28.733042 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m06:14:28.734083 [info ] [MainThread]: 
+[0m06:14:28.734083 [info ] [MainThread]: Done. PASS=19 WARN=0 ERROR=0 SKIP=0 TOTAL=19
+[0m06:14:28.736099 [debug] [MainThread]: Command `dbt test` succeeded at 06:14:28.736099 after 1.97 seconds
+[0m06:14:28.737103 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023FBCDD0750>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023FBCDD1ED0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023FB4307410>]}
+[0m06:14:28.737103 [debug] [MainThread]: Flushing usage events

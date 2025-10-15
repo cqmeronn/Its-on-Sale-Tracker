@@ -31,7 +31,7 @@ def main():
             .reset_index()
         )
         lines = [f"{row.site} – {row.name}: {row.price:.2f} {row.currency}" for _, row in latest.iterrows()]
-        msg = "Latest price summary:\n" + "\n".join(lines)
+        msg = "_______________________________" + "\n" + "\n*LATEST PRICE SUMMARY:*\n" + "\n".join(lines) + "\n_______________________________"
 
     print(msg)
 

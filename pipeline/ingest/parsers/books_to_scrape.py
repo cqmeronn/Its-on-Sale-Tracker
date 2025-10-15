@@ -26,7 +26,7 @@ def parse_product_page(html: str, url: str) -> dict:
         in_stock = "in stock" in txt
 
     return {
-        "site": "books.toscrape",
+        "site": "books.toscrape.com",
         "url": url,
         "name": name,
         "price": price,
