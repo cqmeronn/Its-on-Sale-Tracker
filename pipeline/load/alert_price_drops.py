@@ -2,7 +2,7 @@
 
 import os, json, requests
 import pandas as pd
-from sqlalchemy import create_engine, text
+from sqlalchemy import create_engine, text as sql_text
 
 def main():
     db_url = os.getenv("DATABASE_URL")
@@ -10,13 +10,48 @@ def main():
     engine = create_engine(db_url, future=True)
 
     with engine.connect() as c:
-        df = pd.read_sql(text("""
-            select e.product_id, p.name, p.site, p.url, e.prev_price, e.new_price, e.drop_pct, e.ts_utc
-            from marts.price_events e
-            join staging.stg_product p on p.product_id = e.product_id
-            where e.event_type = 'DROP' and e.ts_utc > now() - interval '12 hours'
-            order by e.ts_utc desc
-        """), c)
+        df = pd.read_sql(sql_text("""
+        with hist as (
+          select
+            ph.product_id,
+            ph.ts_utc,
+            ph.price_numeric as curr_price,
+            lag(ph.price_numeric) over (
+              partition by ph.product_id
+              order by ph.ts_utc
+            ) as prev_price
+          from public.price_history ph
+          where ph.price_numeric is not null
+        ),
+        drops as (
+          select
+            product_id,
+            ts_utc,
+            prev_price,
+            curr_price,
+            case
+              when prev_price is not null and curr_price < prev_price
+              then round(100.0 * (prev_price - curr_price) / nullif(prev_price, 0), 2)
+              else null
+            end as drop_pct
+          from hist
+        )
+        select
+          p.product_id,
+          p.name,
+          p.site,
+          p.url,
+          d.prev_price,
+          d.curr_price as new_price,
+          d.drop_pct,
+          d.ts_utc
+        from drops d
+        join public.product p
+          on p.product_id = d.product_id
+        where d.drop_pct is not null
+          and d.ts_utc > now() - interval '12 hours'
+        order by d.ts_utc desc
+    """), c)
 
     if df.empty:
         print("No price drops in the last 12 hours.")
