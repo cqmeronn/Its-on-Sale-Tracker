@@ -1,15 +1,13 @@
 # It’s On Sale Tracker  
-**A pipeline to monitor product price data (currently in progress).**
-
-> **Note:** Still in active development. The ingestion, transformation, and CI/CD foundation are complete — Streamlit UI, data quality alerting, and Slack notifications are now integrated.
+**An automated data pipeline for tracking and alerting on product price changes across multiple websites. Core pipeline includes ingestion, multi-site support, dbt transformations, Great Expectations data validation, CI/CD automation, and Slack alerting.**
 
 ---
 
 ## Project Overview
 
-**It’s On Sale Tracker** is a data engineering project built to demonstrate a full end-to-end data workflow — from ingestion to transformation, validation, and visualization — using modern, production-like tooling.
+**It’s On Sale Tracker** is a data engineering project built to demonstrate a full end-to-end data workflow — from ingestion to transformation, validation, and visualisation — using modern, production-like tooling.
 
-It scrapes product data from the web (currently using `books.toscrape.com` as a demo source), stores it in a PostgreSQL database (via [Neon](https://neon.tech)), transforms it using **dbt**, validates data quality using **Great Expectations**, and runs automatically in **GitHub Actions** on a schedule. Slack alerts are sent with summaries and notifications.
+It scrapes product data from the web (currently using `books.toscrape.com` as a demo source), stores it in a PostgreSQL database (via [Neon](https://neon.tech)), transforms it using **dbt**, validates data quality using **Great Expectations**, and runs automatically in **GitHub Actions** on a schedule. Slack alerts are sent with summaries and notifications. Also includes a **reset utility** (`reset.py`) which can rebuild the entire environment end-to-end, including schema resets, seeding, ingestion, dbt models, and DQ tests.  
 
 ---
 
@@ -17,14 +15,15 @@ It scrapes product data from the web (currently using `books.toscrape.com` as a 
 
 | Layer | Tool | Purpose |
 |-------|------|----------|
-| **Ingestion** | `requests`, `BeautifulSoup4`, `lxml`, `loguru` | Scrape product data from websites |
-| **Database** | `PostgreSQL` (Neon) + `SQLAlchemy` | Store product and price history data |
-| **Transformation** | `dbt-core`, `dbt-postgres` | Clean and model data for analysis |
-| **Validation** | `dbt tests`, `Great Expectations` | Ensure data quality and integrity |
-| **Orchestration / CI** | `GitHub Actions` | Run ingestion + dbt + validation + alerts |
-| **Notification** | `Slack Webhooks` | Post summaries and price alerts to Slack |
-| **Visualization (WIP)** | `Streamlit` | Dashboard for price history and changes |
-| **Environment** | `.env` + `python-dotenv` | Manage secrets and configuration |
+| **Ingestion** | `requests`, `BeautifulSoup4`, `lxml`, `loguru`, `pandas` | Scrape and structure product data from multiple websites |
+| **Database** | `PostgreSQL` (Neon) + `SQLAlchemy` | Store product metadata and price history |
+| **Transformation** | `dbt-core`, `dbt-postgres` | Clean, model, and aggregate data for analysis |
+| **Validation** | `dbt tests`, `Great Expectations`, `pandas` | Ensure data quality, types, and expected values |
+| **Orchestration / CI** | `GitHub Actions`, `reset.py` | Automate ingestion, dbt, validation, and Slack alerts |
+| **Notification** | `Slack Webhooks` | Send summaries and price drop alerts |
+| **Visualisation (WIP)** | `Streamlit` | Dashboard for historical and live price trends |
+| **Environment** | `.env`, `python-dotenv` | Manage secrets and configuration |
+
 
 ---
 
@@ -129,7 +128,7 @@ its-on-sale-tracker/
 ### 7. Streamlit (In Progress)
 - Displays live data from Neon DB.
 - Product filters by site or search term.
-- Price history visualization planned.
+- Price history visualisation planned.
 
 ---
 
@@ -154,7 +153,7 @@ DATABASE_URL=postgresql+psycopg://user:password@host/dbname
 SLACK_WEBHOOK_URL=https://hooks.slack.com/services/...
 ```
 
-Initialize the database:
+Initialise the database:
 ```bash
 python -m pipeline.load.init_db
 python -m pipeline.load.test_connection
