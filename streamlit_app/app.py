@@ -34,12 +34,25 @@ def load_price_history(product_id: int):
 
 st.title("It’s On Sale — Price Tracker")
 
+
+latest = pd.read_sql(
+    text("""
+      select p.product_id, p.name, p.site, p.url, l.last_seen_utc, l.price, l.currency
+      from marts.latest_price_per_product l
+      join staging.stg_product p on p.product_id = l.product_id
+      order by p.site, p.name
+    """), engine.connect()
+)
+st.subheader("Latest prices")
+st.dataframe(latest)
+
+
+
 products = load_products()
 if products.empty:
     st.info("No products yet. Run the ingestion pipeline.")
     st.stop()
 
-# Add site filter
 site_filter = st.selectbox(
     "Filter by site",
     ["All"] + sorted(products["site"].dropna().unique().tolist()),
@@ -47,6 +60,10 @@ site_filter = st.selectbox(
 
 if site_filter != "All":
     products = products[products["site"] == site_filter]
+
+search = st.text_input("Search product name")
+if search:
+    products = products[products["name"].str.contains(search, case=False, na=False)]
 
 
 pid = st.selectbox(
