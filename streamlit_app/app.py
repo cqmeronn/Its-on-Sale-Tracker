@@ -1,4 +1,4 @@
-"""Simple UI to browse products and view price history."""
+"""Streamlit app showing price trends and metrics."""
 
 import os
 import pandas as pd
@@ -33,24 +33,44 @@ def load_price_history(product_id: int):
     return df
 
 st.title("It’s On Sale — Price Tracker")
+
 products = load_products()
 if products.empty:
     st.info("No products yet. Run the ingestion pipeline.")
     st.stop()
 
-choice = st.selectbox(
+pid = st.selectbox(
     "Select a product",
     products["product_id"].tolist(),
-    format_func=lambda pid: f"{pid} — {products.set_index('product_id').loc[pid, 'name']}",
+    format_func=lambda i: products.set_index("product_id").loc[i, "name"],
 )
 
-row = products.set_index("product_id").loc[choice]
+row = products.set_index("product_id").loc[pid]
 st.markdown(f"**Site:** {row['site']}  \n**URL:** {row['url']}")
 
-hist = load_price_history(choice)
+hist = load_price_history(pid)
 if hist.empty:
     st.info("No price history yet for this product.")
+    st.stop()
+
+hist["ts_utc"] = pd.to_datetime(hist["ts_utc"])
+hist = hist.sort_values("ts_utc")
+
+latest_price = hist.iloc[-1]["price"]
+currency = hist.iloc[-1]["currency"]
+
+if len(hist) > 1:
+    prev_price = hist.iloc[-2]["price"]
+    diff = latest_price - prev_price
+    pct = (diff / prev_price) * 100 if prev_price else 0
 else:
-    st.metric("Latest price", f"{hist.iloc[-1]['price']} {hist.iloc[-1]['currency']}")
-    st.line_chart(hist.set_index("ts_utc")["price"])
-    st.dataframe(hist.tail(20))
+    prev_price, diff, pct = None, None, 0
+
+col1, col2, col3 = st.columns(3)
+col1.metric("Latest price", f"{latest_price:.2f} {currency}")
+if prev_price:
+    col2.metric("Previous price", f"{prev_price:.2f} {currency}")
+    col3.metric("Change %", f"{pct:.2f}%", delta=f"{pct:.2f}")
+
+st.line_chart(hist.set_index("ts_utc")["price"])
+st.dataframe(hist.tail(20))
