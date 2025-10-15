@@ -9,6 +9,7 @@ from pipeline.load.upsert import get_or_create_product, write_price_snapshot
 from pipeline.common.db import SessionLocal
 
 from pipeline.ingest.parsers import books_to_scrape
+from pipeline.ingest.parsers import scrapeme
 
 from sqlalchemy import select
 from pipeline.common.models import Product
@@ -17,10 +18,12 @@ from pipeline.common.models import Product
 URLS = [
     "https://books.toscrape.com/catalogue/william-shakespeares-star-wars-verily-a-new-hope-william-shakespeares-star-wars-4_871/index.html",
     "https://books.toscrape.com/catalogue/a-light-in-the-attic_1000/index.html",
+    "https://scrapeme.live/shop/Poliwhirl"
 ]
 
 PARSERS = {
     "books.toscrape.com": books_to_scrape.parse_product_page,
+    "scrapeme.live": scrapeme.parse_product_page,
 }
 
 def load_urls_from_db(session):
