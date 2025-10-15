@@ -5879,3 +5879,677 @@ having count(*) > 1
 [0m03:09:02.759548 [debug] [MainThread]: Command `cli deps` succeeded at 03:09:02.759548 after 0.28 seconds
 [0m03:09:02.759548 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AA28FCF650>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AA28FA8450>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AA29FB7790>]}
 [0m03:09:02.760552 [debug] [MainThread]: Flushing usage events
+[0m03:38:37.743193 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027A8A7035D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027A8A702D10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027A8A7030D0>]}
+
+
+============================== 03:38:37.748275 | 5aeb33eb-960b-4c58-9ef9-9612289f19bc ==============================
+[0m03:38:37.748275 [info ] [MainThread]: Running with dbt=1.8.8
+[0m03:38:37.749275 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'profiles_dir': '../', 'log_path': "C:\\Users\\meg\\Documents\\cam\\proj\\It's On Sale\\its-on-sale-tracker\\pipeline\\transform\\its_on_sale\\logs", 'debug': 'False', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt run --select price_events --profiles-dir ../', 'log_format': 'default', 'static_parser': 'True', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m03:38:37.755861 [error] [MainThread]: Encountered an error:
+Parsing Error
+  Env var required but not provided: 'PGHOST'
+[0m03:38:37.757985 [debug] [MainThread]: Command `dbt run` failed at 03:38:37.757985 after 0.10 seconds
+[0m03:38:37.757985 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027A8A701950>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027A8940F210>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027A8B71A490>]}
+[0m03:38:37.758989 [debug] [MainThread]: Flushing usage events
+[0m03:38:42.248268 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024C363206D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024C3631F3D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024C3631F110>]}
+
+
+============================== 03:38:42.252809 | f11ba539-4baf-4442-accd-d7ebe76307be ==============================
+[0m03:38:42.252809 [info ] [MainThread]: Running with dbt=1.8.8
+[0m03:38:42.253814 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '../', 'fail_fast': 'False', 'debug': 'False', 'log_path': "C:\\Users\\meg\\Documents\\cam\\proj\\It's On Sale\\its-on-sale-tracker\\pipeline\\transform\\its_on_sale\\logs", 'version_check': 'True', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'target_path': 'None', 'invocation_command': 'dbt test --select price_events --profiles-dir ../', 'send_anonymous_usage_stats': 'True'}
+[0m03:38:42.259939 [error] [MainThread]: Encountered an error:
+Parsing Error
+  Env var required but not provided: 'PGHOST'
+[0m03:38:42.261446 [debug] [MainThread]: Command `dbt test` failed at 03:38:42.261446 after 0.09 seconds
+[0m03:38:42.261446 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024C363219D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024C2EAF0B90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024C3631FAD0>]}
+[0m03:38:42.262583 [debug] [MainThread]: Flushing usage events
+[0m03:39:12.587715 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000198BC641290>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000198BC3B1090>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000198BC63F750>]}
+
+
+============================== 03:39:12.593777 | 901000df-a238-44cd-a477-2be815c5d4a5 ==============================
+[0m03:39:12.593777 [info ] [MainThread]: Running with dbt=1.8.8
+[0m03:39:12.594782 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'version_check': 'True', 'log_path': "C:\\Users\\meg\\Documents\\cam\\proj\\It's On Sale\\its-on-sale-tracker\\pipeline\\transform\\its_on_sale\\logs", 'fail_fast': 'False', 'profiles_dir': '../', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt run --select price_events --profiles-dir ../', 'introspect': 'True', 'log_format': 'default', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m03:39:12.600808 [error] [MainThread]: Encountered an error:
+Parsing Error
+  Env var required but not provided: 'PGHOST'
+[0m03:39:12.601867 [debug] [MainThread]: Command `dbt run` failed at 03:39:12.601867 after 0.09 seconds
+[0m03:39:12.603372 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000198BC63F9D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000198BC63FB50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000198BC63F550>]}
+[0m03:39:12.603372 [debug] [MainThread]: Flushing usage events
+[0m03:39:17.041681 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C1CE6C3E10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C1CE6BF790>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C1CE6C3150>]}
+
+
+============================== 03:39:17.046198 | 53581651-04ba-468c-980a-de02cd57c06f ==============================
+[0m03:39:17.046198 [info ] [MainThread]: Running with dbt=1.8.8
+[0m03:39:17.047202 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'debug': 'False', 'log_path': "C:\\Users\\meg\\Documents\\cam\\proj\\It's On Sale\\its-on-sale-tracker\\pipeline\\transform\\its_on_sale\\logs", 'profiles_dir': '../', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'static_parser': 'True', 'invocation_command': 'dbt test --select price_events --profiles-dir ../', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m03:39:17.052287 [error] [MainThread]: Encountered an error:
+Parsing Error
+  Env var required but not provided: 'PGHOST'
+[0m03:39:17.053793 [debug] [MainThread]: Command `dbt test` failed at 03:39:17.053793 after 0.09 seconds
+[0m03:39:17.054825 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C1CF6D0150>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C1CD3DB950>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C1CE6BFE90>]}
+[0m03:39:17.054825 [debug] [MainThread]: Flushing usage events
+[0m03:41:19.836565 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002B81B253890>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002B81B24F750>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002B81B24F910>]}
+
+
+============================== 03:41:19.840622 | 524469a8-6ec7-40db-890f-67461d7a57eb ==============================
+[0m03:41:19.840622 [info ] [MainThread]: Running with dbt=1.8.8
+[0m03:41:19.842128 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'version_check': 'True', 'log_path': "C:\\Users\\meg\\Documents\\cam\\proj\\It's On Sale\\its-on-sale-tracker\\pipeline\\transform\\its_on_sale\\logs", 'profiles_dir': '../', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'False', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt run --select price_events --profiles-dir ../', 'log_format': 'default', 'introspect': 'True', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m03:41:19.848290 [error] [MainThread]: Encountered an error:
+Parsing Error
+  Env var required but not provided: 'PGHOST'
+[0m03:41:19.850302 [debug] [MainThread]: Command `dbt run` failed at 03:41:19.849296 after 0.09 seconds
+[0m03:41:19.850302 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002B81B03CA50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002B819F5F590>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002B81B24F910>]}
+[0m03:41:19.850302 [debug] [MainThread]: Flushing usage events
+[0m03:41:24.377283 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EF60032CD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EF6002F410>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EF6002F310>]}
+
+
+============================== 03:41:24.382421 | e5b56a2c-7e02-4d22-9d61-dbb24d5cf319 ==============================
+[0m03:41:24.382421 [info ] [MainThread]: Running with dbt=1.8.8
+[0m03:41:24.383423 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'debug': 'False', 'log_path': "C:\\Users\\meg\\Documents\\cam\\proj\\It's On Sale\\its-on-sale-tracker\\pipeline\\transform\\its_on_sale\\logs", 'profiles_dir': '../', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt test --select price_events --profiles-dir ../', 'introspect': 'True', 'static_parser': 'True', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m03:41:24.389639 [error] [MainThread]: Encountered an error:
+Parsing Error
+  Env var required but not provided: 'PGHOST'
+[0m03:41:24.390734 [debug] [MainThread]: Command `dbt test` failed at 03:41:24.390734 after 0.09 seconds
+[0m03:41:24.392241 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EF60031750>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EF5FD9D290>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EF6002FF50>]}
+[0m03:41:24.393264 [debug] [MainThread]: Flushing usage events
+[0m03:42:26.157769 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024045C939D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024046CAA790>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024046CAB2D0>]}
+
+
+============================== 03:42:26.162836 | 45062ccd-6cf1-48bd-b9e6-7534859911f8 ==============================
+[0m03:42:26.162836 [info ] [MainThread]: Running with dbt=1.8.8
+[0m03:42:26.163837 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '../', 'version_check': 'True', 'debug': 'False', 'log_path': "C:\\Users\\meg\\Documents\\cam\\proj\\It's On Sale\\its-on-sale-tracker\\pipeline\\transform\\its_on_sale\\logs", 'warn_error': 'None', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'log_format': 'default', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt run --select price_events --profiles-dir ../', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m03:42:26.169493 [error] [MainThread]: Encountered an error:
+Parsing Error
+  Env var required but not provided: 'PGHOST'
+[0m03:42:26.171507 [debug] [MainThread]: Command `dbt run` failed at 03:42:26.171507 after 0.09 seconds
+[0m03:42:26.172512 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024046CB0B50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024046CB0250>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024045A00F50>]}
+[0m03:42:26.172512 [debug] [MainThread]: Flushing usage events
+[0m03:42:30.717733 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022880EB3A50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000228FF9E4190>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022881EC4290>]}
+
+
+============================== 03:42:30.722932 | f81949b8-e353-4a86-94c6-a973f6cc7fd2 ==============================
+[0m03:42:30.722932 [info ] [MainThread]: Running with dbt=1.8.8
+[0m03:42:30.722932 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'debug': 'False', 'log_path': "C:\\Users\\meg\\Documents\\cam\\proj\\It's On Sale\\its-on-sale-tracker\\pipeline\\transform\\its_on_sale\\logs", 'version_check': 'True', 'profiles_dir': '../', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'invocation_command': 'dbt test --select price_events --profiles-dir ../', 'static_parser': 'True', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m03:42:30.728480 [error] [MainThread]: Encountered an error:
+Parsing Error
+  Env var required but not provided: 'PGHOST'
+[0m03:42:30.730605 [debug] [MainThread]: Command `dbt test` failed at 03:42:30.730605 after 0.08 seconds
+[0m03:42:30.731610 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000228F9610C90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022880EAF9D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022880EAFF10>]}
+[0m03:42:30.731610 [debug] [MainThread]: Flushing usage events
+[0m03:43:46.346346 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023BDCC7C3D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023BDCA6CAD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023BDCC7B250>]}
+
+
+============================== 03:43:46.350361 | 1480bd21-b8e1-4cd9-8001-eb990a832f02 ==============================
+[0m03:43:46.350361 [info ] [MainThread]: Running with dbt=1.8.8
+[0m03:43:46.351360 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'profiles_dir': '../', 'log_path': "C:\\Users\\meg\\Documents\\cam\\proj\\It's On Sale\\its-on-sale-tracker\\pipeline\\transform\\its_on_sale\\logs", 'debug': 'False', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'False', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'invocation_command': 'dbt run --select price_events --profiles-dir ../', 'static_parser': 'True', 'introspect': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m03:43:46.580067 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '1480bd21-b8e1-4cd9-8001-eb990a832f02', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023BDDD7B650>]}
+[0m03:43:46.632755 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '1480bd21-b8e1-4cd9-8001-eb990a832f02', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023BDCC9E210>]}
+[0m03:43:46.634826 [info ] [MainThread]: Registered adapter: postgres=1.8.2
+[0m03:43:46.659170 [debug] [MainThread]: checksum: ec53e341a936509427e16df1c646386a84befec52c1957e3f4359fbc36fc93f5, vars: {}, profile: , target: , version: 1.8.8
+[0m03:43:47.779231 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 1 files added, 1 files changed.
+[0m03:43:47.779231 [debug] [MainThread]: Partial parsing: added file: its_on_sale://models\marts\price_events.sql
+[0m03:43:47.780235 [debug] [MainThread]: Partial parsing: updated file: its_on_sale://models\marts\marts.yml
+[0m03:43:48.001475 [warn ] [MainThread]: [[33mWARNING[0m]: Deprecated functionality
+The `tests` config has been renamed to `data_tests`. Please see
+https://docs.getdbt.com/docs/build/data-tests#new-data_tests-syntax for more
+information.
+[0m03:43:48.001475 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': '1480bd21-b8e1-4cd9-8001-eb990a832f02', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023BDE170C50>]}
+[0m03:43:48.264078 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '1480bd21-b8e1-4cd9-8001-eb990a832f02', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023BDCC72850>]}
+[0m03:43:48.391831 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '1480bd21-b8e1-4cd9-8001-eb990a832f02', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023BDDF9BB10>]}
+[0m03:43:48.392336 [info ] [MainThread]: Found 5 models, 19 data tests, 423 macros
+[0m03:43:48.393739 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '1480bd21-b8e1-4cd9-8001-eb990a832f02', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023BDE0B2010>]}
+[0m03:43:48.395754 [info ] [MainThread]: 
+[0m03:43:48.396758 [debug] [MainThread]: Acquiring new postgres connection 'master'
+[0m03:43:48.398778 [debug] [ThreadPool]: Acquiring new postgres connection 'list_neondb'
+[0m03:43:51.373088 [debug] [ThreadPool]: Using postgres connection "list_neondb"
+[0m03:43:51.374092 [debug] [ThreadPool]: On list_neondb: /* {"app": "dbt", "dbt_version": "1.8.8", "profile_name": "its_on_sale", "target_name": "dev", "connection_name": "list_neondb"} */
+
+    select distinct nspname from pg_namespace
+  
+[0m03:43:51.375359 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m03:43:51.471666 [debug] [ThreadPool]: SQL status: SELECT 6 in 0.096 seconds
+[0m03:43:51.472686 [debug] [ThreadPool]: On list_neondb: Close
+[0m03:43:51.478820 [debug] [ThreadPool]: Acquiring new postgres connection 'list_neondb_public_staging'
+[0m03:43:51.479849 [debug] [ThreadPool]: Acquiring new postgres connection 'list_neondb_public_marts'
+[0m03:43:51.486219 [debug] [ThreadPool]: Using postgres connection "list_neondb_public_staging"
+[0m03:43:51.488230 [debug] [ThreadPool]: Using postgres connection "list_neondb_public_marts"
+[0m03:43:51.489235 [debug] [ThreadPool]: On list_neondb_public_staging: BEGIN
+[0m03:43:51.490247 [debug] [ThreadPool]: On list_neondb_public_marts: BEGIN
+[0m03:43:51.490247 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m03:43:51.490247 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m03:43:51.549584 [debug] [ThreadPool]: SQL status: BEGIN in 0.058 seconds
+[0m03:43:51.549584 [debug] [ThreadPool]: Using postgres connection "list_neondb_public_marts"
+[0m03:43:51.550708 [debug] [ThreadPool]: On list_neondb_public_marts: /* {"app": "dbt", "dbt_version": "1.8.8", "profile_name": "its_on_sale", "target_name": "dev", "connection_name": "list_neondb_public_marts"} */
+select
+      'neondb' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'public_marts'
+    union all
+    select
+      'neondb' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'public_marts'
+    union all
+    select
+      'neondb' as database,
+      matviewname as name,
+      schemaname as schema,
+      'materialized_view' as type
+    from pg_matviews
+    where schemaname ilike 'public_marts'
+  
+[0m03:43:51.557341 [debug] [ThreadPool]: SQL status: BEGIN in 0.067 seconds
+[0m03:43:51.557715 [debug] [ThreadPool]: Using postgres connection "list_neondb_public_staging"
+[0m03:43:51.558716 [debug] [ThreadPool]: On list_neondb_public_staging: /* {"app": "dbt", "dbt_version": "1.8.8", "profile_name": "its_on_sale", "target_name": "dev", "connection_name": "list_neondb_public_staging"} */
+select
+      'neondb' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'public_staging'
+    union all
+    select
+      'neondb' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'public_staging'
+    union all
+    select
+      'neondb' as database,
+      matviewname as name,
+      schemaname as schema,
+      'materialized_view' as type
+    from pg_matviews
+    where schemaname ilike 'public_staging'
+  
+[0m03:43:51.560736 [debug] [ThreadPool]: SQL status: SELECT 2 in 0.009 seconds
+[0m03:43:51.561737 [debug] [ThreadPool]: On list_neondb_public_marts: ROLLBACK
+[0m03:43:51.566589 [debug] [ThreadPool]: SQL status: SELECT 2 in 0.008 seconds
+[0m03:43:51.568652 [debug] [ThreadPool]: On list_neondb_public_staging: ROLLBACK
+[0m03:43:51.568652 [debug] [ThreadPool]: On list_neondb_public_marts: Close
+[0m03:43:51.574597 [debug] [ThreadPool]: On list_neondb_public_staging: Close
+[0m03:43:51.579828 [debug] [MainThread]: Using postgres connection "master"
+[0m03:43:51.580834 [debug] [MainThread]: On master: BEGIN
+[0m03:43:51.581836 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m03:43:51.640357 [debug] [MainThread]: SQL status: BEGIN in 0.060 seconds
+[0m03:43:51.641862 [debug] [MainThread]: Using postgres connection "master"
+[0m03:43:51.642889 [debug] [MainThread]: On master: /* {"app": "dbt", "dbt_version": "1.8.8", "profile_name": "its_on_sale", "target_name": "dev", "connection_name": "master"} */
+with relation as (
+        select
+            pg_rewrite.ev_class as class,
+            pg_rewrite.oid as id
+        from pg_rewrite
+    ),
+    class as (
+        select
+            oid as id,
+            relname as name,
+            relnamespace as schema,
+            relkind as kind
+        from pg_class
+    ),
+    dependency as (
+        select distinct
+            pg_depend.objid as id,
+            pg_depend.refobjid as ref
+        from pg_depend
+    ),
+    schema as (
+        select
+            pg_namespace.oid as id,
+            pg_namespace.nspname as name
+        from pg_namespace
+        where nspname != 'information_schema' and nspname not like 'pg\_%'
+    ),
+    referenced as (
+        select
+            relation.id AS id,
+            referenced_class.name ,
+            referenced_class.schema ,
+            referenced_class.kind
+        from relation
+        join class as referenced_class on relation.class=referenced_class.id
+        where referenced_class.kind in ('r', 'v', 'm')
+    ),
+    relationships as (
+        select
+            referenced.name as referenced_name,
+            referenced.schema as referenced_schema_id,
+            dependent_class.name as dependent_name,
+            dependent_class.schema as dependent_schema_id,
+            referenced.kind as kind
+        from referenced
+        join dependency on referenced.id=dependency.id
+        join class as dependent_class on dependency.ref=dependent_class.id
+        where
+            (referenced.name != dependent_class.name or
+             referenced.schema != dependent_class.schema)
+    )
+
+    select
+        referenced_schema.name as referenced_schema,
+        relationships.referenced_name as referenced_name,
+        dependent_schema.name as dependent_schema,
+        relationships.dependent_name as dependent_name
+    from relationships
+    join schema as dependent_schema on relationships.dependent_schema_id=dependent_schema.id
+    join schema as referenced_schema on relationships.referenced_schema_id=referenced_schema.id
+    group by referenced_schema, referenced_name, dependent_schema, dependent_name
+    order by referenced_schema, referenced_name, dependent_schema, dependent_name;
+[0m03:43:51.650363 [debug] [MainThread]: SQL status: SELECT 5 in 0.007 seconds
+[0m03:43:51.652894 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '1480bd21-b8e1-4cd9-8001-eb990a832f02', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023BDDD4B390>]}
+[0m03:43:51.652894 [debug] [MainThread]: On master: ROLLBACK
+[0m03:43:51.659941 [debug] [MainThread]: Using postgres connection "master"
+[0m03:43:51.661004 [debug] [MainThread]: On master: BEGIN
+[0m03:43:51.673309 [debug] [MainThread]: SQL status: BEGIN in 0.012 seconds
+[0m03:43:51.673309 [debug] [MainThread]: On master: COMMIT
+[0m03:43:51.674316 [debug] [MainThread]: Using postgres connection "master"
+[0m03:43:51.674316 [debug] [MainThread]: On master: COMMIT
+[0m03:43:51.680554 [debug] [MainThread]: SQL status: COMMIT in 0.005 seconds
+[0m03:43:51.680554 [debug] [MainThread]: On master: Close
+[0m03:43:51.682059 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m03:43:51.682059 [info ] [MainThread]: 
+[0m03:43:51.686096 [debug] [Thread-1 (]: Began running node model.its_on_sale.price_events
+[0m03:43:51.687185 [info ] [Thread-1 (]: 1 of 1 START sql view model public_marts.price_events .......................... [RUN]
+[0m03:43:51.688188 [debug] [Thread-1 (]: Acquiring new postgres connection 'model.its_on_sale.price_events'
+[0m03:43:51.689298 [debug] [Thread-1 (]: Began compiling node model.its_on_sale.price_events
+[0m03:43:51.697041 [debug] [Thread-1 (]: Writing injected SQL for node "model.its_on_sale.price_events"
+[0m03:43:51.699053 [debug] [Thread-1 (]: Began executing node model.its_on_sale.price_events
+[0m03:43:51.737258 [debug] [Thread-1 (]: Writing runtime sql for node "model.its_on_sale.price_events"
+[0m03:43:51.740342 [debug] [Thread-1 (]: Using postgres connection "model.its_on_sale.price_events"
+[0m03:43:51.741847 [debug] [Thread-1 (]: On model.its_on_sale.price_events: BEGIN
+[0m03:43:51.741847 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m03:43:51.795099 [debug] [Thread-1 (]: SQL status: BEGIN in 0.053 seconds
+[0m03:43:51.796140 [debug] [Thread-1 (]: Using postgres connection "model.its_on_sale.price_events"
+[0m03:43:51.797144 [debug] [Thread-1 (]: On model.its_on_sale.price_events: /* {"app": "dbt", "dbt_version": "1.8.8", "profile_name": "its_on_sale", "target_name": "dev", "node_id": "model.its_on_sale.price_events"} */
+
+  create view "neondb"."public_marts"."price_events__dbt_tmp"
+    
+    
+  as (
+    -- Price drop/restock events derived from consecutive snapshots
+
+with hist as (
+  select
+    product_id,
+    ts_utc,
+    price,
+    in_stock,
+    lag(price) over (partition by product_id order by ts_utc) as prev_price,
+    lag(in_stock) over (partition by product_id order by ts_utc) as prev_stock
+  from "neondb"."public_staging"."stg_price_history"
+),
+events as (
+  select
+    product_id,
+    ts_utc,
+    prev_price,
+    price as new_price,
+    case
+      when prev_price is not null and price is not null and price < prev_price then 'DROP'
+      when prev_stock = false and in_stock = true then 'RESTOCK'
+      when prev_stock = true and in_stock = false then 'OOS'
+      else null
+    end as event_type,
+    case
+      when prev_price is not null and price is not null and price < prev_price
+        then round(100.0*(prev_price - price)/prev_price, 2)
+      else null
+    end as drop_pct
+  from hist
+)
+select * from events where event_type is not null
+  );
+[0m03:43:51.811033 [debug] [Thread-1 (]: SQL status: CREATE VIEW in 0.013 seconds
+[0m03:43:51.818241 [debug] [Thread-1 (]: Using postgres connection "model.its_on_sale.price_events"
+[0m03:43:51.818241 [debug] [Thread-1 (]: On model.its_on_sale.price_events: /* {"app": "dbt", "dbt_version": "1.8.8", "profile_name": "its_on_sale", "target_name": "dev", "node_id": "model.its_on_sale.price_events"} */
+alter table "neondb"."public_marts"."price_events__dbt_tmp" rename to "price_events"
+[0m03:43:51.824953 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.005 seconds
+[0m03:43:51.840979 [debug] [Thread-1 (]: On model.its_on_sale.price_events: COMMIT
+[0m03:43:51.840979 [debug] [Thread-1 (]: Using postgres connection "model.its_on_sale.price_events"
+[0m03:43:51.841980 [debug] [Thread-1 (]: On model.its_on_sale.price_events: COMMIT
+[0m03:43:51.850158 [debug] [Thread-1 (]: SQL status: COMMIT in 0.009 seconds
+[0m03:43:51.857732 [debug] [Thread-1 (]: Applying DROP to: "neondb"."public_marts"."price_events__dbt_backup"
+[0m03:43:51.864359 [debug] [Thread-1 (]: Using postgres connection "model.its_on_sale.price_events"
+[0m03:43:51.865368 [debug] [Thread-1 (]: On model.its_on_sale.price_events: /* {"app": "dbt", "dbt_version": "1.8.8", "profile_name": "its_on_sale", "target_name": "dev", "node_id": "model.its_on_sale.price_events"} */
+drop view if exists "neondb"."public_marts"."price_events__dbt_backup" cascade
+[0m03:43:51.872936 [debug] [Thread-1 (]: SQL status: DROP VIEW in 0.007 seconds
+[0m03:43:51.875954 [debug] [Thread-1 (]: On model.its_on_sale.price_events: Close
+[0m03:43:51.878973 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '1480bd21-b8e1-4cd9-8001-eb990a832f02', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023BDE5DF9D0>]}
+[0m03:43:51.880085 [info ] [Thread-1 (]: 1 of 1 OK created sql view model public_marts.price_events ..................... [[32mCREATE VIEW[0m in 0.19s]
+[0m03:43:51.881096 [debug] [Thread-1 (]: Finished running node model.its_on_sale.price_events
+[0m03:43:51.882604 [debug] [MainThread]: Using postgres connection "master"
+[0m03:43:51.883613 [debug] [MainThread]: On master: BEGIN
+[0m03:43:51.883613 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m03:43:51.938527 [debug] [MainThread]: SQL status: BEGIN in 0.054 seconds
+[0m03:43:51.939532 [debug] [MainThread]: On master: COMMIT
+[0m03:43:51.939532 [debug] [MainThread]: Using postgres connection "master"
+[0m03:43:51.940539 [debug] [MainThread]: On master: COMMIT
+[0m03:43:51.946977 [debug] [MainThread]: SQL status: COMMIT in 0.006 seconds
+[0m03:43:51.946977 [debug] [MainThread]: On master: Close
+[0m03:43:51.947983 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m03:43:51.948988 [debug] [MainThread]: Connection 'list_neondb' was properly closed.
+[0m03:43:51.948988 [debug] [MainThread]: Connection 'list_neondb_public_staging' was properly closed.
+[0m03:43:51.950063 [debug] [MainThread]: Connection 'list_neondb_public_marts' was properly closed.
+[0m03:43:51.950063 [debug] [MainThread]: Connection 'model.its_on_sale.price_events' was properly closed.
+[0m03:43:51.951172 [info ] [MainThread]: 
+[0m03:43:51.951675 [info ] [MainThread]: Finished running 1 view model in 0 hours 0 minutes and 3.55 seconds (3.55s).
+[0m03:43:51.952754 [debug] [MainThread]: Command end result
+[0m03:43:51.989664 [info ] [MainThread]: 
+[0m03:43:51.990670 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m03:43:51.991670 [info ] [MainThread]: 
+[0m03:43:51.992179 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=0 SKIP=0 TOTAL=1
+[0m03:43:51.994190 [debug] [MainThread]: Command `dbt run` succeeded at 03:43:51.993183 after 5.72 seconds
+[0m03:43:51.994190 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023BDCA6CED0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023BDCC7EFD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023BDCC7C110>]}
+[0m03:43:51.995198 [debug] [MainThread]: Flushing usage events
+[0m03:43:56.630112 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000234257202D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023426739AD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002342550CF10>]}
+
+
+============================== 03:43:56.633625 | 7cac080c-854f-452d-9b20-b54d1a84d243 ==============================
+[0m03:43:56.633625 [info ] [MainThread]: Running with dbt=1.8.8
+[0m03:43:56.634634 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'debug': 'False', 'log_path': "C:\\Users\\meg\\Documents\\cam\\proj\\It's On Sale\\its-on-sale-tracker\\pipeline\\transform\\its_on_sale\\logs", 'profiles_dir': '../', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'log_format': 'default', 'introspect': 'True', 'target_path': 'None', 'invocation_command': 'dbt test --select price_events --profiles-dir ../', 'send_anonymous_usage_stats': 'True'}
+[0m03:43:56.866846 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '7cac080c-854f-452d-9b20-b54d1a84d243', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002342685F650>]}
+[0m03:43:56.919318 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '7cac080c-854f-452d-9b20-b54d1a84d243', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000234227742D0>]}
+[0m03:43:56.921326 [info ] [MainThread]: Registered adapter: postgres=1.8.2
+[0m03:43:56.930877 [debug] [MainThread]: checksum: ec53e341a936509427e16df1c646386a84befec52c1957e3f4359fbc36fc93f5, vars: {}, profile: , target: , version: 1.8.8
+[0m03:43:57.118302 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m03:43:57.119303 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m03:43:57.158268 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '7cac080c-854f-452d-9b20-b54d1a84d243', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000234268FD050>]}
+[0m03:43:57.281036 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '7cac080c-854f-452d-9b20-b54d1a84d243', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023426914D50>]}
+[0m03:43:57.282037 [info ] [MainThread]: Found 5 models, 19 data tests, 423 macros
+[0m03:43:57.282037 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '7cac080c-854f-452d-9b20-b54d1a84d243', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000234268D9150>]}
+[0m03:43:57.284495 [info ] [MainThread]: 
+[0m03:43:57.286523 [debug] [MainThread]: Acquiring new postgres connection 'master'
+[0m03:43:57.292159 [debug] [ThreadPool]: Acquiring new postgres connection 'list_neondb_public_staging'
+[0m03:43:57.293182 [debug] [ThreadPool]: Acquiring new postgres connection 'list_neondb_public_marts'
+[0m03:43:57.503461 [debug] [ThreadPool]: Using postgres connection "list_neondb_public_staging"
+[0m03:43:57.503461 [debug] [ThreadPool]: Using postgres connection "list_neondb_public_marts"
+[0m03:43:57.504466 [debug] [ThreadPool]: On list_neondb_public_staging: BEGIN
+[0m03:43:57.504466 [debug] [ThreadPool]: On list_neondb_public_marts: BEGIN
+[0m03:43:57.505471 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m03:43:57.505471 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m03:43:57.579308 [debug] [ThreadPool]: SQL status: BEGIN in 0.074 seconds
+[0m03:43:57.579308 [debug] [ThreadPool]: Using postgres connection "list_neondb_public_staging"
+[0m03:43:57.580304 [debug] [ThreadPool]: On list_neondb_public_staging: /* {"app": "dbt", "dbt_version": "1.8.8", "profile_name": "its_on_sale", "target_name": "dev", "connection_name": "list_neondb_public_staging"} */
+select
+      'neondb' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'public_staging'
+    union all
+    select
+      'neondb' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'public_staging'
+    union all
+    select
+      'neondb' as database,
+      matviewname as name,
+      schemaname as schema,
+      'materialized_view' as type
+    from pg_matviews
+    where schemaname ilike 'public_staging'
+  
+[0m03:43:57.583666 [debug] [ThreadPool]: SQL status: BEGIN in 0.078 seconds
+[0m03:43:57.584872 [debug] [ThreadPool]: Using postgres connection "list_neondb_public_marts"
+[0m03:43:57.584872 [debug] [ThreadPool]: On list_neondb_public_marts: /* {"app": "dbt", "dbt_version": "1.8.8", "profile_name": "its_on_sale", "target_name": "dev", "connection_name": "list_neondb_public_marts"} */
+select
+      'neondb' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'public_marts'
+    union all
+    select
+      'neondb' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'public_marts'
+    union all
+    select
+      'neondb' as database,
+      matviewname as name,
+      schemaname as schema,
+      'materialized_view' as type
+    from pg_matviews
+    where schemaname ilike 'public_marts'
+  
+[0m03:43:57.587405 [debug] [ThreadPool]: SQL status: SELECT 2 in 0.006 seconds
+[0m03:43:57.588412 [debug] [ThreadPool]: On list_neondb_public_staging: ROLLBACK
+[0m03:43:57.592524 [debug] [ThreadPool]: SQL status: SELECT 3 in 0.006 seconds
+[0m03:43:57.593595 [debug] [ThreadPool]: On list_neondb_public_marts: ROLLBACK
+[0m03:43:57.595406 [debug] [ThreadPool]: On list_neondb_public_staging: Close
+[0m03:43:57.599473 [debug] [ThreadPool]: On list_neondb_public_marts: Close
+[0m03:43:57.605018 [debug] [MainThread]: Using postgres connection "master"
+[0m03:43:57.606022 [debug] [MainThread]: On master: BEGIN
+[0m03:43:57.607027 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m03:43:57.677362 [debug] [MainThread]: SQL status: BEGIN in 0.071 seconds
+[0m03:43:57.678367 [debug] [MainThread]: Using postgres connection "master"
+[0m03:43:57.678367 [debug] [MainThread]: On master: /* {"app": "dbt", "dbt_version": "1.8.8", "profile_name": "its_on_sale", "target_name": "dev", "connection_name": "master"} */
+with relation as (
+        select
+            pg_rewrite.ev_class as class,
+            pg_rewrite.oid as id
+        from pg_rewrite
+    ),
+    class as (
+        select
+            oid as id,
+            relname as name,
+            relnamespace as schema,
+            relkind as kind
+        from pg_class
+    ),
+    dependency as (
+        select distinct
+            pg_depend.objid as id,
+            pg_depend.refobjid as ref
+        from pg_depend
+    ),
+    schema as (
+        select
+            pg_namespace.oid as id,
+            pg_namespace.nspname as name
+        from pg_namespace
+        where nspname != 'information_schema' and nspname not like 'pg\_%'
+    ),
+    referenced as (
+        select
+            relation.id AS id,
+            referenced_class.name ,
+            referenced_class.schema ,
+            referenced_class.kind
+        from relation
+        join class as referenced_class on relation.class=referenced_class.id
+        where referenced_class.kind in ('r', 'v', 'm')
+    ),
+    relationships as (
+        select
+            referenced.name as referenced_name,
+            referenced.schema as referenced_schema_id,
+            dependent_class.name as dependent_name,
+            dependent_class.schema as dependent_schema_id,
+            referenced.kind as kind
+        from referenced
+        join dependency on referenced.id=dependency.id
+        join class as dependent_class on dependency.ref=dependent_class.id
+        where
+            (referenced.name != dependent_class.name or
+             referenced.schema != dependent_class.schema)
+    )
+
+    select
+        referenced_schema.name as referenced_schema,
+        relationships.referenced_name as referenced_name,
+        dependent_schema.name as dependent_schema,
+        relationships.dependent_name as dependent_name
+    from relationships
+    join schema as dependent_schema on relationships.dependent_schema_id=dependent_schema.id
+    join schema as referenced_schema on relationships.referenced_schema_id=referenced_schema.id
+    group by referenced_schema, referenced_name, dependent_schema, dependent_name
+    order by referenced_schema, referenced_name, dependent_schema, dependent_name;
+[0m03:43:57.687482 [debug] [MainThread]: SQL status: SELECT 6 in 0.008 seconds
+[0m03:43:57.689382 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '7cac080c-854f-452d-9b20-b54d1a84d243', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023426C97D50>]}
+[0m03:43:57.690386 [debug] [MainThread]: On master: ROLLBACK
+[0m03:43:57.696420 [debug] [MainThread]: Using postgres connection "master"
+[0m03:43:57.697496 [debug] [MainThread]: On master: BEGIN
+[0m03:43:57.709574 [debug] [MainThread]: SQL status: BEGIN in 0.012 seconds
+[0m03:43:57.709574 [debug] [MainThread]: On master: COMMIT
+[0m03:43:57.710580 [debug] [MainThread]: Using postgres connection "master"
+[0m03:43:57.710580 [debug] [MainThread]: On master: COMMIT
+[0m03:43:57.717135 [debug] [MainThread]: SQL status: COMMIT in 0.006 seconds
+[0m03:43:57.718198 [debug] [MainThread]: On master: Close
+[0m03:43:57.718198 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m03:43:57.719203 [info ] [MainThread]: 
+[0m03:43:57.723356 [debug] [Thread-1 (]: Began running node test.its_on_sale.not_null_price_events_event_type.61d7de2d7b
+[0m03:43:57.724366 [debug] [Thread-2 (]: Began running node test.its_on_sale.not_null_price_events_product_id.d5bcb90d02
+[0m03:43:57.724366 [debug] [Thread-3 (]: Began running node test.its_on_sale.not_null_price_events_ts_utc.dd91ee2019
+[0m03:43:57.725375 [info ] [Thread-1 (]: 1 of 3 START test not_null_price_events_event_type ............................. [RUN]
+[0m03:43:57.725375 [info ] [Thread-2 (]: 2 of 3 START test not_null_price_events_product_id ............................. [RUN]
+[0m03:43:57.726384 [info ] [Thread-3 (]: 3 of 3 START test not_null_price_events_ts_utc ................................. [RUN]
+[0m03:43:57.728419 [debug] [Thread-1 (]: Acquiring new postgres connection 'test.its_on_sale.not_null_price_events_event_type.61d7de2d7b'
+[0m03:43:57.729431 [debug] [Thread-2 (]: Acquiring new postgres connection 'test.its_on_sale.not_null_price_events_product_id.d5bcb90d02'
+[0m03:43:57.729431 [debug] [Thread-3 (]: Acquiring new postgres connection 'test.its_on_sale.not_null_price_events_ts_utc.dd91ee2019'
+[0m03:43:57.730643 [debug] [Thread-1 (]: Began compiling node test.its_on_sale.not_null_price_events_event_type.61d7de2d7b
+[0m03:43:57.730643 [debug] [Thread-2 (]: Began compiling node test.its_on_sale.not_null_price_events_product_id.d5bcb90d02
+[0m03:43:57.732150 [debug] [Thread-3 (]: Began compiling node test.its_on_sale.not_null_price_events_ts_utc.dd91ee2019
+[0m03:43:57.751014 [debug] [Thread-1 (]: Writing injected SQL for node "test.its_on_sale.not_null_price_events_event_type.61d7de2d7b"
+[0m03:43:57.756657 [debug] [Thread-2 (]: Writing injected SQL for node "test.its_on_sale.not_null_price_events_product_id.d5bcb90d02"
+[0m03:43:57.762209 [debug] [Thread-3 (]: Writing injected SQL for node "test.its_on_sale.not_null_price_events_ts_utc.dd91ee2019"
+[0m03:43:57.763245 [debug] [Thread-1 (]: Began executing node test.its_on_sale.not_null_price_events_event_type.61d7de2d7b
+[0m03:43:57.781523 [debug] [Thread-1 (]: Writing runtime sql for node "test.its_on_sale.not_null_price_events_event_type.61d7de2d7b"
+[0m03:43:57.782029 [debug] [Thread-2 (]: Began executing node test.its_on_sale.not_null_price_events_product_id.d5bcb90d02
+[0m03:43:57.782029 [debug] [Thread-3 (]: Began executing node test.its_on_sale.not_null_price_events_ts_utc.dd91ee2019
+[0m03:43:57.785073 [debug] [Thread-2 (]: Writing runtime sql for node "test.its_on_sale.not_null_price_events_product_id.d5bcb90d02"
+[0m03:43:57.786309 [debug] [Thread-1 (]: Using postgres connection "test.its_on_sale.not_null_price_events_event_type.61d7de2d7b"
+[0m03:43:57.789340 [debug] [Thread-3 (]: Writing runtime sql for node "test.its_on_sale.not_null_price_events_ts_utc.dd91ee2019"
+[0m03:43:57.791360 [debug] [Thread-1 (]: On test.its_on_sale.not_null_price_events_event_type.61d7de2d7b: BEGIN
+[0m03:43:57.792358 [debug] [Thread-2 (]: Using postgres connection "test.its_on_sale.not_null_price_events_product_id.d5bcb90d02"
+[0m03:43:57.792358 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m03:43:57.793363 [debug] [Thread-2 (]: On test.its_on_sale.not_null_price_events_product_id.d5bcb90d02: BEGIN
+[0m03:43:57.794409 [debug] [Thread-3 (]: Using postgres connection "test.its_on_sale.not_null_price_events_ts_utc.dd91ee2019"
+[0m03:43:57.795425 [debug] [Thread-2 (]: Opening a new connection, currently in state init
+[0m03:43:57.796816 [debug] [Thread-3 (]: On test.its_on_sale.not_null_price_events_ts_utc.dd91ee2019: BEGIN
+[0m03:43:57.797826 [debug] [Thread-3 (]: Opening a new connection, currently in state init
+[0m03:43:57.855138 [debug] [Thread-1 (]: SQL status: BEGIN in 0.062 seconds
+[0m03:43:57.855138 [debug] [Thread-1 (]: Using postgres connection "test.its_on_sale.not_null_price_events_event_type.61d7de2d7b"
+[0m03:43:57.856163 [debug] [Thread-1 (]: On test.its_on_sale.not_null_price_events_event_type.61d7de2d7b: /* {"app": "dbt", "dbt_version": "1.8.8", "profile_name": "its_on_sale", "target_name": "dev", "node_id": "test.its_on_sale.not_null_price_events_event_type.61d7de2d7b"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+
+
+select event_type
+from "neondb"."public_marts"."price_events"
+where event_type is null
+
+
+
+      
+    ) dbt_internal_test
+[0m03:43:57.860189 [debug] [Thread-2 (]: SQL status: BEGIN in 0.065 seconds
+[0m03:43:57.861194 [debug] [Thread-2 (]: Using postgres connection "test.its_on_sale.not_null_price_events_product_id.d5bcb90d02"
+[0m03:43:57.861194 [debug] [Thread-2 (]: On test.its_on_sale.not_null_price_events_product_id.d5bcb90d02: /* {"app": "dbt", "dbt_version": "1.8.8", "profile_name": "its_on_sale", "target_name": "dev", "node_id": "test.its_on_sale.not_null_price_events_product_id.d5bcb90d02"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+
+
+select product_id
+from "neondb"."public_marts"."price_events"
+where product_id is null
+
+
+
+      
+    ) dbt_internal_test
+[0m03:43:57.863129 [debug] [Thread-1 (]: SQL status: SELECT 1 in 0.007 seconds
+[0m03:43:57.868203 [debug] [Thread-1 (]: On test.its_on_sale.not_null_price_events_event_type.61d7de2d7b: ROLLBACK
+[0m03:43:57.868203 [debug] [Thread-3 (]: SQL status: BEGIN in 0.071 seconds
+[0m03:43:57.869209 [debug] [Thread-2 (]: SQL status: SELECT 1 in 0.007 seconds
+[0m03:43:57.869209 [debug] [Thread-3 (]: Using postgres connection "test.its_on_sale.not_null_price_events_ts_utc.dd91ee2019"
+[0m03:43:57.871235 [debug] [Thread-2 (]: On test.its_on_sale.not_null_price_events_product_id.d5bcb90d02: ROLLBACK
+[0m03:43:57.871235 [debug] [Thread-3 (]: On test.its_on_sale.not_null_price_events_ts_utc.dd91ee2019: /* {"app": "dbt", "dbt_version": "1.8.8", "profile_name": "its_on_sale", "target_name": "dev", "node_id": "test.its_on_sale.not_null_price_events_ts_utc.dd91ee2019"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+
+
+select ts_utc
+from "neondb"."public_marts"."price_events"
+where ts_utc is null
+
+
+
+      
+    ) dbt_internal_test
+[0m03:43:57.875521 [debug] [Thread-1 (]: On test.its_on_sale.not_null_price_events_event_type.61d7de2d7b: Close
+[0m03:43:57.876525 [info ] [Thread-1 (]: 1 of 3 PASS not_null_price_events_event_type ................................... [[32mPASS[0m in 0.15s]
+[0m03:43:57.877529 [debug] [Thread-1 (]: Finished running node test.its_on_sale.not_null_price_events_event_type.61d7de2d7b
+[0m03:43:57.878609 [debug] [Thread-2 (]: On test.its_on_sale.not_null_price_events_product_id.d5bcb90d02: Close
+[0m03:43:57.880622 [info ] [Thread-2 (]: 2 of 3 PASS not_null_price_events_product_id ................................... [[32mPASS[0m in 0.15s]
+[0m03:43:57.880622 [debug] [Thread-2 (]: Finished running node test.its_on_sale.not_null_price_events_product_id.d5bcb90d02
+[0m03:43:57.882127 [debug] [Thread-3 (]: SQL status: SELECT 1 in 0.009 seconds
+[0m03:43:57.883208 [debug] [Thread-3 (]: On test.its_on_sale.not_null_price_events_ts_utc.dd91ee2019: ROLLBACK
+[0m03:43:57.890256 [debug] [Thread-3 (]: On test.its_on_sale.not_null_price_events_ts_utc.dd91ee2019: Close
+[0m03:43:57.891259 [info ] [Thread-3 (]: 3 of 3 PASS not_null_price_events_ts_utc ....................................... [[32mPASS[0m in 0.16s]
+[0m03:43:57.892258 [debug] [Thread-3 (]: Finished running node test.its_on_sale.not_null_price_events_ts_utc.dd91ee2019
+[0m03:43:57.893652 [debug] [MainThread]: Using postgres connection "master"
+[0m03:43:57.895058 [debug] [MainThread]: On master: BEGIN
+[0m03:43:57.895058 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m03:43:57.948717 [debug] [MainThread]: SQL status: BEGIN in 0.053 seconds
+[0m03:43:57.949722 [debug] [MainThread]: On master: COMMIT
+[0m03:43:57.949722 [debug] [MainThread]: Using postgres connection "master"
+[0m03:43:57.950727 [debug] [MainThread]: On master: COMMIT
+[0m03:43:57.957720 [debug] [MainThread]: SQL status: COMMIT in 0.006 seconds
+[0m03:43:57.957720 [debug] [MainThread]: On master: Close
+[0m03:43:57.958723 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m03:43:57.959729 [debug] [MainThread]: Connection 'list_neondb_public_staging' was properly closed.
+[0m03:43:57.959729 [debug] [MainThread]: Connection 'list_neondb_public_marts' was properly closed.
+[0m03:43:57.959729 [debug] [MainThread]: Connection 'test.its_on_sale.not_null_price_events_event_type.61d7de2d7b' was properly closed.
+[0m03:43:57.960734 [debug] [MainThread]: Connection 'test.its_on_sale.not_null_price_events_product_id.d5bcb90d02' was properly closed.
+[0m03:43:57.960734 [debug] [MainThread]: Connection 'test.its_on_sale.not_null_price_events_ts_utc.dd91ee2019' was properly closed.
+[0m03:43:57.960734 [info ] [MainThread]: 
+[0m03:43:57.962241 [info ] [MainThread]: Finished running 3 data tests in 0 hours 0 minutes and 0.68 seconds (0.68s).
+[0m03:43:57.963271 [debug] [MainThread]: Command end result
+[0m03:43:58.002704 [info ] [MainThread]: 
+[0m03:43:58.003710 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m03:43:58.004777 [info ] [MainThread]: 
+[0m03:43:58.005788 [info ] [MainThread]: Done. PASS=3 WARN=0 ERROR=0 SKIP=0 TOTAL=3
+[0m03:43:58.006811 [debug] [MainThread]: Command `dbt test` succeeded at 03:43:58.006811 after 1.45 seconds
+[0m03:43:58.007819 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023426743E90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023426743DD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023424437610>]}
+[0m03:43:58.007819 [debug] [MainThread]: Flushing usage events
