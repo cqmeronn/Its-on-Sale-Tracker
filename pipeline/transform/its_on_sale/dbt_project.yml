@@ -1,3 +1,5 @@
+# dbt project configuration file (dbt_project.yml)
+
 name: "its_on_sale"
 version: "1.0"
 config-version: 2

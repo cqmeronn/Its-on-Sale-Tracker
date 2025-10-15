@@ -37,12 +37,16 @@ st.title("It’s On Sale — Price Tracker")
 
 latest = pd.read_sql(
     text("""
-      select p.product_id, p.name, p.site, p.url, l.last_seen_utc, l.price, l.currency
-      from marts.latest_price_per_product l
-      join staging.stg_product p on p.product_id = l.product_id
+      select p.product_id, p.name, p.site, p.url,
+             l.last_seen_utc, l.price, l.currency
+      from public_marts.latest_price_per_product l
+      join public_staging.stg_product p
+        on p.product_id = l.product_id
       order by p.site, p.name
-    """), engine.connect()
+    """),
+    engine.connect()
 )
+
 st.subheader("Latest prices")
 st.dataframe(latest)
 

@@ -26,3 +26,119 @@ Runtime Error
 [0m03:33:50.141933 [debug] [MainThread]: Command `dbt test` failed at 03:33:50.141933 after 0.08 seconds
 [0m03:33:50.141933 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002A63A1E0AD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002A6419CB110>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002A6419CADD0>]}
 [0m03:33:50.142951 [debug] [MainThread]: Flushing usage events
+[0m04:25:08.558184 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F826FD0A10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F829E80990>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F82B0A8990>]}
+
+
+============================== 04:25:08.563805 | d39e4a8c-fbf4-4589-a171-9bed896f2d8e ==============================
+[0m04:25:08.563805 [info ] [MainThread]: Running with dbt=1.8.8
+[0m04:25:08.564810 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': "C:\\Users\\meg\\Documents\\cam\\proj\\It's On Sale", 'version_check': 'True', 'warn_error': 'None', 'log_path': 'logs', 'debug': 'False', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'log_format': 'default', 'introspect': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt debug', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m04:25:08.585179 [info ] [MainThread]: dbt version: 1.8.8
+[0m04:25:08.585179 [info ] [MainThread]: python version: 3.11.9
+[0m04:25:08.586183 [info ] [MainThread]: python path: C:\Users\meg\Documents\cam\proj\It's On Sale\its-on-sale-tracker\.venv\Scripts\python.exe
+[0m04:25:08.587187 [info ] [MainThread]: os info: Windows-10-10.0.26100-SP0
+[0m04:25:08.587187 [info ] [MainThread]: Using profiles dir at C:\Users\meg\Documents\cam\proj\It's On Sale
+[0m04:25:08.588211 [info ] [MainThread]: Using profiles.yml file at C:\Users\meg\Documents\cam\proj\It's On Sale\profiles.yml
+[0m04:25:08.589216 [info ] [MainThread]: Using dbt_project.yml file at C:\Users\meg\Documents\cam\proj\It's On Sale\its-on-sale-tracker\dbt_project.yml
+[0m04:25:08.590219 [info ] [MainThread]: Configuration:
+[0m04:25:08.590219 [info ] [MainThread]:   profiles.yml file [[31mERROR not found[0m]
+[0m04:25:08.591243 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m04:25:08.592243 [info ] [MainThread]: Required dependencies:
+[0m04:25:08.592243 [debug] [MainThread]: Executing "git --help"
+[0m04:25:08.646201 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone      Clone a repository into a new directory\n   init       Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add        Add file contents to the index\n   mv         Move or rename a file, a directory, or a symlink\n   restore    Restore working tree files\n   rm         Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect     Use binary search to find the commit that introduced a bug\n   diff       Show changes between commits, commit and working tree, etc\n   grep       Print lines matching a pattern\n   log        Show commit logs\n   show       Show various types of objects\n   status     Show the working tree status\n\ngrow, mark and tweak your common history\n   backfill   Download missing objects in a partial clone\n   branch     List, create, or delete branches\n   commit     Record changes to the repository\n   merge      Join two or more development histories together\n   rebase     Reapply commits on top of another base tip\n   reset      Reset current HEAD to the specified state\n   switch     Switch branches\n   tag        Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch      Download objects and refs from another repository\n   pull       Fetch from and integrate with another repository or a local branch\n   push       Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m04:25:08.647379 [debug] [MainThread]: STDERR: "b''"
+[0m04:25:08.647379 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m04:25:08.648384 [info ] [MainThread]: Connection test skipped since no profile was found
+[0m04:25:08.649388 [info ] [MainThread]: [31m2 checks failed:[0m
+[0m04:25:08.649388 [info ] [MainThread]: dbt looked for a profiles.yml file in C:\Users\meg\Documents\cam\proj\It's On Sale\profiles.yml, but did
+not find one. For more information on configuring your profile, consult the
+documentation:
+
+https://docs.getdbt.com/docs/configure-your-profile
+
+
+[0m04:25:08.650406 [info ] [MainThread]: Project loading failed for the following reason:
+ project path <C:\Users\meg\Documents\cam\proj\It's On Sale\its-on-sale-tracker\dbt_project.yml> not found
+
+[0m04:25:08.652939 [debug] [MainThread]: Command `dbt debug` failed at 04:25:08.651915 after 0.17 seconds
+[0m04:25:08.653944 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F82B0AB4D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F8296F3790>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F82A08F750>]}
+[0m04:25:08.653944 [debug] [MainThread]: Flushing usage events
+[0m04:25:13.143699 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F8F5120DD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F8F5332610>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F8F5331890>]}
+
+
+============================== 04:25:13.147815 | 47201633-d641-4ca0-8aa7-b46658a29e13 ==============================
+[0m04:25:13.147815 [info ] [MainThread]: Running with dbt=1.8.8
+[0m04:25:13.148382 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'version_check': 'True', 'log_path': 'logs', 'fail_fast': 'False', 'profiles_dir': "C:\\Users\\meg\\Documents\\cam\\proj\\It's On Sale", 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'False', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'introspect': 'True', 'static_parser': 'True', 'invocation_command': 'dbt run --select staging stg_product stg_price_history latest_price_per_product', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m04:25:13.149390 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path C:\Users\meg\Documents\cam\proj\It's On Sale\its-on-sale-tracker\dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m04:25:13.151426 [debug] [MainThread]: Command `dbt run` failed at 04:25:13.150413 after 0.08 seconds
+[0m04:25:13.151426 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F8F634FC10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F8F634DFD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F8F634D090>]}
+[0m04:25:13.152427 [debug] [MainThread]: Flushing usage events
+[0m04:25:17.716726 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000252D44FDC90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000252D3AE8910>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000252D452F250>]}
+
+
+============================== 04:25:17.721820 | c3d88bb5-74bd-49d4-89b3-a705d70218a1 ==============================
+[0m04:25:17.721820 [info ] [MainThread]: Running with dbt=1.8.8
+[0m04:25:17.722821 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': "C:\\Users\\meg\\Documents\\cam\\proj\\It's On Sale", 'debug': 'False', 'fail_fast': 'False', 'log_path': 'logs', 'warn_error': 'None', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'static_parser': 'True', 'invocation_command': 'dbt test --select latest_price_per_product', 'introspect': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m04:25:17.722821 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path C:\Users\meg\Documents\cam\proj\It's On Sale\its-on-sale-tracker\dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m04:25:17.724954 [debug] [MainThread]: Command `dbt test` failed at 04:25:17.724954 after 0.08 seconds
+[0m04:25:17.724954 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000252D5529750>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000252D19D8810>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000252D4271110>]}
+[0m04:25:17.725958 [debug] [MainThread]: Flushing usage events
+[0m04:28:42.660436 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000029B94A783D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000029B9384CA10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000029B94A78990>]}
+
+
+============================== 04:28:42.664937 | c3e061bf-cdfd-4b62-b05d-739efde40c34 ==============================
+[0m04:28:42.664937 [info ] [MainThread]: Running with dbt=1.8.8
+[0m04:28:42.664937 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': "C:\\Users\\meg\\Documents\\cam\\proj\\It's On Sale", 'debug': 'False', 'version_check': 'True', 'log_path': 'logs', 'warn_error': 'None', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'log_format': 'default', 'invocation_command': 'dbt debug', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m04:28:42.682449 [info ] [MainThread]: dbt version: 1.8.8
+[0m04:28:42.683458 [info ] [MainThread]: python version: 3.11.9
+[0m04:28:42.684521 [info ] [MainThread]: python path: C:\Users\meg\Documents\cam\proj\It's On Sale\its-on-sale-tracker\.venv\Scripts\python.exe
+[0m04:28:42.684521 [info ] [MainThread]: os info: Windows-10-10.0.26100-SP0
+[0m04:28:42.686025 [info ] [MainThread]: Using profiles dir at C:\Users\meg\Documents\cam\proj\It's On Sale
+[0m04:28:42.686025 [info ] [MainThread]: Using profiles.yml file at C:\Users\meg\Documents\cam\proj\It's On Sale\profiles.yml
+[0m04:28:42.687047 [info ] [MainThread]: Using dbt_project.yml file at C:\Users\meg\Documents\cam\proj\It's On Sale\its-on-sale-tracker\dbt_project.yml
+[0m04:28:42.687047 [info ] [MainThread]: Configuration:
+[0m04:28:42.688052 [info ] [MainThread]:   profiles.yml file [[31mERROR not found[0m]
+[0m04:28:42.689056 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m04:28:42.690109 [info ] [MainThread]: Required dependencies:
+[0m04:28:42.690109 [debug] [MainThread]: Executing "git --help"
+[0m04:28:42.734977 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone      Clone a repository into a new directory\n   init       Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add        Add file contents to the index\n   mv         Move or rename a file, a directory, or a symlink\n   restore    Restore working tree files\n   rm         Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect     Use binary search to find the commit that introduced a bug\n   diff       Show changes between commits, commit and working tree, etc\n   grep       Print lines matching a pattern\n   log        Show commit logs\n   show       Show various types of objects\n   status     Show the working tree status\n\ngrow, mark and tweak your common history\n   backfill   Download missing objects in a partial clone\n   branch     List, create, or delete branches\n   commit     Record changes to the repository\n   merge      Join two or more development histories together\n   rebase     Reapply commits on top of another base tip\n   reset      Reset current HEAD to the specified state\n   switch     Switch branches\n   tag        Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch      Download objects and refs from another repository\n   pull       Fetch from and integrate with another repository or a local branch\n   push       Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m04:28:42.736482 [debug] [MainThread]: STDERR: "b''"
+[0m04:28:42.736482 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m04:28:42.737505 [info ] [MainThread]: Connection test skipped since no profile was found
+[0m04:28:42.738509 [info ] [MainThread]: [31m2 checks failed:[0m
+[0m04:28:42.738509 [info ] [MainThread]: dbt looked for a profiles.yml file in C:\Users\meg\Documents\cam\proj\It's On Sale\profiles.yml, but did
+not find one. For more information on configuring your profile, consult the
+documentation:
+
+https://docs.getdbt.com/docs/configure-your-profile
+
+
+[0m04:28:42.739519 [info ] [MainThread]: Project loading failed for the following reason:
+ project path <C:\Users\meg\Documents\cam\proj\It's On Sale\its-on-sale-tracker\dbt_project.yml> not found
+
+[0m04:28:42.740523 [debug] [MainThread]: Command `dbt debug` failed at 04:28:42.740523 after 0.15 seconds
+[0m04:28:42.741532 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000029B94A7AD90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000029B9384CB10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000029B94A78690>]}
+[0m04:28:42.742535 [debug] [MainThread]: Flushing usage events
+[0m04:28:47.167157 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E7BE235290>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E7BCE10690>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E7BD211650>]}
+
+
+============================== 04:28:47.172183 | 85fca3bb-3533-4bed-93dc-38f38525e78f ==============================
+[0m04:28:47.172183 [info ] [MainThread]: Running with dbt=1.8.8
+[0m04:28:47.173188 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': "C:\\Users\\meg\\Documents\\cam\\proj\\It's On Sale", 'version_check': 'True', 'fail_fast': 'False', 'log_path': 'logs', 'warn_error': 'None', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'log_format': 'default', 'introspect': 'True', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'invocation_command': 'dbt run --select staging stg_product stg_price_history latest_price_per_product', 'send_anonymous_usage_stats': 'True'}
+[0m04:28:47.173188 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path C:\Users\meg\Documents\cam\proj\It's On Sale\its-on-sale-tracker\dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m04:28:47.175283 [debug] [MainThread]: Command `dbt run` failed at 04:28:47.175283 after 0.08 seconds
+[0m04:28:47.176283 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E7BBF27590>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E7BD20F250>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E7BD20FF90>]}
+[0m04:28:47.176788 [debug] [MainThread]: Flushing usage events
