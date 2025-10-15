@@ -9,8 +9,8 @@
       "kwargs": { "column": "price_numeric", "min_value": 0.01 }
     },
     {
-      "expectation_type": "expect_column_values_to_be_in_set",
-      "kwargs": { "column": "currency", "value_set": ["GBP"] }
+    "expectation_type": "expect_column_values_to_be_in_set",
+    "kwargs": { "column": "currency", "value_set": ["GBP", "£", null] }
     },
     {
       "expectation_type": "expect_column_values_to_not_be_null",

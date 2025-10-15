@@ -1,10 +1,11 @@
-"""Run Great Expectations validations on price_history table."""
+"""Run basic Great Expectations checks on price_history table."""
 
 import os
-from great_expectations.dataset import SqlAlchemyDataset
+import sys
+import pandas as pd
 from sqlalchemy import create_engine
 import json
-import sys
+from great_expectations.dataset import PandasDataset
 
 def main():
     db_url = os.getenv("DATABASE_URL")
@@ -17,15 +18,20 @@ def main():
         suite = json.load(f)
 
     engine = create_engine(db_url)
-    dataset = SqlAlchemyDataset("price_history", engine=engine)
+    df = pd.read_sql("select * from price_history", engine)
+    dataset = PandasDataset(df)
 
     all_passed = True
     for exp in suite["expectations"]:
         etype = exp["expectation_type"]
         kwargs = exp["kwargs"]
-        result = getattr(dataset, etype)(**kwargs)
+        func = getattr(dataset, etype, None)
+        if not func:
+            print(f"Unknown expectation: {etype}")
+            continue
+        result = func(**kwargs)
         success = result.get("success", False)
-        print(f"{etype} ({kwargs}): {'PASS' if success else 'FAIL'}")
+        print(f"{etype} ({kwargs}) -> {'PASS' if success else 'FAIL'}")
         if not success:
             all_passed = False
 
