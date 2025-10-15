@@ -63,8 +63,11 @@ jobs:
         run: dbt test
 
       - name: Run Great Expectations checks
+        env:
+          DATABASE_URL: ${{ secrets.NEON_DATABASE_URL }}
         run: |
           python -m pipeline.dq.run_dq_checks
+
 
       - name: Post price summary
         run: |
