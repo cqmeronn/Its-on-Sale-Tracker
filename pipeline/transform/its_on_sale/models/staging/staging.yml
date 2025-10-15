@@ -8,7 +8,8 @@ models:
       - name: site
         tests: [not_null]
       - name: url
-        tests: [not_null, unique]
+        tests: [not_null]
+
 
   - name: stg_price_history
     columns:
