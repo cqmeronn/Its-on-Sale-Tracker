@@ -1,15 +1,15 @@
 # It’s On Sale Tracker  
 **A pipeline to monitor product price data (currently in progress).**
 
-> **Note:** Still in active development. The ingestion, transformation, and CI/CD foundation are complete — Streamlit UI and data quality alerting will be added next.
+> **Note:** Still in active development. The ingestion, transformation, and CI/CD foundation are complete — Streamlit UI, data quality alerting, and Slack notifications are now integrated.
 
 ---
 
 ## Project Overview
 
-**It’s On Sale Tracker** is a data engineering project built to demonstrate a full end-to-end data workflow — from ingestion to transformation and visualization — using modern, production-like tooling.
+**It’s On Sale Tracker** is a data engineering project built to demonstrate a full end-to-end data workflow — from ingestion to transformation, validation, and visualization — using modern, production-like tooling.
 
-It scrapes product data from the web (currently using `books.toscrape.com` as a demo source), stores it in a PostgreSQL database (via [Neon](https://neon.tech)), transforms it using **dbt**, and runs automatically in **GitHub Actions** on a schedule.
+It scrapes product data from the web (currently using `books.toscrape.com` as a demo source), stores it in a PostgreSQL database (via [Neon](https://neon.tech)), transforms it using **dbt**, validates data quality using **Great Expectations**, and runs automatically in **GitHub Actions** on a schedule. Slack alerts are sent with summaries and notifications.
 
 ---
 
@@ -20,9 +20,10 @@ It scrapes product data from the web (currently using `books.toscrape.com` as a 
 | **Ingestion** | `requests`, `BeautifulSoup4`, `lxml`, `loguru` | Scrape product data from websites |
 | **Database** | `PostgreSQL` (Neon) + `SQLAlchemy` | Store product and price history data |
 | **Transformation** | `dbt-core`, `dbt-postgres` | Clean and model data for analysis |
-| **Validation** | `dbt tests` (and soon `Great Expectations`) | Ensure data quality and integrity |
-| **Orchestration / CI** | `GitHub Actions` | Run ingestion + dbt on a 5-minute schedule |
-| **Visualization (WIP)** | `Streamlit` | Simple dashboard for price history |
+| **Validation** | `dbt tests`, `Great Expectations` | Ensure data quality and integrity |
+| **Orchestration / CI** | `GitHub Actions` | Run ingestion + dbt + validation + alerts |
+| **Notification** | `Slack Webhooks` | Post summaries and price alerts to Slack |
+| **Visualization (WIP)** | `Streamlit` | Dashboard for price history and changes |
 | **Environment** | `.env` + `python-dotenv` | Manage secrets and configuration |
 
 ---
@@ -32,24 +33,44 @@ It scrapes product data from the web (currently using `books.toscrape.com` as a 
 ```
 its-on-sale-tracker/
 │
-├── .github/workflows/pipeline.yml      # CI/CD pipeline
+├── .github/workflows/
 ├── pipeline/
 │   ├── common/                         # Shared config, DB engine, ORM models
-│   ├── ingest/                         # Data fetching and parsing
+│   ├── dq/
+│   │   └── run_dq_checks.py            # Great Expectations entrypoint
+│   ├── ingest/
 │   │   ├── fetch_and_parse.py          # Fetch product HTML + parse details
-│   │   └── parsers/books_to_scrape.py  # Parser for demo website
-│   ├── load/                           # Insert data into Postgres
-│   ├── transform/its_on_sale/          # dbt project
-│   │   ├── models/staging/             # stg_product, stg_price_history
-│   │   └── models/marts/               # fact_price_history, latest_price_per_product
-│   └── dq/                             # (to be added) Great Expectations
-│
-├── streamlit_app/                      # Streamlit app (WIP)
-│   └── app.py
-│
-├── .env.example                        # Example env file for local setup
-├── requirements.txt                    # Dependencies
-└── README.md
+│   │   └── parsers/
+│   │       ├── books_to_scrape.py      # Demo parser: books.toscrape.com
+│   │       └── webscraper_io.py        # Demo parser: webscraper.io
+│   ├── load/
+│   │   ├── alert_price_drops.py        # Detect price drops + Slack alerts
+│   │   ├── init_db.py                  # Create schemas/tables
+│   │   ├── report_summary.py           # Post run summary to Slack
+│   │   ├── seed_products.py            # Seed initial product rows
+│   │   └── upsert.py                   # Upsert product + price rows
+│   └── transform/
+│       └── its_on_sale/                # dbt project root
+│           ├── models/
+│           │   ├── marts/
+│           │   │   ├── fact_price_history.sql
+│           │   │   ├── latest_price_per_product.sql
+│           │   │   ├── price_events.sql
+│           │   │   └── marts.yml
+│           │   └── staging/
+│           │       ├── staging.yml
+│           │       ├── stg_price_history.sql
+│           │       └── stg_product.sql
+│           ├── .user.yml
+│           └── dbt_project.yml
+├── streamlit_app/
+│   └── app.py                          # (WIP) dashboard
+├── .env.example
+├── .gitignore
+├── README.md
+├── requirements.txt
+└── reset.py                            # One-command reset & full run
+
 ```
 
 ---
@@ -57,14 +78,14 @@ its-on-sale-tracker/
 ## Current Features
 
 ### 1. Ingestion
-- Scrapes product data (name, price, currency, availability) from **Books to Scrape**.
-- Modular parser design (can extend easily to Amazon, Argos, etc.).
-- Logged with `loguru` for visibility.
+- Scrapes product data (name, price, currency, availability) from **Books to Scrape** and demo e-commerce pages.
+- Modular parser design (extensible to Amazon, Argos, etc.).
+- Uses `loguru` for clean logging and `hashlib` for deduplication.
 
 ### 2. Database
 - SQLAlchemy ORM with models for `product` and `price_history`.
 - Automatic table creation + Neon PostgreSQL connection.
-- Local `.env` support and GitHub Actions secret handling.
+- Supports both local and remote environments via `.env`.
 
 ### 3. Transformations (dbt)
 - dbt project: `its_on_sale`
@@ -72,23 +93,43 @@ its-on-sale-tracker/
   - `stg_product`
   - `stg_price_history`
   - `fact_price_history`
+  - `price_events`
   - `latest_price_per_product`
-- Relationship + uniqueness tests integrated and passing.
-- dbt runs automatically in CI.
+- Relationship, uniqueness, and custom tests integrated.
+- dbt runs automatically in CI/CD.
 
-### 4. CI/CD (GitHub Actions)
-- Full pipeline triggered:
+### 4. Data Quality Checks
+- Great Expectations integrated (`pipeline/dq/run_dq_checks.py`).
+- Validates:
+  - Non-null IDs, prices, and timestamps.
+  - Positive numeric prices.
+  - Currency validity (`GBP`, `USD`, etc.).
+- Fails CI pipeline on validation errors.
+
+### 5. CI/CD (GitHub Actions)
+- Full pipeline executes on schedule and push:
   1. Install dependencies
-  2. Parse Neon DB URL → env vars
+  2. Set up Postgres connection from Neon secret
   3. Run ingestion (`python -m pipeline.ingest.fetch_and_parse`)
-  4. Run `dbt debug`, `dbt run`, and `dbt test`
-- Scheduled every 5 minutes + manual dispatch.
-- Uses Neon DB secrets securely via `secrets.NEON_DATABASE_URL`.
+  4. Run dbt (`debug`, `run`, `test`)
+  5. Run data quality checks (`Great Expectations`)
+  6. Send Slack summaries and alerts
+- Securely manages secrets via GitHub repository settings.
 
-### 5. Streamlit (In Progress)
-- Basic app implemented (`streamlit_app/app.py`)
-- Reads from Neon DB, displays products + price history.
-- Deployment to Streamlit Cloud planned for next phase.
+### 6. Slack Integration
+- Slack webhook connected to a workspace channel (e.g., `#projects-tracking`).
+- Posts formatted summaries like:
+  ```
+  *Latest price summary:*
+  • *books.toscrape.com* – A Light in the Attic: 51.77 GBP
+  • *webscraper.io* – iPad Mini Retina: 537.99 USD
+  ```
+- Supports bold text, bullet points, and hyperlink formatting.
+
+### 7. Streamlit (In Progress)
+- Displays live data from Neon DB.
+- Product filters by site or search term.
+- Price history visualization planned.
 
 ---
 
@@ -110,6 +151,7 @@ pip install -r requirements.txt
 Create your `.env` file:
 ```
 DATABASE_URL=postgresql+psycopg://user:password@host/dbname
+SLACK_WEBHOOK_URL=https://hooks.slack.com/services/...
 ```
 
 Initialize the database:
@@ -118,9 +160,10 @@ python -m pipeline.load.init_db
 python -m pipeline.load.test_connection
 ```
 
-Run the ingestion:
+Run ingestion and checks:
 ```bash
 python -m pipeline.ingest.fetch_and_parse
+python -m pipeline.dq.run_dq_checks
 ```
 
 Run dbt locally:
@@ -135,6 +178,15 @@ Run Streamlit:
 ```bash
 streamlit run streamlit_app/app.py
 ```
+
+**Optional**: Reset:
+```bash
+python reset.py     # reset and run everything end-to-end
+```
+
+
+
+---
 
 ## CI/CD Status
 
